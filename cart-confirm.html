@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header component -->
+    <header>
+      <div class="header-banner">
+        <div class="header-banner__container">
+          <img src="./assets/img/header-banner.svg" alt="Header Banner" class="header-banner__img" />
+          <span class="header-banner__btn">XEM THÊM</span>
+        </div>
+      </div>
+      <div class="grid wide header-function">
+        <img src="./assets/img/logo.svg" alt="" class="header-logo" />
+        <div class="header-search">
+          <input type="text" placeholder="Tìm kiếm tại đây" class="header-search__input" />
+          <img src="./assets/icon/search.svg" class="header-search__icon" />
+        </div>
+        <div class="header-list-btn">
+          <div class="header-btn header-heart-btn">
+            <img src="./assets/icon/heart.svg" alt="" class="" />
+            <span class="header-amount header-heart-amount">2</span>
+          </div>
+          <span class="ml-24">300.00VNĐ</span>
+          <div class="header-btn header-cart-btn ml-10">
+            <img src="./assets/icon/cart.svg" alt="" class="" />
+            <span class="header-amount header-cart-amount">2</span>
+          </div>
+          <a href="#" class="ml-24">Đăng nhập</a>
+          <img src="./assets/icon/user-circle.svg" alt="" class="ml-10" />
+        </div>
+      </div>
+
+      <div class="header-navbar">
+        <div class="grid wide header-navbar__content">
+          <div>
+            <div class="header-navbar__btn">
+              <img src="./assets/icon/bar.svg" class="mr-6" />
+              Danh mục sản phẩm
+              <img src="./assets/icon/caret-down.svg" />
+              <div class="header-navbar__dropdown">
+                <ul>
+                  <li>Thuốc trừ bệnh sinh học</li>
+                  <li>Thuốc trừ sâu sinh học</li>
+                  <li>Dinh dưỡng cho cây</li>
+                  <li>Hỗ trợ nông nghiệp</li>
+                  <li>Phòng trừ bệnh</li>
+                </ul>
+              </div>
+            </div>
+            <ul>
+              <li>Sản phẩm</li>
+              <li>Hỏi đáp</li>
+              <li>Về chúng tôi</li>
+              <li>Hỗ trợ</li>
+            </ul>
+          </div>
+          <div class="header-navbar__support">
+            <img src="./assets/icon/headphone.svg" />
+            <div class="ml-10">
+              <p class="header-navbar__support-phone">0363631997</p>
+              <p class="header-navbar__support-desc">Trung tâm hỗ trợ 24/7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- breadcrumb component -->
+    <div class="breadcrumb">
+      <div class="grid wide">
+        <span class="breadcrumb__text">
+          Trang Chủ
+          <span class="breadcrumb__current-page">
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="breadcrumb__icon"
+            >
+              <path
+                d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+              />
+            </svg>
+            Giỏ Hàng
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="grid wide">
+      <div class="cart__back-to-shopping">
+        <svg
+          width="8"
+          height="14"
+          viewBox="0 0 8 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="cart__back-icon"
+        >
+          <path
+            d="M6.66699 1.1665L1.00033 6.83317L6.66699 12.4998"
+            stroke="#333949"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        Quay lại mua sắm
+      </div>
+      <h1 class="cart__heading">Xác nhận</h1>
+      <div class="row cart__body">
+        <div class="col l-8">
+          <div class="cart-confirm__box">
+            <h3 class="cart-confirm__title">1 .Thông tin giao hàng</h3>
+            <div class="row mt-24">
+              <div class="col l-6">
+                <label for="fname" class="cart-confirm__input-label">Họ tên</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Nhập thông tin tại đây"
+                  class="cart-confirm__input-text"
+                />
+              </div>
+              <div class="col l-6">
+                <label for="phone" class="cart-confirm__input-label">Số điện thoại</label>
+                <input type="text" id="phone" name="phone" value="+84" class="cart-confirm__input-text" />
+              </div>
+            </div>
+            <h3 class="cart-confirm__title">2 .Địa chỉ giao hàng</h3>
+            <div class="cart-confirm__list-btn">
+              <span class="cart-confirm__address-btn cart-confirm__address-btn-selected">
+                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="mr-6">
+                  <path
+                    d="M0.513592 8.86333L8.06047 1.32036L8.56633 0.814502C8.68158 0.700003 8.83745 0.635742 8.99992 0.635742C9.16238 0.635742 9.31825 0.700003 9.43351 0.814502L17.4862 8.86333C17.6044 8.98097 17.6977 9.12108 17.7608 9.27539C17.8238 9.4297 17.8553 9.59508 17.8534 9.76177C17.8456 10.4493 17.2734 10.9981 16.5859 10.9981H15.7558V17.3594H2.24406V10.9981H1.3964C1.06242 10.9981 0.747967 10.8672 0.511639 10.6309C0.395271 10.5149 0.30307 10.377 0.240377 10.2251C0.177685 10.0732 0.145744 9.91045 0.146404 9.74614C0.146404 9.41411 0.277264 9.09966 0.513592 8.86333ZM7.90617 15.9532H10.0937V11.9688H7.90617V15.9532ZM3.65031 9.59185V15.9532H6.65617V11.5C6.65617 11.0684 7.00578 10.7188 7.43742 10.7188H10.5624C10.9941 10.7188 11.3437 11.0684 11.3437 11.5V15.9532H14.3495V9.59185H16.2245L8.99797 2.37114L8.54679 2.82231L1.77336 9.59185H3.65031Z"
+                  />
+                </svg>
+                Nhà riêng
+              </span>
+              <span class="cart-confirm__address-btn">
+                <svg width="18" height="16" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg" class="mr-6">
+                  <path
+                    d="M9.00008 3.83333V0.5H0.666748V15.5H17.3334V3.83333H9.00008ZM4.00008 13.8333H2.33341V12.1667H4.00008V13.8333ZM4.00008 10.5H2.33341V8.83333H4.00008V10.5ZM4.00008 7.16667H2.33341V5.5H4.00008V7.16667ZM4.00008 3.83333H2.33341V2.16667H4.00008V3.83333ZM7.33341 13.8333H5.66675V12.1667H7.33341V13.8333ZM7.33341 10.5H5.66675V8.83333H7.33341V10.5ZM7.33341 7.16667H5.66675V5.5H7.33341V7.16667ZM7.33341 3.83333H5.66675V2.16667H7.33341V3.83333ZM15.6667 13.8333H9.00008V12.1667H10.6667V10.5H9.00008V8.83333H10.6667V7.16667H9.00008V5.5H15.6667V13.8333ZM14.0001 7.16667H12.3334V8.83333H14.0001V7.16667ZM14.0001 10.5H12.3334V12.1667H14.0001V10.5Z"
+                  />
+                </svg>
+                Công ty
+              </span>
+            </div>
+            <div class="row mt-24">
+              <div class="col l-6">
+                <label for="province" class="cart-confirm__input-label">Thành phố</label>
+                <select id="province" name="province" class="cart-confirm__select">
+                  <option class="cart-confirm__select-option" value="hn">Hà Nội</option>
+                  <option class="cart-confirm__select-option" value="tphcm">TP Hồ Chí Minh</option>
+                  <option class="cart-confirm__select-option" value="dn">Đà Nẵng</option>
+                  <option class="cart-confirm__select-option" value="nt">Nha Trang</option>
+                  <option class="cart-confirm__select-option" value="th">Thanh Hoá</option>
+                </select>
+              </div>
+              <div class="col l-6">
+                <label for="district" class="cart-confirm__input-label">Quận/Huyện</label>
+                <select id="district" name="district" class="cart-confirm__select">
+                  <option class="cart-confirm__select-option" value="hk">Hoàn Kiếm</option>
+                  <option class="cart-confirm__select-option" value="dd">Đống Đa</option>
+                  <option class="cart-confirm__select-option" value="bd">Ba Đình</option>
+                  <option class="cart-confirm__select-option" value="hbt">Hai Bà Trưng</option>
+                  <option class="cart-confirm__select-option" value="hm">Hoàng Mai</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mt-24">
+              <div class="col l-6">
+                <label for="commune" class="cart-confirm__input-label">Phường xã</label>
+                <select id="commune" name="commune" class="cart-confirm__select">
+                  <option class="cart-confirm__select-option" value="nd">Nguyễn Du</option>
+                  <option class="cart-confirm__select-option" value="ldh">Lê Đại Hành</option>
+                  <option class="cart-confirm__select-option" value="btx">Bùi Thị Xuân</option>
+                  <option class="cart-confirm__select-option" value="ph">Phố Huế</option>
+                  <option class="cart-confirm__select-option" value="ntn">Ngô Thì Nhậm</option>
+                </select>
+              </div>
+              <div class="col l-6">
+                <label for="address" class="cart-confirm__input-label">Địa chỉ chi tiết</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Nhập thông tin tại đây"
+                  class="cart-confirm__input-text"
+                />
+              </div>
+            </div>
+            <div class="row mt-24">
+              <div class="col l-12">
+                <label for="note" class="cart-confirm__input-label">Ghi chú (Nếu có)</label>
+                <input
+                  type="text"
+                  id="note"
+                  name="note"
+                  placeholder="Nhập thông tin tại đây"
+                  class="cart-confirm__input-text"
+                />
+              </div>
+            </div>
+          </div>
+          <h3 class="cart-confirm__title">3 .Hình thức thanh toán</h3>
+          <div class="cart-confirm__payment-list">
+            <div class="cart-confirm__payment-box cart-confirm__payment-selected">
+              <input type="radio" id="cod" name="payment" value="cod" class="cart-confirm__payment-radio" checked />
+              <div class="cart-confirm__payment-img">COD</div>
+              <div class="cart-confirm__payment-text">
+                <p class="cart-confirm__payment-tile">Hướng dẫn thanh toán COD</p>
+                <p class="cart-confirm__payment-desc">Thanh toán bằng tiền mặt khi bạn nhận được sản phẩm</p>
+              </div>
+            </div>
+            <div class="cart-confirm__payment-box">
+              <input type="radio" id="momo" name="payment" value="momo" class="cart-confirm__payment-radio" />
+              <img src="./assets/img/media-logo/momo.png" alt="Momo" class="cart-confirm__payment-img" />
+              <div class="cart-confirm__payment-text">
+                <p class="cart-confirm__payment-tile">Hướng dẫn thanh toán MOMO</p>
+                <p class="cart-confirm__payment-desc">
+                  Bạn chọn thanh toán bằng Momo sau đó hãy quét mã QR trên Momo để thanh toán nhé
+                </p>
+              </div>
+            </div>
+            <div class="cart-confirm__payment-box">
+              <input type="radio" id="zalopay" name="payment" value="zalopay" class="cart-confirm__payment-radio" />
+              <img src="./assets/img/media-logo/zalopay.png" alt="Zalopay" class="cart-confirm__payment-img" />
+              <div class="cart-confirm__payment-text">
+                <p class="cart-confirm__payment-tile">Hướng dẫn thanh toán Zalopay</p>
+                <p class="cart-confirm__payment-desc">
+                  Bạn chọn thanh toán bằng Zalopay sau đó hãy quét mã QR trên Zalopay để thanh toán nhé
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l-4">
+          <div class="cart__summary-box">
+            <h3 class="cart__summary-heading">Đơn hàng</h3>
+            <div class="cart__summary-order">
+              <div class="cart__summary-item">
+                <img src="./assets/img/0001575_physa_500.png" alt="Physa" width="52px" />
+                <div class="mr-12">
+                  <p class="fs-12">Thuốc trừ sâu sinh học</p>
+                  <p class="font-bold mt-8">BS04 - TRIZON</p>
+                </div>
+                <span class="font-bold text-primary">300.000VNĐ</span>
+              </div>
+              <div class="cart__summary-item">
+                <img src="./assets/img/0001575_physa_500.png" alt="Physa" width="52px" />
+                <div class="mr-12">
+                  <p class="fs-12">Thuốc trừ sâu sinh học</p>
+                  <p class="font-bold mt-8">BS04 - TRIZON</p>
+                </div>
+                <span class="font-bold text-primary">300.000VNĐ</span>
+              </div>
+            </div>
+            <div class="cart__summary-item">Giá tiền ( số sản phẩm )<span class="font-bold">900.000VNĐ</span></div>
+            <div class="cart__summary-item">Phí vận chuyển<span class="font-bold">20.000VNĐ</span></div>
+            <div class="cart__summary-item">Giảm giá<span class="font-bold">-100.000VNĐ</span></div>
+            <div class="cart__summary-item cart__total-price">Tổng tiền<span class="font-bold">920.000 VNĐ</span></div>
+            <div class="btn btn-primary text-center mt-24">Xác nhận thanh toán</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer component -->
+    <footer>
+      <div class="grid wide">
+        <div class="row footer__list-title">
+          <div class="col l-3-6">
+            <!-- <h4 class="footer-title">abc</h4> -->
+            <img src="./assets/img/logo.svg" alt="Logo" />
+          </div>
+          <div class="col l-2-4">
+            <h4 class="footer__title">Thông tin chính sách</h4>
+          </div>
+          <div class="col l-2-4">
+            <h4 class="footer__title">Khám phá VNFarm</h4>
+          </div>
+          <div class="col l-3-6">
+            <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
+          </div>
+        </div>
+        <div class="row footer__content">
+          <div class="col l-3-6">
+            <ul class="footer__col-1">
+              <li><img src="./assets/icon/building.svg" alt="" /> CÔNG TY CỔ PHẦN NÔNG NGHIỆP VNFARM</li>
+              <li>
+                <img src="./assets/icon/scale-balanced.svg" alt="" />Do sở kế hoạch và Đầu tư TPHCM cấp lần đầu ngày
+                14/05/2020
+              </li>
+              <li><img src="./assets/icon/location-dot.svg" alt="" />Địa chỉ: Tầng 8, Số 520 Cách Mạng Tháng Tám</li>
+              <li><img src="./assets/icon/envelope.svg" alt="" />Admin@vnfarm.com.vn</li>
+            </ul>
+          </div>
+          <div class="col l-2-4">
+            <ul class="footer__col-2">
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+            </ul>
+          </div>
+          <div class="col l-2-4">
+            <ul class="footer__col-3">
+              <li>Sản phẩm</li>
+              <li>Hỏi đáp</li>
+              <li>Về chúng tôi</li>
+              <li>Hỗ trợ</li>
+            </ul>
+          </div>
+          <div class="col l-3-6">
+            <!-- <div class="footer__col-4"> -->
+            <p class="footer__listen-to-you">
+              Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải
+              nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+            </p>
+            <span class="btn btn-primary footer__btn">Gửi ý kiến</span>
+            <div class="footer__list-social">
+              Theo dõi chúng tôi
+              <img src="./assets/icon/youtube.png" alt="Youtube" class="footer__social-logo" />
+              <img src="./assets/icon/facebook.png" alt="Facebook" class="footer__social-logo" />
+              <img src="./assets/icon/tiktok.png" alt="Tiktok" class="footer__social-logo" />
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="">© 2022 VNFarm. All rights reserved.</div>
+          <div class="footer__support">
+            <div class="row">
+              <div class="col l-2">
+                <img src="./assets/icon/phone-call.svg" alt="" />
+              </div>
+              <div class="col l-10">
+                <p class="footer__support-title">0342331997</p>
+                <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__support">
+            <div class="row">
+              <div class="col l-2">
+                <img src="./assets/icon/phone-call.svg" alt="" />
+              </div>
+              <div class="col l-10">
+                <p class="footer__support-title">0342331997</p>
+                <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
+              </div>
+            </div>
+          </div>
+          <div class=""><img src="./assets/img/bo-cong-thuong.png" alt="Đã thông báo Bộ Công Thương" /></div>
+          <div class=""><img src="./assets/img/dmca.png" alt="DMCA Logo" /></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

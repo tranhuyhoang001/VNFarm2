@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-banner">
+        <div class="header-banner__container">
+          <img src="./assets/img/header-banner.svg" alt="Header Banner" class="header-banner__img" />
+          <span class="header-banner__btn">XEM THÊM</span>
+        </div>
+      </div>
+      <div class="s-none">
+        <div class="grid wide header-function">
+          <img src="./assets/img/logo.svg" alt="" class="header-logo" />
+          <div class="header-search">
+            <input type="text" placeholder="Tìm kiếm tại đây" class="header-search__input" />
+            <img src="./assets/icon/search.svg" class="header-search__icon" />
+          </div>
+          <div class="header-list-btn">
+            <div class="header-btn header-heart-btn">
+              <img src="./assets/icon/heart.svg" alt="" class="" />
+              <span class="header-amount header-heart-amount">2</span>
+            </div>
+            <span class="ml-24">300.00VNĐ</span>
+            <div class="header-btn header-cart-btn ml-10">
+              <img src="./assets/icon/cart.svg" alt="" class="" />
+              <span class="header-amount header-cart-amount">2</span>
+            </div>
+            <a id="loginBtn" class="header-login-btn">Đăng nhập</a>
+            <img src="./assets/icon/user-circle.svg" alt="" class="ml-10" />
+          </div>
+        </div>
+
+        <div class="header-navbar">
+          <div class="grid wide header-navbar__content">
+            <div class="header-navbar__content-left">
+              <div class="header-navbar__btn">
+                <img src="./assets/icon/bar.svg" />
+                Danh mục sản phẩm
+                <img src="./assets/icon/caret-down.svg" class="ml-12" />
+                <div class="header-navbar__dropdown">
+                  <ul>
+                    <li>Thuốc trừ bệnh sinh học</li>
+                    <li>Thuốc trừ sâu sinh học</li>
+                    <li>Dinh dưỡng cho cây</li>
+                    <li>Hỗ trợ nông nghiệp</li>
+                    <li>Phòng trừ bệnh</li>
+                  </ul>
+                </div>
+              </div>
+              <ul>
+                <li>Sản phẩm</li>
+                <li>Hỏi đáp</li>
+                <li>Về chúng tôi</li>
+                <li>Hỗ trợ</li>
+              </ul>
+            </div>
+            <div class="header-navbar__support">
+              <img src="./assets/icon/headphone.svg" />
+              <div class="ml-10">
+                <p class="header-navbar__support-phone">0363631997</p>
+                <p class="header-navbar__support-desc">Trung tâm hỗ trợ 24/7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-none s-block">
+        <div class="header-mobile">
+          <div class="header-mobile__func">
+            <div class="header-mobile__func-left">
+              <img src="./assets/img/logo.svg" alt="Logo" class="header-mobile__logo" />
+              <div class="header-mobile__list-icon-btn">
+                <div class="header-mobile__heart-btn">
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.4375 0.625C11.915 0.625 10.4537 1.33375 9.5 2.45375C8.54625 1.33375 7.085 0.625 5.5625 0.625C2.8675 0.625 0.75 2.7425 0.75 5.4375C0.75 8.745 3.725 11.44 8.23125 15.535L9.5 16.6813L10.7688 15.5263C15.275 11.44 18.25 8.745 18.25 5.4375C18.25 2.7425 16.1325 0.625 13.4375 0.625ZM9.5875 14.2312L9.5 14.3188L9.4125 14.2312C5.2475 10.46 2.5 7.96625 2.5 5.4375C2.5 3.6875 3.8125 2.375 5.5625 2.375C6.91 2.375 8.2225 3.24125 8.68625 4.44H10.3225C10.7775 3.24125 12.09 2.375 13.4375 2.375C15.1875 2.375 16.5 3.6875 16.5 5.4375C16.5 7.96625 13.7525 10.46 9.5875 14.2312Z"
+                      fill="#3FA000"
+                    />
+                  </svg>
+                  <div class="header-mobile__heart-btn-number">3</div>
+                </div>
+                <div class="header-mobile__cart-btn">
+                  <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.125 3.8H11.25C11.25 1.7005 9.57187 0 7.5 0C5.42813 0 3.75 1.7005 3.75 3.8H1.875C0.84375 3.8 0 4.655 0 5.7V17.1C0 18.145 0.84375 19 1.875 19H13.125C14.1562 19 15 18.145 15 17.1V5.7C15 4.655 14.1562 3.8 13.125 3.8ZM7.5 1.9C8.53125 1.9 9.375 2.755 9.375 3.8H5.625C5.625 2.755 6.46875 1.9 7.5 1.9ZM13.125 17.1H1.875V5.7H3.75V7.6C3.75 8.1225 4.17188 8.55 4.6875 8.55C5.20312 8.55 5.625 8.1225 5.625 7.6V5.7H9.375V7.6C9.375 8.1225 9.79688 8.55 10.3125 8.55C10.8281 8.55 11.25 8.1225 11.25 7.6V5.7H13.125V17.1Z"
+                      fill="#107B8C"
+                    />
+                  </svg>
+                  <div class="header-mobile__cart-btn-number">3</div>
+                </div>
+              </div>
+            </div>
+            <div id="mobileMenuBtn" class="header-mobile__menu-btn">
+              <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="6" width="21" height="3" rx="1.5" fill="#7FB640" />
+                <rect x="6" y="21" width="21" height="3" rx="1.5" fill="#7FB640" />
+                <rect x="6" y="13" width="21" height="3" rx="1.5" fill="#7FB640" />
+                <rect x="0.5" y="0.5" width="32" height="29" rx="3.5" stroke="#7FB640" />
+              </svg>
+            </div>
+          </div>
+          <div class="header-search">
+            <input type="text" placeholder="Tìm kiếm tại đây" class="header-search__input" />
+            <img src="./assets/icon/search.svg" class="header-search__icon" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenuModal" class="mobile-menu__modal">
+      <div class="mobile-menu__box">
+        <span class="mobile-menu__close-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.4 15L10 11.4L13.6 15L15 13.6L11.4 10L15 6.4L13.6 5L10 8.6L6.4 5L5 6.4L8.6 10L5 13.6L6.4 15ZM10 20C8.61667 20 7.31667 19.7373 6.1 19.212C4.88333 18.6873 3.825 17.975 2.925 17.075C2.025 16.175 1.31267 15.1167 0.788 13.9C0.262667 12.6833 0 11.3833 0 10C0 8.61667 0.262667 7.31667 0.788 6.1C1.31267 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.31233 6.1 0.787C7.31667 0.262333 8.61667 0 10 0C11.3833 0 12.6833 0.262333 13.9 0.787C15.1167 1.31233 16.175 2.025 17.075 2.925C17.975 3.825 18.6873 4.88333 19.212 6.1C19.7373 7.31667 20 8.61667 20 10C20 11.3833 19.7373 12.6833 19.212 13.9C18.6873 15.1167 17.975 16.175 17.075 17.075C16.175 17.975 15.1167 18.6873 13.9 19.212C12.6833 19.7373 11.3833 20 10 20ZM10 18C12.2167 18 14.1043 17.221 15.663 15.663C17.221 14.1043 18 12.2167 18 10C18 7.78333 17.221 5.89567 15.663 4.337C14.1043 2.779 12.2167 2 10 2C7.78333 2 5.896 2.779 4.338 4.337C2.77933 5.89567 2 7.78333 2 10C2 12.2167 2.77933 14.1043 4.338 15.663C5.896 17.221 7.78333 18 10 18Z"
+              fill="#333949"
+            />
+          </svg>
+        </span>
+        <div class="mobile-menu__header">
+          <div class="header-navbar__btn">
+            <img src="./assets/icon/bar.svg" />
+            Danh mục sản phẩm
+            <img src="./assets/icon/caret-down.svg" class="ml-12" />
+            <div class="header-navbar__dropdown">
+              <ul>
+                <li>Thuốc trừ bệnh sinh học</li>
+                <li>Thuốc trừ sâu sinh học</li>
+                <li>Dinh dưỡng cho cây</li>
+                <li>Hỗ trợ nông nghiệp</li>
+                <li>Phòng trừ bệnh</li>
+              </ul>
+            </div>
+          </div>
+          <ul class="mobile-menu__list-text-btn">
+            <li id="mobile-menu__login-btn">Đăng nhập</li>
+            <li>Sản phẩm</li>
+            <li>Hỏi đáp</li>
+            <li>Về chúng tôi</li>
+            <li>Hỗ trợ</li>
+          </ul>
+        </div>
+        <div class="mobile-menu__support">
+          <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M31.5 15.636V13.5C31.5 9.9196 30.0777 6.4858 27.546 3.95406C25.0142 1.42232 21.5805 0 18 0C14.4196 0 10.9858 1.42232 8.45411 3.95406C5.92236 6.4858 4.50005 9.9196 4.50005 13.5V15.636C2.92679 16.3287 1.63925 17.5409 0.85298 19.0696C0.0667122 20.5983 -0.170561 22.3506 0.180884 24.0334C0.532329 25.7161 1.45116 27.227 2.78355 28.3132C4.11595 29.3994 5.78103 29.9949 7.50005 30H10.5V15H7.50005V13.5C7.50005 10.7152 8.60629 8.0445 10.5754 6.07538C12.5446 4.10625 15.2153 3 18 3C20.7848 3 23.4555 4.10625 25.4247 6.07538C27.3938 8.0445 28.5 10.7152 28.5 13.5V15H25.5V27H19.5V30H28.5C30.2191 29.9949 31.8841 29.3994 33.2165 28.3132C34.5489 27.227 35.4678 25.7161 35.8192 24.0334C36.1707 22.3506 35.9334 20.5983 35.1471 19.0696C34.3608 17.5409 33.0733 16.3287 31.5 15.636ZM7.50005 27C6.30657 27 5.16198 26.5259 4.31807 25.682C3.47415 24.8381 3.00005 23.6935 3.00005 22.5C3.00005 21.3065 3.47415 20.1619 4.31807 19.318C5.16198 18.4741 6.30657 18 7.50005 18V27ZM28.5 27V18C29.6935 18 30.8381 18.4741 31.682 19.318C32.5259 20.1619 33 21.3065 33 22.5C33 23.6935 32.5259 24.8381 31.682 25.682C30.8381 26.5259 29.6935 27 28.5 27Z"
+              fill="#333949"
+            />
+          </svg>
+          <div class="mobile-menu__support-content">
+            <div class="mobile-menu__support-number">0363631997</div>
+            <div class="mobile-menu__support-desc">Trung tâm hỗ trợ 24/7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="breadcrumb">
+      <div class="grid wide">
+        <span class="breadcrumb__text">
+          Trang Chủ
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="breadcrumb__icon"
+          >
+            <path
+              d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+            />
+          </svg>
+          Sản phẩm
+          <span class="breadcrumb__current-page">
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="breadcrumb__icon"
+            >
+              <path
+                d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+              />
+            </svg>
+            BS04- TRIZON
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="grid wide s-px-20">
+      <div class="row">
+        <div class="col l-6 c-12">
+          <img src="./assets/img/BS04 - TRIZON.png" alt="BS04 - TRIZON" class="product-image" />
+          <div class="row mt-16">
+            <div class="col l-3 c-4">
+              <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small selected" />
+            </div>
+            <div class="col l-3 c-4">
+              <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
+            </div>
+            <div class="col l-3 c-4">
+              <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
+            </div>
+            <div class="col l-3 s-none">
+              <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
+            </div>
+          </div>
+        </div>
+        <div class="col l-6 c-12">
+          <div class="product-detail">
+            <h1 class="product-detail__heading">BS04 - TRIZON</h1>
+            <p class="product-detail__rating">
+              <object data="./assets/icon/star.svg" width="16" height="16"></object>
+              <object data="./assets/icon/star.svg" width="16" height="16"></object>
+              <object data="./assets/icon/star.svg" width="16" height="16"></object>
+              <object data="./assets/icon/star.svg" width="16" height="16"></object>
+              <object data="./assets/icon/star.svg" width="16" height="16"></object>
+              ( 1 người review )
+            </p>
+            <p class="product-detail__price">
+              <span class="product-detail__current-price">300.000 VNĐ</span>
+              <span class="product-detail__original-price">400.000 VNĐ</span>
+              <span class="product-detail__discount">-15%</span>
+            </p>
+            <p class="product-detail__text-bold">Công dụng:</p>
+            <ul>
+              <li>Chuyên xử lý xoăn ngọn, xoăn lá, khảm, ngoảnh đầu lân, sượng trái do virus gây nên.</li>
+              <li>
+                Tăng cường kích kháng, nâng cao hệ miễn dịch cây trồng, phòng và hạn chế các nấm bệnh gây hại như héo
+                xanh, thối trái, thối rễ.
+              </li>
+              <li>
+                Sản phẩm sinh học an toàn, không độc hại, thân thiện với môi trường và vật nuôi, phù hợp với xu hướng
+                canh tác hữu cơ sinh học, mang lại nguồn nông sản an toàn đạt tiêu chuẩn xuất khẩu.
+              </li>
+            </ul>
+            <p class="product-detail__text-bold">
+              Dung tích:
+              <span class="product-detail__capacity product-detail__capacity-selected">200ml</span>
+              <span class="product-detail__capacity">500ml</span>
+            </p>
+            <fieldset class="product-detail__promotion">
+              <legend class="product-detail__promotion-title">Đặc điểm nổi bật</legend>
+              <p class="product-detail__promotion-text">> Miễn phí giao hàng cho đơn hàng từ 300k</p>
+              <p class="product-detail__promotion-text">> Giao nhanh trong 2 giờ đối với Hà Nội và TP. Hồ Chí Minh</p>
+              <p class="product-detail__promotion-text">
+                > Cam kết chính hãng, nói không với hàng giả, hàng nhái, hàng kém chất lượng
+              </p>
+            </fieldset>
+            <div class="product-detail__amount">
+              <span class="product-detail__amount-title">Số lượng:</span>
+              <span class="product-detail__amount-btn-minus">-</span>
+              1
+              <span class="product-detail__amount-btn-plus">+</span>
+            </div>
+            <div class="product-detail__action-btn">
+              <span class="product-detail__add-to-cart">
+                Thêm vào giỏ hàng
+                <svg
+                  width="15"
+                  height="19"
+                  viewBox="0 0 15 19"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="product-detail__cart-icon"
+                >
+                  <path
+                    d="M13.125 3.8H11.25C11.25 1.7005 9.57187 0 7.5 0C5.42813 0 3.75 1.7005 3.75 3.8H1.875C0.84375 3.8 0 4.655 0 5.7V17.1C0 18.145 0.84375 19 1.875 19H13.125C14.1562 19 15 18.145 15 17.1V5.7C15 4.655 14.1562 3.8 13.125 3.8ZM7.5 1.9C8.53125 1.9 9.375 2.755 9.375 3.8H5.625C5.625 2.755 6.46875 1.9 7.5 1.9ZM13.125 17.1H1.875V5.7H3.75V7.6C3.75 8.1225 4.17188 8.55 4.6875 8.55C5.20312 8.55 5.625 8.1225 5.625 7.6V5.7H9.375V7.6C9.375 8.1225 9.79688 8.55 10.3125 8.55C10.8281 8.55 11.25 8.1225 11.25 7.6V5.7H13.125V17.1Z"
+                  />
+                </svg>
+              </span>
+              <span class="product-detail__buy-now">Mua ngay</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-detail__why-us">
+        <div class="product-detail__why-us-box">
+          <object data="./assets/icon/free-delivery.svg" width="70" height="70"></object>
+          <div class="product-detail__why-us-content">
+            <p class="product-detail__why-us-title">Giao hàng miễn phí</p>
+            <p class="product-detail__why-us-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="product-detail__why-us-box s-mt-24">
+          <object data="./assets/icon/easy-returns.svg" width="70" height="70"></object>
+          <div class="product-detail__why-us-content">
+            <p class="product-detail__why-us-title">Đổi trả dễ dàng</p>
+            <p class="product-detail__why-us-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="product-detail__why-us-box s-mt-24">
+          <object data="./assets/icon/24hours_7days.svg" width="70" height="70"></object>
+          <div class="product-detail__why-us-content">
+            <p class="product-detail__why-us-title">Hỗ trợ từ vấn 24/7</p>
+            <p class="product-detail__why-us-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="product-detail__content-box">
+        <h3 class="product-detail__content-box-title">Thông tin sản phẩm</h3>
+        <img src="./assets/img/BS04 - TRIZON.png" alt="BS04 - TRIZON" class="product-detail__content-box-img" />
+        <p class="product-detail__content-box-desc">
+          Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque
+          nec, egestas non nisi. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Vestibulum ante ipsum
+          primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
+          vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus.
+        </p>
+        <p class="product-detail__content-box-desc">
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus.
+          Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus
+          nibh. Curabitur aliquet quam id dui posuere blandit.
+        </p>
+        <p class="product-detail__content-box-desc">
+          Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque
+          nec, egestas non nisi. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Vestibulum ante ipsum
+          primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
+          vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus.
+        </p>
+        <span class="product-detail__content-box-readmore">
+          Xem thêm
+          <svg
+            width="15"
+            height="9"
+            viewBox="0 0 15 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="product-detail__content-box-icon"
+          >
+            <path
+              d="M13.1665 1.6665L7.49984 7.33317L1.83317 1.6665"
+              stroke="#7FB640"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="product-detail__review-box">
+        <h3 class="product-detail__review-box-heading">Đánh giá sản phẩm</h3>
+        <div class="product-detail__review-box-inner">
+          <div class="row">
+            <div class="col l-4 c-12 product-detail__review-box-score">
+              <div>
+                <div class="text-center">4.4/5</div>
+                <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.5 0L20.2045 11.4012H32.1924L22.494 18.4476L26.1985 29.8488L16.5 22.8024L6.80154 29.8488L10.506 18.4476L0.807568 11.4012H12.7955L16.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.5 0L20.2045 11.4012H32.1924L22.494 18.4476L26.1985 29.8488L16.5 22.8024L6.80154 29.8488L10.506 18.4476L0.807568 11.4012H12.7955L16.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.5 0L20.2045 11.4012H32.1924L22.494 18.4476L26.1985 29.8488L16.5 22.8024L6.80154 29.8488L10.506 18.4476L0.807568 11.4012H12.7955L16.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.5 0L20.2045 11.4012H32.1924L22.494 18.4476L26.1985 29.8488L16.5 22.8024L6.80154 29.8488L10.506 18.4476L0.807568 11.4012H12.7955L16.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.5 0L20.2045 11.4012H32.1925L22.494 18.4476L26.1985 29.8488L16.5 22.8024L6.80159 29.8488L10.5061 18.4476L0.807617 11.4012H12.7956L16.5 0Z"
+                    fill="#F9B402"
+                  />
+                  <path
+                    d="M16.5 0L16.6925 11.4012L16.6925 22.8024L6.50011 30L10.5 18.5L0.832874 11.4012H12.4034L16.5 0Z"
+                    fill="#EAEAEA"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="col l-4 c-12 s-mt-44">
+              <div class="product-detail__review-box-classify">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <span class="product-detail__review-box-bar-5"></span>
+                5
+              </div>
+              <div class="product-detail__review-box-classify">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#B3B3B3"
+                  />
+                </svg>
+                <span class="product-detail__review-box-bar-4"></span>
+                4
+              </div>
+              <div class="product-detail__review-box-classify">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#B3B3B3"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#B3B3B3"
+                  />
+                </svg>
+
+                <span class="product-detail__review-box-bar-3"></span>
+                3
+              </div>
+              <div class="product-detail__review-box-classify">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#B3B3B3"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#B3B3B3"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#B3B3B3"
+                  />
+                </svg>
+
+                <span class="product-detail__review-box-bar-2"></span>
+                2
+              </div>
+              <div class="product-detail__review-box-classify">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#F9B402"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#B3B3B3"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#B3B3B3"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#B3B3B3"
+                  />
+                </svg>
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                    fill="#B3B3B3"
+                  />
+                </svg>
+                <span class="product-detail__review-box-bar-1"></span>
+                1
+              </div>
+            </div>
+            <div class="col l-4 c-12 product-detail__review-box-user s-mt-44">
+              <div class="text-center">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M42.6668 0.666504H5.35675C2.79008 0.666504 0.690081 2.7665 0.690081 5.33317L0.666748 47.3332L10.0001 37.9998H42.6668C45.2334 37.9998 47.3334 35.8998 47.3334 33.3332V5.33317C47.3334 2.7665 45.2334 0.666504 42.6668 0.666504ZM42.6668 33.3332H8.06342L5.33342 36.0632V5.33317H42.6668V33.3332ZM24.0001 19.3332C26.5667 19.3332 28.6667 17.2332 28.6667 14.6665C28.6667 12.0998 26.5667 9.99984 24.0001 9.99984C21.4334 9.99984 19.3334 12.0998 19.3334 14.6665C19.3334 17.2332 21.4334 19.3332 24.0001 19.3332ZM33.3334 27.3365C33.3334 25.4465 32.2134 23.7665 30.4867 23.0198C28.5034 22.1565 26.3101 21.6665 24.0001 21.6665C21.6901 21.6665 19.4967 22.1565 17.5134 23.0198C15.7867 23.7665 14.6667 25.4465 14.6667 27.3365V28.6665H33.3334V27.3365Z"
+                    fill="#7FB640"
+                  />
+                </svg>
+                <div class="mt-16">16 đánh giá</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__review-box-title">
+          <h3 class="product-detail__review-box-heading">Bình luận của người dùng</h3>
+          <span id="writeReviewBtn" class="product-detail__review-box-btn">Viết đánh giá</span>
+        </div>
+        <div class="product-detail__cmt-box">
+          <p class="product-detail__cmt-name">Lê Văn A</p>
+          <p class="product-detail__cmt-rating">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <span class="ml-12">Sẽ giới thiệu thêm cho bạn bè</span>
+          </p>
+          <div class="product-detail__cmt-content">
+            <p class="product-detail__cmt-text">
+              Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a
+              pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Vest
+            </p>
+            <div class="product-detail__cmt-time">3 ngày trước</div>
+          </div>
+          <img
+            src="./assets/img/0001575_physa_500.png"
+            alt="Physa 500"
+            height="160px"
+            class="product-detail__cmt-img"
+          />
+          <div class="product-detail__cmt-action">
+            <span class="product-detail__like-btn">
+              <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.11 3.72L10.54 6.61C10.42 7.2 10.58 7.81 10.96 8.27C11.34 8.73 11.9 9 12.5 9H18V10.08L15.43 16H7.34C7.16 16 7 15.84 7 15.66V7.82L11.11 3.72ZM12 0L5.59 6.41C5.21 6.79 5 7.3 5 7.83V15.66C5 16.95 6.05 18 7.34 18H15.44C16.15 18 16.8 17.63 17.16 17.03L19.83 10.88C19.94 10.63 20 10.36 20 10.08V9C20 7.9 19.1 7 18 7H12.5L13.42 2.35C13.47 2.13 13.44 1.89 13.34 1.69C13.11 1.24 12.82 0.83 12.46 0.47L12 0ZM2 7H0V18H2C2.55 18 3 17.55 3 17V8C3 7.45 2.55 7 2 7Z"
+                />
+              </svg>
+              Hữu ích
+            </span>
+            <span class="product-detail__cmt-btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 0H2C0.9 0 0 0.9 0 2V20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 14H4L2 16V2H18V14ZM5 7H7V9H5V7ZM9 7H11V9H9V7ZM13 7H15V9H13V7Z"
+                />
+              </svg>
+              Thảo luận
+            </span>
+          </div>
+        </div>
+        <div class="product-detail__cmt-box">
+          <p class="product-detail__cmt-name">Lê Văn A</p>
+          <p class="product-detail__cmt-rating">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <span class="ml-12">Sẽ giới thiệu thêm cho bạn bè</span>
+          </p>
+          <div class="product-detail__cmt-content">
+            <p class="product-detail__cmt-text">
+              Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a
+              pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Vest
+            </p>
+            <div class="product-detail__cmt-time">3 ngày trước</div>
+          </div>
+          <div class="product-detail__cmt-action">
+            <span class="product-detail__like-btn">
+              <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.11 3.72L10.54 6.61C10.42 7.2 10.58 7.81 10.96 8.27C11.34 8.73 11.9 9 12.5 9H18V10.08L15.43 16H7.34C7.16 16 7 15.84 7 15.66V7.82L11.11 3.72ZM12 0L5.59 6.41C5.21 6.79 5 7.3 5 7.83V15.66C5 16.95 6.05 18 7.34 18H15.44C16.15 18 16.8 17.63 17.16 17.03L19.83 10.88C19.94 10.63 20 10.36 20 10.08V9C20 7.9 19.1 7 18 7H12.5L13.42 2.35C13.47 2.13 13.44 1.89 13.34 1.69C13.11 1.24 12.82 0.83 12.46 0.47L12 0ZM2 7H0V18H2C2.55 18 3 17.55 3 17V8C3 7.45 2.55 7 2 7Z"
+                />
+              </svg>
+              Hữu ích
+            </span>
+            <span class="product-detail__cmt-btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 0H2C0.9 0 0 0.9 0 2V20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 14H4L2 16V2H18V14ZM5 7H7V9H5V7ZM9 7H11V9H9V7ZM13 7H15V9H13V7Z"
+                />
+              </svg>
+              Thảo luận
+            </span>
+          </div>
+        </div>
+        <div class="product-detail__cmt-box">
+          <p class="product-detail__cmt-name">Lê Văn A</p>
+          <p class="product-detail__cmt-rating">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+                fill="#F9B402"
+              />
+            </svg>
+            <span class="ml-12">Sẽ giới thiệu thêm cho bạn bè</span>
+          </p>
+          <div class="product-detail__cmt-content">
+            <p class="product-detail__cmt-text">
+              Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a
+              pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Vest
+            </p>
+            <div class="product-detail__cmt-time">3 ngày trước</div>
+          </div>
+          <div class="product-detail__cmt-action">
+            <span class="product-detail__like-btn">
+              <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.11 3.72L10.54 6.61C10.42 7.2 10.58 7.81 10.96 8.27C11.34 8.73 11.9 9 12.5 9H18V10.08L15.43 16H7.34C7.16 16 7 15.84 7 15.66V7.82L11.11 3.72ZM12 0L5.59 6.41C5.21 6.79 5 7.3 5 7.83V15.66C5 16.95 6.05 18 7.34 18H15.44C16.15 18 16.8 17.63 17.16 17.03L19.83 10.88C19.94 10.63 20 10.36 20 10.08V9C20 7.9 19.1 7 18 7H12.5L13.42 2.35C13.47 2.13 13.44 1.89 13.34 1.69C13.11 1.24 12.82 0.83 12.46 0.47L12 0ZM2 7H0V18H2C2.55 18 3 17.55 3 17V8C3 7.45 2.55 7 2 7Z"
+                />
+              </svg>
+              Hữu ích
+            </span>
+            <span class="product-detail__cmt-btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 0H2C0.9 0 0 0.9 0 2V20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 14H4L2 16V2H18V14ZM5 7H7V9H5V7ZM9 7H11V9H9V7ZM13 7H15V9H13V7Z"
+                />
+              </svg>
+              Thảo luận
+            </span>
+          </div>
+        </div>
+
+        <!-- pagination component -->
+        <div class="product-pagination">
+          <div class="product-pagination__arrow">
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="product-pagination__arrow-icon"
+            >
+              <path
+                d="M8.5,12.8l5.7,5.6c0.4,0.4,1,0.4,1.4,0c0,0,0,0,0,0c0.4-0.4,0.4-1,0-1.4l-4.9-5l4.9-5c0.4-0.4,0.4-1,0-1.4c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3,0-0.5,0.1-0.7,0.3l-5.7,5.6C8.1,11.7,8.1,12.3,8.5,12.8C8.5,12.7,8.5,12.7,8.5,12.8z"
+              />
+            </svg>
+          </div>
+          <span class="product-pagination__page-number product-pagination__current-page">1</span>
+          <span class="product-pagination__page-number">2</span>
+          <span class="product-pagination__page-number">3</span>
+          <span class="product-pagination__page-number">...</span>
+          <span class="product-pagination__page-number">10</span>
+          <div class="product-pagination__arrow">
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="product-pagination__arrow-icon"
+            >
+              <path
+                d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="product-detail__related-heading">Sản phẩm liên quan</h3>
+      <!-- Product List -->
+      <div class="row">
+        <div class="col l-3">
+          <div class="product-box">
+            <span class="product-box__discount">-15%</span>
+            <svg
+              width="18"
+              height="17"
+              viewBox="0 0 18 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="product-box__heart-btn"
+            >
+              <path
+                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+                fill="#3FA000"
+              />
+            </svg>
+            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+            <p class="product-box__title">BS04 - TRIZON</p>
+            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+            <p class="product-box__price">
+              <span class="product-box__current-price">300.000 VNĐ</span>
+              <span class="product-box__original-price">400.000 VNĐ</span>
+            </p>
+            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+          </div>
+        </div>
+        <div class="col l-3">
+          <div class="product-box">
+            <span class="product-box__discount">-15%</span>
+            <svg
+              width="18"
+              height="17"
+              viewBox="0 0 18 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="product-box__heart-btn"
+            >
+              <path
+                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+                fill="#3FA000"
+              />
+            </svg>
+            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+            <p class="product-box__title">BS04 - TRIZON</p>
+            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+            <p class="product-box__price">
+              <span class="product-box__current-price">300.000 VNĐ</span>
+              <span class="product-box__original-price">400.000 VNĐ</span>
+            </p>
+            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+          </div>
+        </div>
+        <div class="col l-3">
+          <div class="product-box">
+            <span class="product-box__discount">-15%</span>
+            <svg
+              width="18"
+              height="17"
+              viewBox="0 0 18 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="product-box__heart-btn"
+            >
+              <path
+                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+                fill="#3FA000"
+              />
+            </svg>
+            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+            <p class="product-box__title">BS04 - TRIZON</p>
+            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+            <p class="product-box__price">
+              <span class="product-box__current-price">300.000 VNĐ</span>
+              <span class="product-box__original-price">400.000 VNĐ</span>
+            </p>
+            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+          </div>
+        </div>
+        <div class="col l-3">
+          <div class="product-box">
+            <span class="product-box__discount">-15%</span>
+            <svg
+              width="18"
+              height="17"
+              viewBox="0 0 18 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="product-box__heart-btn"
+            >
+              <path
+                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+                fill="#3FA000"
+              />
+            </svg>
+            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+            <p class="product-box__title">BS04 - TRIZON</p>
+            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+            <p class="product-box__price">
+              <span class="product-box__current-price">300.000 VNĐ</span>
+              <span class="product-box__original-price">400.000 VNĐ</span>
+            </p>
+            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-40 mb-62">
+        <div class="col l-3">
+          <div class="product-box">
+            <span class="product-box__discount">-15%</span>
+            <svg
+              width="18"
+              height="17"
+              viewBox="0 0 18 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="product-box__heart-btn"
+            >
+              <path
+                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+                fill="#3FA000"
+              />
+            </svg>
+            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+            <p class="product-box__title">BS04 - TRIZON</p>
+            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+            <p class="product-box__price">
+              <span class="product-box__current-price">300.000 VNĐ</span>
+              <span class="product-box__original-price">400.000 VNĐ</span>
+            </p>
+            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+          </div>
+        </div>
+        <div class="col l-3">
+          <div class="product-box">
+            <span class="product-box__discount">-15%</span>
+            <svg
+              width="18"
+              height="17"
+              viewBox="0 0 18 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="product-box__heart-btn"
+            >
+              <path
+                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+                fill="#3FA000"
+              />
+            </svg>
+            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+            <p class="product-box__title">BS04 - TRIZON</p>
+            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+            <p class="product-box__price">
+              <span class="product-box__current-price">300.000 VNĐ</span>
+              <span class="product-box__original-price">400.000 VNĐ</span>
+            </p>
+            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+          </div>
+        </div>
+        <div class="col l-3">
+          <div class="product-box">
+            <span class="product-box__discount">-15%</span>
+            <svg
+              width="18"
+              height="17"
+              viewBox="0 0 18 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="product-box__heart-btn"
+            >
+              <path
+                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+                fill="#3FA000"
+              />
+            </svg>
+            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+            <p class="product-box__title">BS04 - TRIZON</p>
+            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+            <p class="product-box__price">
+              <span class="product-box__current-price">300.000 VNĐ</span>
+              <span class="product-box__original-price">400.000 VNĐ</span>
+            </p>
+            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+          </div>
+        </div>
+        <div class="col l-3">
+          <div class="product-box">
+            <span class="product-box__discount">-15%</span>
+            <svg
+              width="18"
+              height="17"
+              viewBox="0 0 18 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="product-box__heart-btn"
+            >
+              <path
+                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+                fill="#3FA000"
+              />
+            </svg>
+            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+            <p class="product-box__title">BS04 - TRIZON</p>
+            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+            <p class="product-box__price">
+              <span class="product-box__current-price">300.000 VNĐ</span>
+              <span class="product-box__original-price">400.000 VNĐ</span>
+            </p>
+            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer component -->
+    <footer>
+      <div class="grid wide s-px-20">
+        <div class="row footer__list-title">
+          <div class="col l-3-6 c-12">
+            <!-- <h4 class="footer-title">abc</h4> -->
+            <img src="./assets/img/logo.svg" alt="Logo" />
+            <ul class="footer__col-1">
+              <li><img src="./assets/icon/building.svg" alt="" /> CÔNG TY CỔ PHẦN NÔNG NGHIỆP VNFARM</li>
+              <li>
+                <img src="./assets/icon/scale-balanced.svg" alt="" />Do sở kế hoạch và Đầu tư TPHCM cấp lần đầu ngày
+                14/05/2020
+              </li>
+              <li><img src="./assets/icon/location-dot.svg" alt="" />Địa chỉ: Tầng 8, Số 520 Cách Mạng Tháng Tám</li>
+              <li><img src="./assets/icon/envelope.svg" alt="" />Admin@vnfarm.com.vn</li>
+            </ul>
+          </div>
+          <div class="col l-2-4 c-12 s-mt-24">
+            <h4 class="footer__title">Thông tin chính sách</h4>
+            <ul class="footer__col-2">
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+            </ul>
+          </div>
+          <div class="col l-2-4 c-12 s-mt-24">
+            <h4 class="footer__title">Khám phá VNFarm</h4>
+            <ul class="footer__col-3">
+              <li>Sản phẩm</li>
+              <li>Hỏi đáp</li>
+              <li>Về chúng tôi</li>
+              <li>Hỗ trợ</li>
+            </ul>
+          </div>
+          <div class="col l-3-6 c-12 s-mt-24">
+            <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
+            <p class="footer__listen-to-you">
+              Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải
+              nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+            </p>
+            <span class="btn btn-primary footer__btn">Gửi ý kiến</span>
+            <div class="footer__list-social s-none">
+              Theo dõi chúng tôi
+              <img src="./assets/icon/youtube.png" alt="Youtube" class="footer__social-logo" />
+              <img src="./assets/icon/facebook.png" alt="Facebook" class="footer__social-logo" />
+              <img src="./assets/icon/tiktok.png" alt="Tiktok" class="footer__social-logo" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright s-none">
+          <div class="">© 2022 VNFarm. All rights reserved.</div>
+          <div class="footer__support">
+            <div class="row">
+              <div class="col l-2">
+                <img src="./assets/icon/phone-call.svg" alt="" />
+              </div>
+              <div class="col l-10">
+                <p class="footer__support-title">0342331997</p>
+                <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__support">
+            <div class="row">
+              <div class="col l-2">
+                <img src="./assets/icon/phone-call.svg" alt="" />
+              </div>
+              <div class="col l-10">
+                <p class="footer__support-title">0342331997</p>
+                <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
+              </div>
+            </div>
+          </div>
+          <div class=""><img src="./assets/img/bo-cong-thuong.png" alt="Đã thông báo Bộ Công Thương" /></div>
+          <div class=""><img src="./assets/img/dmca.png" alt="DMCA Logo" /></div>
+        </div>
+        <div class="footer-mobile l-none s-block">
+          <div class="row">
+            <div class="col c-6"><img src="./assets/img/bo-cong-thuong.png" alt="" /></div>
+            <div class="col c-6"><img src="./assets/img/dmca.png" alt="" /></div>
+          </div>
+          <div class="footer-mobile__payment">Cổng thanh toán được bảo đảm</div>
+          <img src="./assets/img/payment-logo.png" alt="" />
+          <div class="row">
+            <div class="col c-6 footer-mobile__call">
+              <object data="./assets/icon/phone-call.svg" width="28"></object>
+              <div class="footer-mobile__call-info">
+                <div class="footer-mobile__number">0342331997</div>
+                <div class="footer-mobile__working-time">Làm việc từ 8:00 - 22:00</div>
+              </div>
+            </div>
+            <div class="col c-6 footer-mobile__call">
+              <object data="./assets/icon/phone-call.svg" width="28"></object>
+              <div class="footer-mobile__call-info">
+                <div class="footer-mobile__number">0342331997</div>
+                <div class="footer-mobile__working-time">Trung tâm hỗ trợ 24/7</div>
+              </div>
+            </div>
+            <div class="footer-mobile__follow-us">
+              Theo dõi chúng tôi
+              <div class="footer-mobile__list-follow-icon">
+                <img src="./assets/icon/youtube.png" alt="" class="footer-mobile__follow-icon" />
+                <img src="./assets/icon/facebook.png" alt="" class="footer-mobile__follow-icon" />
+                <img src="./assets/icon/tiktok.png" alt="" class="footer-mobile__follow-icon" />
+              </div>
+            </div>
+            <div class="footer-mobile__copyright-text">© 2022 VNFarm. All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login Modal component -->
+    <div id="loginModal" class="modal">
+      <div class="login-box">
+        <span class="login-box__close-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.4 15L10 11.4L13.6 15L15 13.6L11.4 10L15 6.4L13.6 5L10 8.6L6.4 5L5 6.4L8.6 10L5 13.6L6.4 15ZM10 20C8.61667 20 7.31667 19.7373 6.1 19.212C4.88333 18.6873 3.825 17.975 2.925 17.075C2.025 16.175 1.31267 15.1167 0.788 13.9C0.262667 12.6833 0 11.3833 0 10C0 8.61667 0.262667 7.31667 0.788 6.1C1.31267 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.31233 6.1 0.787C7.31667 0.262333 8.61667 0 10 0C11.3833 0 12.6833 0.262333 13.9 0.787C15.1167 1.31233 16.175 2.025 17.075 2.925C17.975 3.825 18.6873 4.88333 19.212 6.1C19.7373 7.31667 20 8.61667 20 10C20 11.3833 19.7373 12.6833 19.212 13.9C18.6873 15.1167 17.975 16.175 17.075 17.075C16.175 17.975 15.1167 18.6873 13.9 19.212C12.6833 19.7373 11.3833 20 10 20ZM10 18C12.2167 18 14.1043 17.221 15.663 15.663C17.221 14.1043 18 12.2167 18 10C18 7.78333 17.221 5.89567 15.663 4.337C14.1043 2.779 12.2167 2 10 2C7.78333 2 5.896 2.779 4.338 4.337C2.77933 5.89567 2 7.78333 2 10C2 12.2167 2.77933 14.1043 4.338 15.663C5.896 17.221 7.78333 18 10 18Z"
+              fill="#333949"
+            />
+          </svg>
+        </span>
+        <img src="./assets/img/logo.svg" alt="Logo" class="login-box__logo" />
+        <div class="login-box__list-tab">
+          <div class="login-box__tab active">Đăng nhập</div>
+          <div class="login-box__tab">Đăng ký</div>
+        </div>
+        <div class="login-box__tab-content active">
+          <div class="login-box__input-item">
+            <label for="login__acc" class="login-box__input-label"
+              >Tài khoản hoặc email <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="login__acc"
+              name="login__acc"
+              class="login-box__input-text"
+              placeholder="Nhập tài khoàn hoặc email của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="login__password" class="login-box__input-label"
+              >Mật khẩu <span style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="login__password"
+              name="login__password"
+              class="login-box__input-password"
+              placeholder="Nhập mật khẩu của bạn tại đây"
+            />
+          </div>
+          <div class="login-box__list-action">
+            <div class="login-box__save-password">
+              <input type="checkbox" class="login-box__checkbox" />Lưu mật khẩu
+            </div>
+            <div class="login-box__forgot-password">Quên mật khẩu ?</div>
+          </div>
+          <div class="login-box__btn">Đăng nhập</div>
+        </div>
+        <div class="login-box__tab-content">
+          <div class="login-box__input-item">
+            <label for="register__fname" class="login-box__input-label"
+              >Tên của bạn <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="register__fname"
+              name="register__fname"
+              class="login-box__input-text"
+              placeholder="Nhập tên của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__acc" class="login-box__input-label"
+              >Tài khoản hoặc email <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="register__acc"
+              name="register__acc"
+              class="login-box__input-text"
+              placeholder="Nhập tài khoàn hoặc email của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__phone" class="login-box__input-label"
+              >Sô điện thoại của bạn <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="register__phone"
+              name="register__phone"
+              class="login-box__input-text"
+              placeholder="Nhập tài khoàn hoặc email của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__password" class="login-box__input-label"
+              >Mật khẩu <span style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="register__password"
+              name="register__password"
+              class="login-box__input-password"
+              placeholder="Nhập mật khẩu của bạn tại đây"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__retype-password" class="login-box__input-label"
+              >Nhập lại mật khẩu <span style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="register__retype-password"
+              name="register__retype-password"
+              class="login-box__input-password"
+              placeholder="Nhập mật khẩu của bạn tại đây"
+            />
+          </div>
+          <div class="login-box__btn">Đăng ký</div>
+        </div>
+        <div class="login-box__or">
+          <div class="login-box__or-before"></div>
+          Hoặc
+          <div class="login-box__or-after"></div>
+        </div>
+        <div class="login-box__facebook-btn">
+          <img src="./assets/icon/login-facebook-icon.png" alt="Facebook" class="login-box__icon" />
+          Đăng nhập bằng Facebook
+        </div>
+        <div class="login-box__google-btn">
+          <img src="./assets/icon/login-google-icon.png" alt="Goolge" class="login-box__icon" />
+          Đăng nhập bằng Google
+        </div>
+      </div>
+    </div>
+
+    <!-- Write Review Modal component -->
+    <div id="writeReviewModal" class="modal">
+      <div class="write-review__box">
+        <span class="write-review__close-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.4 15L10 11.4L13.6 15L15 13.6L11.4 10L15 6.4L13.6 5L10 8.6L6.4 5L5 6.4L8.6 10L5 13.6L6.4 15ZM10 20C8.61667 20 7.31667 19.7373 6.1 19.212C4.88333 18.6873 3.825 17.975 2.925 17.075C2.025 16.175 1.31267 15.1167 0.788 13.9C0.262667 12.6833 0 11.3833 0 10C0 8.61667 0.262667 7.31667 0.788 6.1C1.31267 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.31233 6.1 0.787C7.31667 0.262333 8.61667 0 10 0C11.3833 0 12.6833 0.262333 13.9 0.787C15.1167 1.31233 16.175 2.025 17.075 2.925C17.975 3.825 18.6873 4.88333 19.212 6.1C19.7373 7.31667 20 8.61667 20 10C20 11.3833 19.7373 12.6833 19.212 13.9C18.6873 15.1167 17.975 16.175 17.075 17.075C16.175 17.975 15.1167 18.6873 13.9 19.212C12.6833 19.7373 11.3833 20 10 20ZM10 18C12.2167 18 14.1043 17.221 15.663 15.663C17.221 14.1043 18 12.2167 18 10C18 7.78333 17.221 5.89567 15.663 4.337C14.1043 2.779 12.2167 2 10 2C7.78333 2 5.896 2.779 4.338 4.337C2.77933 5.89567 2 7.78333 2 10C2 12.2167 2.77933 14.1043 4.338 15.663C5.896 17.221 7.78333 18 10 18Z"
+              fill="#333949"
+            />
+          </svg>
+        </span>
+        <div class="write-review__header">Đánh giá sản phẩm</div>
+        <div class="write-review__product">
+          <img src="./assets/img/BS04 - TRIZON.png" alt="" class="write-review__img" />
+          <div class="write-review__product-info">
+            <div class="write-review__product-category">Thuốc trừ sâu sinh học</div>
+            <div class="write-review__product-name">BS04 - TRIZON</div>
+          </div>
+        </div>
+        <div class="write-review__rating">
+          <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+              fill="#F9B402"
+            />
+          </svg>
+          <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+              fill="#F9B402"
+            />
+          </svg>
+          <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+              fill="#F9B402"
+            />
+          </svg>
+          <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+              fill="#F9B402"
+            />
+          </svg>
+          <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+              fill="#F9B402"
+            />
+          </svg>
+        </div>
+        <div class="write-review__list-action">
+          <div class="write-review__bad">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              class="write-review__bad-icon"
+            >
+              <path
+                d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM10 18C5.58 18 2 14.42 2 10C2 5.58 5.58 2 10 2C14.42 2 18 5.58 18 10C18 14.42 14.42 18 10 18ZM13.5 9C14.33 9 15 8.33 15 7.5C15 6.67 14.33 6 13.5 6C12.67 6 12 6.67 12 7.5C12 8.33 12.67 9 13.5 9ZM6.5 9C7.33 9 8 8.33 8 7.5C8 6.67 7.33 6 6.5 6C5.67 6 5 6.67 5 7.5C5 8.33 5.67 9 6.5 9ZM10 11.5C7.67 11.5 5.69 12.96 4.89 15H15.11C14.31 12.96 12.33 11.5 10 11.5Z"
+              />
+            </svg>
+            Không hài lòng
+          </div>
+          <div class="write-review__good write-review__selected">
+            Hài lòng
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              class="write-review__good-icon"
+            >
+              <path
+                d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM10 18C5.58 18 2 14.42 2 10C2 5.58 5.58 2 10 2C14.42 2 18 5.58 18 10C18 14.42 14.42 18 10 18ZM13.5 9C14.33 9 15 8.33 15 7.5C15 6.67 14.33 6 13.5 6C12.67 6 12 6.67 12 7.5C12 8.33 12.67 9 13.5 9ZM6.5 9C7.33 9 8 8.33 8 7.5C8 6.67 7.33 6 6.5 6C5.67 6 5 6.67 5 7.5C5 8.33 5.67 9 6.5 9ZM10 11.5C7.67 11.5 5.69 12.96 4.89 15H15.11C14.31 12.96 12.33 11.5 10 11.5Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <textarea rows="8" cols="50" placeholder="Đánh giá sản phẩm" class="write-review__text-area"></textarea>
+        <div class="write-review__btn">Gửi đánh giá</div>
+      </div>
+    </div>
+    <script src="./assets/js/product-detail.js"></script>
+  </body>
+</html>

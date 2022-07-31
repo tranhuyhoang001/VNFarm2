@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header component -->
+    <header>
+      <div class="header-banner">
+        <div class="header-banner__container">
+          <img src="./assets/img/header-banner.svg" alt="Header Banner" class="header-banner__img" />
+          <span class="header-banner__btn">XEM THÊM</span>
+        </div>
+      </div>
+      <div class="grid wide header-function">
+        <img src="./assets/img/logo.svg" alt="" class="header-logo" />
+        <div class="header-search">
+          <input type="text" placeholder="Tìm kiếm tại đây" class="header-search__input" />
+          <img src="./assets/icon/search.svg" class="header-search__icon" />
+        </div>
+        <div class="header-list-btn">
+          <div class="header-btn header-heart-btn">
+            <img src="./assets/icon/heart.svg" alt="" class="" />
+            <span class="header-amount header-heart-amount">2</span>
+          </div>
+          <span class="ml-24">300.00VNĐ</span>
+          <div class="header-btn header-cart-btn ml-10">
+            <img src="./assets/icon/cart.svg" alt="" class="" />
+            <span class="header-amount header-cart-amount">2</span>
+          </div>
+          <a href="#" class="ml-24">Đăng nhập</a>
+          <img src="./assets/icon/user-circle.svg" alt="" class="ml-10" />
+        </div>
+      </div>
+
+      <div class="header-navbar">
+        <div class="grid wide header-navbar__content">
+          <div>
+            <div class="header-navbar__btn">
+              <img src="./assets/icon/bar.svg" class="mr-6" />
+              Danh mục sản phẩm
+              <img src="./assets/icon/caret-down.svg" />
+              <div class="header-navbar__dropdown">
+                <ul>
+                  <li>Thuốc trừ bệnh sinh học</li>
+                  <li>Thuốc trừ sâu sinh học</li>
+                  <li>Dinh dưỡng cho cây</li>
+                  <li>Hỗ trợ nông nghiệp</li>
+                  <li>Phòng trừ bệnh</li>
+                </ul>
+              </div>
+            </div>
+            <ul>
+              <li>Sản phẩm</li>
+              <li>Hỏi đáp</li>
+              <li>Về chúng tôi</li>
+              <li>Hỗ trợ</li>
+            </ul>
+          </div>
+          <div class="header-navbar__support">
+            <img src="./assets/icon/headphone.svg" />
+            <div class="ml-10">
+              <p class="header-navbar__support-phone">0363631997</p>
+              <p class="header-navbar__support-desc">Trung tâm hỗ trợ 24/7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- breadcrumb component -->
+    <div class="breadcrumb">
+      <div class="grid wide">
+        <span class="breadcrumb__text">
+          Trang Chủ
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="breadcrumb__icon"
+          >
+            <path
+              d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+            />
+          </svg>
+          Hỏi đáp
+          <span class="breadcrumb__current-page">
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="breadcrumb__icon"
+            >
+              <path
+                d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+              />
+            </svg>
+            Chuyên mục A
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="grid wide">
+      <div class="row articles-category__container">
+        <div class="col l-3">
+          <div class="category__box">
+            <div class="category__group">
+              <div class="category__group-header">
+                <h2 class="category__heading category__active">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="category__icon"
+                  >
+                    <path
+                      d="M8.00081 3.41685e-08C7.22682 -0.000108062 6.47462 0.256266 5.86181 0.729038C5.249 1.20181 4.81012 1.86433 4.61381 2.613C3.76594 2.83515 3.03224 3.36726 2.55769 4.10417C2.08314 4.84108 1.90227 5.72919 2.05081 6.593C1.4275 7.01094 0.955028 7.61816 0.703103 8.32507C0.451177 9.03198 0.433139 9.80114 0.651648 10.5191C0.870157 11.237 1.31364 11.8657 1.91667 12.3124C2.51971 12.7591 3.25035 13.0002 4.00081 13H6.00081V14.75C6.00081 15.44 6.56081 16 7.25081 16H8.75081C9.44081 16 10.0008 15.44 10.0008 14.75V13H12.0008C12.7513 13.0002 13.4819 12.7591 14.0849 12.3124C14.688 11.8657 15.1315 11.237 15.35 10.5191C15.5685 9.80114 15.5504 9.03198 15.2985 8.32507C15.0466 7.61816 14.5741 7.01094 13.9508 6.593C14.0993 5.72919 13.9185 4.84108 13.4439 4.10417C12.9694 3.36726 12.2357 2.83515 11.3878 2.613C11.1915 1.86433 10.7526 1.20181 10.1398 0.729038C9.527 0.256266 8.77479 -0.000108062 8.00081 3.41685e-08ZM9.00081 13V14.75C9.00081 14.8163 8.97447 14.8799 8.92758 14.9268C8.8807 14.9737 8.81711 15 8.75081 15H7.25081C7.1845 15 7.12091 14.9737 7.07403 14.9268C7.02715 14.8799 7.00081 14.8163 7.00081 14.75V13H9.00081ZM5.53081 3.112C5.62288 2.52303 5.92238 1.98635 6.37528 1.59875C6.82819 1.21115 7.40469 0.998135 8.00081 0.998135C8.59693 0.998135 9.17343 1.21115 9.62633 1.59875C10.0792 1.98635 10.3787 2.52303 10.4708 3.112C10.4869 3.21692 10.5361 3.31397 10.611 3.38912C10.686 3.46427 10.7829 3.51361 10.8878 3.53C11.2387 3.58482 11.5739 3.71378 11.8711 3.90828C12.1682 4.10279 12.4205 4.35837 12.6112 4.65802C12.8018 4.95767 12.9265 5.2945 12.9767 5.64608C13.027 5.99766 13.0018 6.35592 12.9028 6.697C12.8706 6.80809 12.8779 6.92692 12.9235 7.03322C12.9691 7.13953 13.0501 7.22674 13.1528 7.28C13.6504 7.53767 14.047 7.95503 14.2789 8.46511C14.5109 8.97519 14.5648 9.54841 14.4319 10.0928C14.299 10.6371 13.9872 11.1211 13.5463 11.4669C13.1054 11.8128 12.5612 12.0005 12.0008 12H4.00081C3.44055 12.0003 2.89643 11.8124 2.45573 11.4665C2.01504 11.1205 1.70332 10.6366 1.57059 10.0923C1.43786 9.54798 1.4918 8.97486 1.72378 8.46488C1.95575 7.95491 2.3523 7.53763 2.84981 7.28C2.95248 7.22674 3.03351 7.13953 3.0791 7.03322C3.12468 6.92692 3.132 6.80809 3.09981 6.697C3.00113 6.35614 2.97608 5.99819 3.02633 5.64692C3.07658 5.29564 3.20097 4.95907 3.39126 4.65955C3.58154 4.36002 3.83337 4.10441 4.13001 3.90966C4.42665 3.71492 4.76132 3.5855 5.11181 3.53C5.21687 3.51381 5.31403 3.46455 5.3892 3.38939C5.46436 3.31422 5.51362 3.21706 5.52981 3.112H5.53081Z"
+                    />
+                  </svg>
+                  Cây chồng
+                </h2>
+                <svg
+                  width="15"
+                  height="9"
+                  viewBox="0 0 15 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="category__toggle category__active"
+                >
+                  <path
+                    d="M13.166 7.33203L7.49935 1.66536L1.83268 7.33203"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <ul>
+                <li class="category__active">Chuyên mục a.1</li>
+                <li>Chuyên mục a.1</li>
+                <li>Chuyên mục a.1</li>
+                <li>Chuyên mục a.1</li>
+                <li>Chuyên mục a.1</li>
+              </ul>
+            </div>
+            <div class="category__group">
+              <div class="category__group-header">
+                <h2 class="category__heading">
+                  <svg
+                    width="22"
+                    height="19"
+                    viewBox="0 0 22 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="category__icon"
+                  >
+                    <path
+                      d="M6.02713 2.32209C6.3012 2.59816 6.5388 2.90818 6.73413 3.24459C8.00578 2.44947 9.47586 2.02905 10.9756 2.03159C12.5486 2.03159 14.0156 2.48459 15.2531 3.26709C15.4531 2.92159 15.6961 2.59859 15.9731 2.32209C17.2336 1.06409 19.4461 0.510089 20.4686 1.53059C21.4911 2.55059 20.9356 4.75859 19.6751 6.01659C19.2912 6.39423 18.845 6.70276 18.3561 6.92859C18.7667 7.90608 18.9775 8.95586 18.9761 10.0161C18.9761 14.4256 15.3941 18.0001 10.9761 18.0001C6.55663 18.0001 2.97513 14.4251 2.97513 10.0161C2.97513 8.91409 3.19863 7.86409 3.60313 6.90909C3.13014 6.68529 2.69812 6.38359 2.32513 6.01659C1.06413 4.75859 0.509129 2.55059 1.53163 1.53059C2.55413 0.510588 4.76663 1.06409 6.02663 2.32209H6.02713Z"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 15.5C13.2091 15.5 15 13.933 15 12C15 10.067 13.2091 8.5 11 8.5C8.79086 8.5 7 10.067 7 12C7 13.933 8.79086 15.5 11 15.5Z"
+                    />
+                    <path
+                      d="M7.5 7.5C8.05228 7.5 8.5 7.05228 8.5 6.5C8.5 5.94772 8.05228 5.5 7.5 5.5C6.94772 5.5 6.5 5.94772 6.5 6.5C6.5 7.05228 6.94772 7.5 7.5 7.5Z"
+                    />
+                    <path
+                      d="M9.5 13C10.0523 13 10.5 12.5523 10.5 12C10.5 11.4477 10.0523 11 9.5 11C8.94772 11 8.5 11.4477 8.5 12C8.5 12.5523 8.94772 13 9.5 13Z"
+                    />
+                    <path
+                      d="M14.5 7.5C15.0523 7.5 15.5 7.05228 15.5 6.5C15.5 5.94772 15.0523 5.5 14.5 5.5C13.9477 5.5 13.5 5.94772 13.5 6.5C13.5 7.05228 13.9477 7.5 14.5 7.5Z"
+                    />
+                    <path
+                      d="M12.5 13C13.0523 13 13.5 12.5523 13.5 12C13.5 11.4477 13.0523 11 12.5 11C11.9477 11 11.5 11.4477 11.5 12C11.5 12.5523 11.9477 13 12.5 13Z"
+                    />
+                  </svg>
+                  Chăn nuôi
+                </h2>
+                <svg
+                  width="15"
+                  height="9"
+                  viewBox="0 0 15 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="category__toggle"
+                >
+                  <path
+                    d="M13.166 7.33203L7.49935 1.66536L1.83268 7.33203"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <ul>
+                <li>Chuyên mục a.1</li>
+                <li>Chuyên mục a.1</li>
+                <li>Chuyên mục a.1</li>
+                <li>Chuyên mục a.1</li>
+                <li>Chuyên mục a.1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col l-9">
+          <div class="articles__box">
+            <div class="articles__l">
+              <img src="./assets/img/post-thumbnail-l.png" alt="" class="articles__l-img" />
+              <h3 class="articles__l-heading">
+                Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo,
+              </h3>
+              <span class="articles__l-category">Cách trồng và cách chăm sóc</span>
+            </div>
+            <div class="articles__m">
+              <div class="row more-gutters">
+                <div class="col l-4">
+                  <img src="./assets/img/post-thumbnail-m.png" alt="" />
+                  <h3 class="articles__m-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                </div>
+                <div class="col l-4">
+                  <img src="./assets/img/post-thumbnail-m.png" alt="" />
+                  <h3 class="articles__m-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                </div>
+                <div class="col l-4">
+                  <img src="./assets/img/post-thumbnail-m.png" alt="" />
+                  <h3 class="articles__m-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                </div>
+              </div>
+              <div class="row more-gutters mt-24">
+                <div class="col l-4">
+                  <img src="./assets/img/post-thumbnail-m.png" alt="" />
+                  <h3 class="articles__m-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                </div>
+                <div class="col l-4">
+                  <img src="./assets/img/post-thumbnail-m.png" alt="" />
+                  <h3 class="articles__m-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                </div>
+                <div class="col l-4">
+                  <img src="./assets/img/post-thumbnail-m.png" alt="" />
+                  <h3 class="articles__m-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                </div>
+              </div>
+            </div>
+            <div class="articles__s">
+              <div class="row mt-24">
+                <div class="col l-6">
+                  <div class="articles__s-container">
+                    <img src="./assets/img/post-thumbnail-s.png" alt="" />
+                    <div class="articles__s-info">
+                      <p class="articles__s-category">Chuyên mục 1</p>
+                      <h3 class="articles__s-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-6">
+                  <div class="articles__s-container">
+                    <img src="./assets/img/post-thumbnail-s.png" alt="" />
+                    <div class="articles__s-info">
+                      <p class="articles__s-category">Chuyên mục 1</p>
+                      <h3 class="articles__s-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-24">
+                <div class="col l-6">
+                  <div class="articles__s-container">
+                    <img src="./assets/img/post-thumbnail-s.png" alt="" />
+                    <div class="articles__s-info">
+                      <p class="articles__s-category">Chuyên mục 1</p>
+                      <h3 class="articles__s-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-6">
+                  <div class="articles__s-container">
+                    <img src="./assets/img/post-thumbnail-s.png" alt="" />
+                    <div class="articles__s-info">
+                      <p class="articles__s-category">Chuyên mục 1</p>
+                      <h3 class="articles__s-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-24">
+                <div class="col l-6">
+                  <div class="articles__s-container">
+                    <img src="./assets/img/post-thumbnail-s.png" alt="" />
+                    <div class="articles__s-info">
+                      <p class="articles__s-category">Chuyên mục 1</p>
+                      <h3 class="articles__s-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-6">
+                  <div class="articles__s-container">
+                    <img src="./assets/img/post-thumbnail-s.png" alt="" />
+                    <div class="articles__s-info">
+                      <p class="articles__s-category">Chuyên mục 1</p>
+                      <h3 class="articles__s-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-24">
+                <div class="col l-6">
+                  <div class="articles__s-container">
+                    <img src="./assets/img/post-thumbnail-s.png" alt="" />
+                    <div class="articles__s-info">
+                      <p class="articles__s-category">Chuyên mục 1</p>
+                      <h3 class="articles__s-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-6">
+                  <div class="articles__s-container">
+                    <img src="./assets/img/post-thumbnail-s.png" alt="" />
+                    <div class="articles__s-info">
+                      <p class="articles__s-category">Chuyên mục 1</p>
+                      <h3 class="articles__s-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-24">
+                <div class="col l-6">
+                  <div class="articles__s-container">
+                    <img src="./assets/img/post-thumbnail-s.png" alt="" />
+                    <div class="articles__s-info">
+                      <p class="articles__s-category">Chuyên mục 1</p>
+                      <h3 class="articles__s-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-6">
+                  <div class="articles__s-container">
+                    <img src="./assets/img/post-thumbnail-s.png" alt="" />
+                    <div class="articles__s-info">
+                      <p class="articles__s-category">Chuyên mục 1</p>
+                      <h3 class="articles__s-heading">Vivamus magna justo, lacinia eget consectetur</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination component -->
+          <div class="product-pagination">
+            <div class="product-pagination__arrow">
+              <svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="product-pagination__arrow-icon"
+              >
+                <path
+                  d="M8.5,12.8l5.7,5.6c0.4,0.4,1,0.4,1.4,0c0,0,0,0,0,0c0.4-0.4,0.4-1,0-1.4l-4.9-5l4.9-5c0.4-0.4,0.4-1,0-1.4c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3,0-0.5,0.1-0.7,0.3l-5.7,5.6C8.1,11.7,8.1,12.3,8.5,12.8C8.5,12.7,8.5,12.7,8.5,12.8z"
+                />
+              </svg>
+            </div>
+            <span class="product-pagination__page-number product-pagination__current-page">1</span>
+            <span class="product-pagination__page-number">2</span>
+            <span class="product-pagination__page-number">3</span>
+            <span class="product-pagination__page-number">...</span>
+            <span class="product-pagination__page-number">10</span>
+            <div class="product-pagination__arrow">
+              <svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="product-pagination__arrow-icon"
+              >
+                <path
+                  d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer component -->
+    <footer>
+      <div class="grid wide">
+        <div class="row footer__list-title">
+          <div class="col l-3-6">
+            <!-- <h4 class="footer-title">abc</h4> -->
+            <img src="./assets/img/logo.svg" alt="Logo" />
+          </div>
+          <div class="col l-2-4">
+            <h4 class="footer__title">Thông tin chính sách</h4>
+          </div>
+          <div class="col l-2-4">
+            <h4 class="footer__title">Khám phá VNFarm</h4>
+          </div>
+          <div class="col l-3-6">
+            <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
+          </div>
+        </div>
+        <div class="row footer__content">
+          <div class="col l-3-6">
+            <ul class="footer__col-1">
+              <li><img src="./assets/icon/building.svg" alt="" /> CÔNG TY CỔ PHẦN NÔNG NGHIỆP VNFARM</li>
+              <li>
+                <img src="./assets/icon/scale-balanced.svg" alt="" />Do sở kế hoạch và Đầu tư TPHCM cấp lần đầu ngày
+                14/05/2020
+              </li>
+              <li><img src="./assets/icon/location-dot.svg" alt="" />Địa chỉ: Tầng 8, Số 520 Cách Mạng Tháng Tám</li>
+              <li><img src="./assets/icon/envelope.svg" alt="" />Admin@vnfarm.com.vn</li>
+            </ul>
+          </div>
+          <div class="col l-2-4">
+            <ul class="footer__col-2">
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+            </ul>
+          </div>
+          <div class="col l-2-4">
+            <ul class="footer__col-3">
+              <li>Sản phẩm</li>
+              <li>Hỏi đáp</li>
+              <li>Về chúng tôi</li>
+              <li>Hỗ trợ</li>
+            </ul>
+          </div>
+          <div class="col l-3-6">
+            <!-- <div class="footer__col-4"> -->
+            <p class="footer__listen-to-you">
+              Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải
+              nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+            </p>
+            <span class="btn btn-primary footer__btn">Gửi ý kiến</span>
+            <div class="footer__list-social">
+              Theo dõi chúng tôi
+              <img src="./assets/icon/youtube.png" alt="Youtube" class="footer__social-logo" />
+              <img src="./assets/icon/facebook.png" alt="Facebook" class="footer__social-logo" />
+              <img src="./assets/icon/tiktok.png" alt="Tiktok" class="footer__social-logo" />
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="">© 2022 VNFarm. All rights reserved.</div>
+          <div class="footer__support">
+            <div class="row">
+              <div class="col l-2">
+                <img src="./assets/icon/phone-call.svg" alt="" />
+              </div>
+              <div class="col l-10">
+                <p class="footer__support-title">0342331997</p>
+                <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__support">
+            <div class="row">
+              <div class="col l-2">
+                <img src="./assets/icon/phone-call.svg" alt="" />
+              </div>
+              <div class="col l-10">
+                <p class="footer__support-title">0342331997</p>
+                <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
+              </div>
+            </div>
+          </div>
+          <div class=""><img src="./assets/img/bo-cong-thuong.png" alt="Đã thông báo Bộ Công Thương" /></div>
+          <div class=""><img src="./assets/img/dmca.png" alt="DMCA Logo" /></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

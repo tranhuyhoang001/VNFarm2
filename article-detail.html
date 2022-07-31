@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header component -->
+    <header>
+      <div class="header-banner">
+        <div class="header-banner__container">
+          <img src="./assets/img/header-banner.svg" alt="Header Banner" class="header-banner__img" />
+          <span class="header-banner__btn">XEM THÊM</span>
+        </div>
+      </div>
+      <div class="grid wide header-function">
+        <img src="./assets/img/logo.svg" alt="" class="header-logo" />
+        <div class="header-search">
+          <input type="text" placeholder="Tìm kiếm tại đây" class="header-search__input" />
+          <img src="./assets/icon/search.svg" class="header-search__icon" />
+        </div>
+        <div class="header-list-btn">
+          <div class="header-btn header-heart-btn">
+            <img src="./assets/icon/heart.svg" alt="" class="" />
+            <span class="header-amount header-heart-amount">2</span>
+          </div>
+          <span class="ml-24">300.00VNĐ</span>
+          <div class="header-btn header-cart-btn ml-10">
+            <img src="./assets/icon/cart.svg" alt="" class="" />
+            <span class="header-amount header-cart-amount">2</span>
+          </div>
+          <span id="loginBtn" class="header-login-btn">Đăng nhập</span>
+          <img src="./assets/icon/user-circle.svg" alt="" class="ml-10" />
+        </div>
+      </div>
+
+      <div class="header-navbar">
+        <div class="grid wide header-navbar__content">
+          <div>
+            <div class="header-navbar__btn">
+              <img src="./assets/icon/bar.svg" class="mr-6" />
+              Danh mục sản phẩm
+              <img src="./assets/icon/caret-down.svg" />
+              <div class="header-navbar__dropdown">
+                <ul>
+                  <li>Thuốc trừ bệnh sinh học</li>
+                  <li>Thuốc trừ sâu sinh học</li>
+                  <li>Dinh dưỡng cho cây</li>
+                  <li>Hỗ trợ nông nghiệp</li>
+                  <li>Phòng trừ bệnh</li>
+                </ul>
+              </div>
+            </div>
+            <ul>
+              <li>Sản phẩm</li>
+              <li>Hỏi đáp</li>
+              <li>Về chúng tôi</li>
+              <li>Hỗ trợ</li>
+            </ul>
+          </div>
+          <div class="header-navbar__support">
+            <img src="./assets/icon/headphone.svg" />
+            <div class="ml-10">
+              <p class="header-navbar__support-phone">0363631997</p>
+              <p class="header-navbar__support-desc">Trung tâm hỗ trợ 24/7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- breadcrumb component -->
+    <div class="breadcrumb">
+      <div class="grid wide">
+        <span class="breadcrumb__text">
+          Trang Chủ
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="breadcrumb__icon"
+          >
+            <path
+              d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+            />
+          </svg>
+          Hỏi đáp
+          <span class="breadcrumb__current-page">
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="breadcrumb__icon"
+            >
+              <path
+                d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+              />
+            </svg>
+            Chuyên mục A
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="grid wide">
+      <div class="row">
+        <div class="col l-9">
+          <div class="article-detail__container">
+            <h1 class="article-detail__heading">Praesent sapien massa, convallis a pellentesque nec, egestas</h1>
+            <div class="article-detail__func">
+              14/06/2022 09:55 (GMT+7)
+              <div class="article-detail__list-fs-btn">
+                <div class="article-detail__fs-btn">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.42969 12L7.60156 9.28125H3.4375L2.60938 12H0L4.03125 0.53125H6.99219L11.0391 12H8.42969ZM7.02344 7.25C6.25781 4.78646 5.82552 3.39323 5.72656 3.07031C5.63281 2.7474 5.5651 2.49219 5.52344 2.30469C5.35156 2.97135 4.85938 4.61979 4.04688 7.25H7.02344Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+                <div class="article-detail__fs-btn">
+                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.42969 12L7.60156 9.28125H3.4375L2.60938 12H0L4.03125 0.53125H6.99219L11.0391 12H8.42969ZM7.02344 7.25C6.25781 4.78646 5.82552 3.39323 5.72656 3.07031C5.63281 2.7474 5.5651 2.49219 5.52344 2.30469C5.35156 2.97135 4.85938 4.61979 4.04688 7.25H7.02344ZM14.4858 7.21875H11.4624V5.50781H14.4858V2.46094H16.1967V5.50781H19.2202V7.21875H16.1967V10.2266H14.4858V7.21875Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+                <div class="article-detail__fs-btn">
+                  <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.42969 17L7.60156 14.2812H3.4375L2.60938 17H0L4.03125 5.53125H6.99219L11.0391 17H8.42969ZM7.02344 12.25C6.25781 9.78646 5.82552 8.39323 5.72656 8.07031C5.63281 7.7474 5.5651 7.49219 5.52344 7.30469C5.35156 7.97135 4.85938 9.61979 4.04688 12.25H7.02344Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M14.3193 8.01172H12.4297V6.94238H14.3193V5.03809H15.3887V6.94238H17.2783V8.01172H15.3887V9.8916H14.3193V8.01172ZM20.0322 8.01172H18.1426V6.94238H20.0322V5.03809H21.1016V6.94238H22.9912V8.01172H21.1016V9.8916H20.0322V8.01172Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="article-detail__text-to-speech">
+              <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M55 27.5C55 42.6878 42.6878 55 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6878 0 55 12.3122 55 27.5Z"
+                  fill="#7FB640"
+                />
+                <path d="M41 28.5L20.75 40.1913L20.75 16.8087L41 28.5Z" fill="white" />
+              </svg>
+              <div class="article-detail__seek-time">
+                <span class="font-bold">00:00 / 02:52</span>
+                <input
+                  type="range"
+                  id="time"
+                  name="time"
+                  min="0"
+                  max="100"
+                  value="0"
+                  step="1"
+                  class="article-detail__input-range"
+                />
+              </div>
+            </div>
+            <p class="font-bold">
+              Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus suscipit tortor eget felis porttitor
+              volutpat. Vivamus magna justo,
+            </p>
+
+            <img src="./assets/img/img-in-post.jpg" alt="img" />
+
+            <p>
+              Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed,
+              convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut
+              libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac
+              diam sit amet quam vehicula elementum sed sit amet dui.
+            </p>
+
+            <p>
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Cras
+              ultricies ligula sed magna dictum porta. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
+              sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </p>
+
+            <p>
+              Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur
+              aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at
+              tellus. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
+              porttitor at sem.
+            </p>
+
+            <p>
+              Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed,
+              convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut
+              libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac
+              diam sit amet quam vehicula elementum sed sit amet dui.
+            </p>
+
+            <p>
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Cras
+              ultricies ligula sed magna dictum porta. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
+              sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </p>
+
+            <p>
+              Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur
+              aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at
+              tellus. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
+              porttitor at sem.
+            </p>
+
+            <p>
+              Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed,
+              convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut
+              libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac
+              diam sit amet quam vehicula elementum sed sit amet dui.
+            </p>
+
+            <p>
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Cras
+              ultricies ligula sed magna dictum porta. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
+              sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </p>
+
+            <p>
+              Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur
+              aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at
+              tellus. Nulla quis lorem ut libero malesuada feugiat. Cu
+            </p>
+
+            <div class="article-detail__ads-box">
+              <img src="./assets/img/0001575_physa_500.png" alt="physa" class="article-detail__ads-img" />
+              <div class="article-detail__ads-info">
+                <h3 class="article-detail__ads-heading">
+                  BS04 - TRIZON <span class="article-detail__ads-discount">15%</span>
+                </h3>
+                <div class="article-detail__ads-uses">Phòng và đặc trị bệnh đạo ôn lá; đạo ôn cổ bông...</div>
+                <div class="article-detail__ads-price">
+                  <span class="article-detail__ads-current-price">300.000 VNĐ</span>
+                  <span class="article-detail__ads-original-price">400.000 VNĐ</span>
+                </div>
+                <div class="article-detail__ads-rating">
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.5 0L6.73483 3.80041H10.7308L7.49799 6.14919L8.73282 9.94959L5.5 7.60081L2.26718 9.94959L3.50201 6.14919L0.269189 3.80041H4.26517L5.5 0Z"
+                      fill="#F9B402"
+                    />
+                  </svg>
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.5 0L6.73483 3.80041H10.7308L7.49799 6.14919L8.73282 9.94959L5.5 7.60081L2.26718 9.94959L3.50201 6.14919L0.269189 3.80041H4.26517L5.5 0Z"
+                      fill="#F9B402"
+                    />
+                  </svg>
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.5 0L6.73483 3.80041H10.7308L7.49799 6.14919L8.73282 9.94959L5.5 7.60081L2.26718 9.94959L3.50201 6.14919L0.269189 3.80041H4.26517L5.5 0Z"
+                      fill="#F9B402"
+                    />
+                  </svg>
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.5 0L6.73483 3.80041H10.7308L7.49799 6.14919L8.73282 9.94959L5.5 7.60081L2.26718 9.94959L3.50201 6.14919L0.269189 3.80041H4.26517L5.5 0Z"
+                      fill="#F9B402"
+                    />
+                  </svg>
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.5 0L6.73483 3.80041H10.7308L7.49799 6.14919L8.73282 9.94959L5.5 7.60081L2.26718 9.94959L3.50201 6.14919L0.269189 3.80041H4.26517L5.5 0Z"
+                      fill="#F9B402"
+                    />
+                  </svg>
+                </div>
+                <span class="btn btn-primary article-detail__ads-cart-btn">Thêm vào giỏ hàng</span>
+                <svg
+                  width="18"
+                  height="17"
+                  viewBox="0 0 18 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="article-detail__ads-heart-btn"
+                >
+                  <path
+                    d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+                    fill="#3FA000"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <img src="./assets/img/img-in-post-2.jpg" alt="img" />
+
+            <p>
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Cras
+              ultricies ligula sed magna dictum porta. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
+              sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </p>
+
+            <p>
+              Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur
+              aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at
+              tellus. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
+              porttitor at sem.
+            </p>
+
+            <p>
+              Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed,
+              convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut
+              libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac
+              diam sit amet quam vehicula elementum sed sit amet dui.
+            </p>
+
+            <p>
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Cras
+              ultricies ligula sed magna dictum porta. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
+              sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </p>
+          </div>
+          <h3 class="article-detail__suggest-heading">Một số sản phẩm tốt cho cây sầu riêng của VNFarm:</h3>
+          <div class="row">
+            <div class="col l-4">
+              <div class="product-box">
+                <span class="product-box__discount">-15%</span>
+                <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+                <p class="product-box__title">BS04 - TRIZON</p>
+                <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+                <p class="product-box__price">
+                  <span class="product-box__current-price">300.000 VNĐ</span>
+                  <span class="product-box__original-price">400.000 VNĐ</span>
+                </p>
+                <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+                <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+              </div>
+            </div>
+            <div class="col l-4">
+              <div class="product-box">
+                <span class="product-box__discount">-15%</span>
+                <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+                <p class="product-box__title">BS04 - TRIZON</p>
+                <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+                <p class="product-box__price">
+                  <span class="product-box__current-price">300.000 VNĐ</span>
+                  <span class="product-box__original-price">400.000 VNĐ</span>
+                </p>
+                <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+                <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+              </div>
+            </div>
+            <div class="col l-4">
+              <div class="product-box">
+                <span class="product-box__discount">-15%</span>
+                <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+                <p class="product-box__title">BS04 - TRIZON</p>
+                <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+                <p class="product-box__price">
+                  <span class="product-box__current-price">300.000 VNĐ</span>
+                  <span class="product-box__original-price">400.000 VNĐ</span>
+                </p>
+                <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+                <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+              </div>
+            </div>
+          </div>
+          <div class="article-detail__show-more">
+            <span class="article-detail__show-more-btn">
+              Xem thêm
+              <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.5 1.5L6.5 6.5L1.5 1.5"
+                  stroke="#7FB640"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="article-detail__list-share-btn">
+            <span class="article-detail__share-btn article-detail__facebook-share-btn">
+              <img src="./assets/icon/facebook-share-icon.png" alt="Share Facebook" class="mr-6" />
+              Chia sẻ Facebook
+            </span>
+            <span class="article-detail__share-btn article-detail__zalo-share-btn">
+              <img src="./assets/icon/zalo-share-icon.png" alt="Share Zalo" class="mr-6" />
+              Chia sẻ Zalo
+            </span>
+          </div>
+          <h3 class="article-detail__related-heading">Bài viết liên quan</h3>
+          <div class="row mb-62">
+            <div class="col l-4">
+              <img src="./assets/img/releted-post.png" alt="post" class="article-detail__related-post-img" />
+              <h4 class="article-detail__related-post-heading">
+                Praesent sapien massa, convallis a pellentesque nec, egestas
+              </h4>
+            </div>
+            <div class="col l-4">
+              <img src="./assets/img/releted-post.png" alt="post" class="article-detail__related-post-img" />
+              <h4 class="article-detail__related-post-heading">
+                Praesent sapien massa, convallis a pellentesque nec, egestas
+              </h4>
+            </div>
+            <div class="col l-4">
+              <img src="./assets/img/releted-post.png" alt="post" class="article-detail__related-post-img" />
+              <h4 class="article-detail__related-post-heading">
+                Praesent sapien massa, convallis a pellentesque nec, egestas
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col l-3">
+          <div class="article-detail__quick-view">
+            <h3 class="article-detail__quick-view-heading">Xem nhanh</h3>
+            <ul>
+              <li class="article-detail__quick-view-active">
+                1. Vivamus suscipit tortor eget felis porttitor volutpat.
+              </li>
+              <li>2. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus suscipit tortor</li>
+              <li>3. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus suscipit tortor e</li>
+              <li>4. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus suscipit tortor e</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer component -->
+    <footer>
+      <div class="grid wide">
+        <div class="row footer__list-title">
+          <div class="col l-3-6">
+            <!-- <h4 class="footer-title">abc</h4> -->
+            <img src="./assets/img/logo.svg" alt="Logo" />
+          </div>
+          <div class="col l-2-4">
+            <h4 class="footer__title">Thông tin chính sách</h4>
+          </div>
+          <div class="col l-2-4">
+            <h4 class="footer__title">Khám phá VNFarm</h4>
+          </div>
+          <div class="col l-3-6">
+            <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
+          </div>
+        </div>
+        <div class="row footer__content">
+          <div class="col l-3-6">
+            <ul class="footer__col-1">
+              <li><img src="./assets/icon/building.svg" alt="" /> CÔNG TY CỔ PHẦN NÔNG NGHIỆP VNFARM</li>
+              <li>
+                <img src="./assets/icon/scale-balanced.svg" alt="" />Do sở kế hoạch và Đầu tư TPHCM cấp lần đầu ngày
+                14/05/2020
+              </li>
+              <li><img src="./assets/icon/location-dot.svg" alt="" />Địa chỉ: Tầng 8, Số 520 Cách Mạng Tháng Tám</li>
+              <li><img src="./assets/icon/envelope.svg" alt="" />Admin@vnfarm.com.vn</li>
+            </ul>
+          </div>
+          <div class="col l-2-4">
+            <ul class="footer__col-2">
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+              <li>Quy chế hoạt động</li>
+            </ul>
+          </div>
+          <div class="col l-2-4">
+            <ul class="footer__col-3">
+              <li>Sản phẩm</li>
+              <li>Hỏi đáp</li>
+              <li>Về chúng tôi</li>
+              <li>Hỗ trợ</li>
+            </ul>
+          </div>
+          <div class="col l-3-6">
+            <!-- <div class="footer__col-4"> -->
+            <p class="footer__listen-to-you">
+              Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải
+              nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+            </p>
+            <span class="btn btn-primary footer__btn">Gửi ý kiến</span>
+            <div class="footer__list-social">
+              Theo dõi chúng tôi
+              <img src="./assets/icon/youtube.png" alt="Youtube" class="footer__social-logo" />
+              <img src="./assets/icon/facebook.png" alt="Facebook" class="footer__social-logo" />
+              <img src="./assets/icon/tiktok.png" alt="Tiktok" class="footer__social-logo" />
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="">© 2022 VNFarm. All rights reserved.</div>
+          <div class="footer__support">
+            <div class="row">
+              <div class="col l-2">
+                <img src="./assets/icon/phone-call.svg" alt="" />
+              </div>
+              <div class="col l-10">
+                <p class="footer__support-title">0342331997</p>
+                <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__support">
+            <div class="row">
+              <div class="col l-2">
+                <img src="./assets/icon/phone-call.svg" alt="" />
+              </div>
+              <div class="col l-10">
+                <p class="footer__support-title">0342331997</p>
+                <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
+              </div>
+            </div>
+          </div>
+          <div class=""><img src="./assets/img/bo-cong-thuong.png" alt="Đã thông báo Bộ Công Thương" /></div>
+          <div class=""><img src="./assets/img/dmca.png" alt="DMCA Logo" /></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="./assets/js/main.js"></script> -->
+  </body>
+</html>
