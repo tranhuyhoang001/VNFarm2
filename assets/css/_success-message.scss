@@ -1,0 +1,28 @@
+.successful-message {
+  width: 690px;
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  display: inline-block;
+  padding: 88px 110px 62px 110px;
+  text-align: center;
+  position: relative;
+  &__close-icon {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    fill: #333949;
+    transition: 0.3s;
+    &:hover {
+      cursor: pointer;
+      fill: #7fb640;
+    }
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 55px;
+  }
+  &__desc {
+    margin-top: 18px;
+  }
+}

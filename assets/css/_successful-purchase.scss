@@ -1,0 +1,18 @@
+.successful-purchase {
+  width: 350px;
+  margin: 85px auto 100px auto;
+  text-align: center;
+  &__heading {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 40px;
+  }
+  &__desc {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+  &__btn {
+    display: block;
+    margin-top: 14px;
+  }
+}

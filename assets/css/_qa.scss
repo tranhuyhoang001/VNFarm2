@@ -1,0 +1,30 @@
+.qa-btn {
+  margin-top: 22px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.qa-img-12,
+.qa-img-45 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.qa-img {
+  position: relative;
+  &__title,
+  &__content {
+    position: absolute;
+    bottom: 25px;
+    left: 21px;
+    right: 21px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  &__desc {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}

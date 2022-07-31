@@ -1,0 +1,335 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.login-box {
+  margin: auto;
+  width: 548px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 24px 20px 33px 20px;
+  position: relative;
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    width: 121px;
+  }
+  &__list-tab {
+    margin-top: 36px;
+    margin-bottom: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tab {
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #858585;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #d7d7d7;
+    cursor: pointer;
+    &.active {
+      color: #7fb640;
+      border-bottom: 4px solid #7fb640;
+    }
+  }
+  &__input-item:not(:first-child) {
+    margin-top: 16px;
+  }
+  &__input-label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  &__input-text,
+  &__input-password {
+    padding: 10px 26px;
+    width: 100%;
+    border: 1px solid #eeeeee;
+    border-radius: 32px;
+  }
+  &__list-action {
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__save-password {
+    display: flex;
+    align-items: center;
+  }
+  &__checkbox {
+    margin-right: 8px;
+    margin-bottom: 6px;
+  }
+  &__btn {
+    padding: 10px 0;
+    background: #7fb640;
+    border-radius: 32px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 40px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+  }
+  &__or {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 23px;
+    position: relative;
+    &-before,
+    &-after {
+      width: 210px;
+      height: 1px;
+      background-color: #eeeeee;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    &-after {
+      right: 0;
+    }
+  }
+  &__facebook-btn,
+  &__google-btn {
+    padding: 10px 0;
+    border-radius: 32px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+    transition: 0.3s;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+  }
+  &__facebook-btn {
+    color: #fff;
+    background-color: #15208a;
+  }
+  &__google-btn {
+    margin-top: 16px;
+    background-color: #f0f0f0;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+  }
+  &__tab-content {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+/* The Close Button */
+.login-box__close-btn,
+.register-agent__close-btn,
+.write-review__close-btn,
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.register-agent {
+  &__box {
+    margin: auto;
+    padding: 24px 20px 30px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    width: 548px;
+    position: relative;
+  }
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    width: 121px;
+  }
+  &__header {
+    margin-top: 38px;
+    padding-bottom: 14px;
+    border-bottom: 4px solid #7fb640;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #7fb640;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  &__input-item {
+    margin-top: 24px;
+  }
+  &__input-label {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+  }
+  &__input-text,
+  &__select {
+    padding: 10px 26px;
+    width: 100%;
+    border: 1px solid #eeeeee;
+    border-radius: 32px;
+  }
+  &__select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../icon/angle-down.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 18px) center;
+  }
+  &__select-option {
+    font-size: 14px;
+    color: #a5a5a5;
+  }
+  &__btn {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.write-review {
+  &__box {
+    margin: auto;
+    padding: 16px 20px 15px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    width: 450px;
+    position: relative;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+  &__product {
+    margin-top: 14px;
+    padding: 18px 0;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 87px;
+    border-radius: 8px;
+  }
+  &__product-info {
+    margin-left: 20px;
+  }
+  &__product-category {
+    font-size: 12px;
+  }
+  &__product-name {
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  &__rating {
+    margin: 18px 55px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    fill: #333949;
+  }
+  &__bad,
+  &__good {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__bad-icon {
+    margin-right: 6px;
+  }
+  &__good-icon {
+    margin-left: 6px;
+  }
+  &__selected {
+    color: #7fb640;
+    font-weight: 700;
+    fill: #7fb640;
+  }
+  &__text-area {
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    padding: 18px 16px;
+    margin-top: 20px;
+  }
+  &__btn {
+    padding: 12px 0;
+    background: #7fb640;
+    border-radius: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 12px;
+    transition: 0.3s;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .login-box {
+    width: 353px;
+  }
+  .register-agent {
+    &__box {
+      padding: 24px 16px 30px 16px;
+      width: 353px;
+    }
+    &__btn {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px !important;
+    }
+  }
+  .login-box__close-btn,
+  .register-agent__close-btn,
+  .write-review__close-btn {
+    top: 14px;
+    right: 12px;
+  }
+}

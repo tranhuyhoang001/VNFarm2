@@ -1,0 +1,127 @@
+.articles-category {
+  &__container {
+    margin-top: 42px;
+    margin-bottom: 30px;
+  }
+}
+.category {
+  &__box {
+    padding: 5px 25px 25px 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+  }
+  &__group:not(:last-child) {
+    padding-bottom: 28px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  &__heading {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__group {
+    margin-top: 20px;
+    fill: #333949;
+    stroke: #333949;
+    & ul {
+      margin-top: 10px;
+      margin-left: 22px;
+    }
+    & li {
+      margin-top: 6px;
+      font-size: 14px;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        color: #7fb640;
+      }
+    }
+  }
+  &__icon {
+    margin-right: 6px;
+  }
+  &__active {
+    color: #7fb640;
+    stroke: #7fb640;
+  }
+}
+
+.articles {
+  &__box {
+    padding: 26px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    & img {
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+  &__l {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    &-heading {
+      font-weight: 600;
+      font-size: 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    &-category {
+      position: absolute;
+      top: 26px;
+      left: 24px;
+      padding: 10px 12px;
+      background: #99c83e;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+  &__m {
+    padding-top: 32px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #e6e6e6;
+    &-heading {
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  }
+  &__s {
+    padding-top: 32px;
+    &-container {
+      display: flex;
+      align-items: center;
+    }
+    & img {
+      width: 154px;
+    }
+    &-info {
+      margin-left: 15px;
+      font-weight: 600;
+    }
+    &-category {
+      color: #7fb640;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    &-heading {
+      margin-top: 6px;
+      cursor: pointer;
+    }
+  }
+}

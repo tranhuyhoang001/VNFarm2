@@ -1,0 +1,142 @@
+.product-portfolio {
+  margin: 50px 0 80px 0;
+
+  &__list-box {
+    margin-top: 110px;
+  }
+
+  &__box {
+    width: 200px;
+    height: 160px;
+    // background: #8c2285;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    // padding: 0 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  &__title {
+    // padding-top: 85px;
+    font-weight: 700;
+    padding-bottom: 6px;
+  }
+  &__amount {
+    padding-bottom: 12px;
+  }
+  &__img {
+    position: absolute;
+    top: -92px;
+  }
+}
+
+.box-jade-green {
+  background-color: #249371;
+}
+
+.box-purple {
+  background-color: #8c2285;
+}
+
+.box-green {
+  background-color: #598f1b;
+}
+
+.box-gold {
+  background-color: #c09515;
+}
+
+.box-blue {
+  background-color: #0e78a5;
+}
+
+.recommend-large {
+  position: relative;
+  margin-top: 80px;
+  height: 444px;
+  background: #fafafa;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 0 50px;
+  &__img {
+    display: block;
+    margin: 35px 0;
+  }
+  &__text {
+    margin-top: 47px;
+    font-weight: 600;
+    color: #7fb640;
+  }
+  &__product {
+    font-weight: 700;
+    font-size: 50px;
+  }
+  &__product-desc {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 16px;
+  }
+  &__product-element,
+  &__product-uses {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    // margin-right: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    border-bottom: 2px dashed #333949;
+  }
+  &__product-element-desc,
+  &__product-uses-desc {
+    margin-top: 16px;
+    color: #000000;
+  }
+  &__product-btn {
+    position: absolute;
+    bottom: 43px;
+  }
+}
+
+@media (max-width: 740px) {
+  .product-portfolio {
+    &__list-box {
+      margin-top: 125px;
+      // padding: 0 8px;
+    }
+
+    &__box {
+      width: 100%;
+    }
+  }
+  .box-blue {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .recommend-large {
+    padding: 0 20px;
+    height: 850px;
+    &__img {
+      display: block;
+      width: 100%;
+      margin: 25px auto;
+    }
+    &__text {
+      margin-top: 29px;
+    }
+    &__product {
+      font-size: 24px;
+    }
+    &__product-desc {
+      margin-top: 13px;
+    }
+    &__product-btn {
+      position: absolute;
+      bottom: 22px;
+    }
+  }
+}

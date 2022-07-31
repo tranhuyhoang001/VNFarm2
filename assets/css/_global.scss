@@ -1,0 +1,291 @@
+:root {
+  --color-primary: #7fb640;
+  --text-primary: #333949;
+  --jade-green-color: #249371;
+  --turquoise-color: #00cc9b;
+  --purple-color: #8c2285;
+  --green-color: #598f1b;
+  --green-bold: #289b15;
+  --gold-color: #c09515;
+  --blue-color: #0e78a5;
+  --black-color: #000000;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.btn-small {
+  padding: 8px 14px;
+}
+
+.btn {
+  padding: 11px 24px;
+  border-radius: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+.btn-primary {
+  background-color: #7fb640;
+}
+
+.btn-turquoise {
+  background-color: #00cc9b;
+}
+
+.btn-gold {
+  background-color: #a69605;
+}
+
+.btn-brown {
+  background-color: #a7330a;
+}
+
+.btn-blue {
+  background-color: #107b8c;
+}
+
+.btn-category {
+  display: inline-block;
+  padding: 11px 24px;
+  border-radius: 32px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-gray {
+  background: #f1f1f1;
+  color: #333949;
+}
+
+.text-primary {
+  color: #7fb640 !important;
+}
+
+.text-gray {
+  color: #333949 !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-24 {
+  margin-left: 24px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-24 {
+  margin-top: 24px !important;
+}
+
+.mb-42 {
+  margin-bottom: 42px !important;
+}
+
+.mb-62 {
+  margin-bottom: 62px !important;
+}
+
+.ml-6 {
+  margin-left: 6px !important;
+}
+
+.mr-6 {
+  margin-right: 6px !important;
+}
+
+.ml-12 {
+  margin-left: 12px !important;
+}
+
+.mr-12 {
+  margin-right: 12px !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.mt-22 {
+  margin-top: 22px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mt-62 {
+  margin-top: 62px !important;
+}
+
+.mt-80 {
+  margin-top: 80px !important;
+}
+
+.pr-12 {
+  padding-right: 12px !important;
+}
+
+.pr-24 {
+  padding-right: 24px !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid #7fb640;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  background: #d2e2ad;
+  height: 8px;
+}
+
+input[type='range']::-moz-range-track {
+  background: #d2e2ad;
+  height: 8px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -12px;
+  background-color: #7fb640;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+input[type='range']::-moz-range-thumb {
+  border: none;
+  border-radius: 50%;
+  background-color: #7fb640;
+  width: 30px;
+  height: 30px;
+}
+
+.l-none {
+  display: none !important;
+}
+
+@media (max-width: 740px) {
+  .s-none {
+    display: none !important;
+  }
+  .s-block {
+    display: block !important;
+  }
+  .s-p-0 {
+    padding: 0 !important;
+  }
+  .s-px-20 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .s-mt-0 {
+    margin-top: 0 !important;
+  }
+  .s-mt-16 {
+    margin-top: 16px !important;
+  }
+  .s-mt-20 {
+    margin-top: 20px !important;
+  }
+  .s-mt-24 {
+    margin-top: 24px !important;
+  }
+  .s-mt-44 {
+    margin-top: 44px !important;
+  }
+  .s-mt-111 {
+    margin-top: 111px !important;
+  }
+  .s-w-full {
+    width: 100% !important;
+  }
+  .s-text-14 {
+    font-size: 14px !important;
+  }
+  .s-text-16 {
+    font-size: 16px !important;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    border-radius: 32px;
+    // text-transform: none;
+    font-weight: 700;
+    font-size: 10px;
+  }
+}

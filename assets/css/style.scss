@@ -1,0 +1,131 @@
+$primary-color: #7fb640;
+$text-color: #333949;
+
+// html {
+//   font-size: 62.5%;
+// }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // -webkit-box-sizing: border-box;
+}
+
+// img {
+//   display: block;
+//   max-width: 100%;
+// }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333949;
+  line-height: 1.35;
+}
+
+a {
+  color: #7fb640;
+  text-decoration: none;
+}
+
+.brand-name {
+  text-align: center;
+  font-family: 'Damion';
+  font-size: 20px;
+  color: #289b15;
+
+  &__text {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: '~';
+      position: absolute;
+      top: 6px;
+      left: -15px;
+    }
+
+    &::after {
+      content: '~';
+      position: absolute;
+      top: 6px;
+      right: -15px;
+    }
+  }
+}
+
+.homepage-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+
+  &__text {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: url(../icon/homepage-heading-decorate.svg);
+      position: absolute;
+      top: -2px;
+      left: -77px;
+    }
+
+    &::after {
+      content: url(../icon/homepage-heading-decorate.svg);
+      transform: scaleX(-1);
+      position: absolute;
+      top: -2px;
+      right: -77px;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .brand-name {
+    font-size: 14px;
+  }
+
+  .homepage-heading {
+    font-size: 20px;
+
+    &__text {
+      display: inline-block;
+      position: relative;
+
+      &::before {
+        top: -12px;
+      }
+
+      &::after {
+        top: -12px;
+      }
+    }
+  }
+}
+
+@import 'global';
+@import 'header';
+@import 'featured';
+@import 'product-portfolio';
+@import 'category';
+@import 'product-list';
+@import 'about-us';
+@import 'qa';
+@import 'list-media';
+@import 'footer';
+@import 'breadcrumb';
+@import 'product';
+@import 'product-detail';
+@import 'cart';
+@import 'cart-confirm';
+@import 'successful-purchase';
+@import '404';
+@import 'success-message';
+@import 'articles-category';
+@import 'article-detail';
+@import 'modal';
+@import 'profile';
+@import 'register-agent';
+@import 'mobile-menu';
+@import 'banner-mobile';
