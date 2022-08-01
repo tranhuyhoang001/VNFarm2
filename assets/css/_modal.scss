@@ -226,7 +226,7 @@
 .write-review {
   &__box {
     margin: auto;
-    padding: 16px 20px 15px 20px;
+    padding: 16px 20px;
     background: #ffffff;
     border-radius: 8px;
     width: 450px;
@@ -260,7 +260,7 @@
     margin-top: 10px;
   }
   &__rating {
-    margin: 18px 55px;
+    margin: 18px 55px 22px 18px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -290,6 +290,7 @@
     fill: #7fb640;
   }
   &__text-area {
+    width: 100%;
     border: 1px solid #efefef;
     border-radius: 4px;
     padding: 18px 16px;
@@ -331,5 +332,13 @@
   .write-review__close-btn {
     top: 14px;
     right: 12px;
+  }
+  .write-review {
+    &__box {
+      width: 352px;
+    }
+    &__rating {
+      margin: 18px 10px 22px 10px;
+    }
   }
 }

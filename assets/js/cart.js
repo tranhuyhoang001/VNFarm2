@@ -49,38 +49,6 @@ listLoginTab.forEach((loginTab, index) => {
   };
 });
 
-// Change tab "Tài khoản của tôi"
-const listProfileTab = document.querySelectorAll('.profile__tab');
-const listProfileTabContent = document.querySelectorAll('.profile__tab-content');
-
-listProfileTab.forEach((profileTab, index) => {
-  const profileTabContent = listProfileTabContent[index];
-
-  profileTab.onclick = function () {
-    document.querySelector('.profile__tab.active').classList.remove('active');
-    document.querySelector('.profile__tab-content.active').classList.remove('active');
-
-    this.classList.add('active');
-    profileTabContent.classList.add('active');
-  };
-});
-
-// Change tab "Tình trạng đơn hàng"
-const listOrderTab = document.querySelectorAll('.order-status__tab');
-const listOrderTabContent = document.querySelectorAll('.order-status__tab-content');
-
-listOrderTab.forEach((orderTab, index) => {
-  const orderTabContent = listOrderTabContent[index];
-
-  orderTab.onclick = function () {
-    document.querySelector('.order-status__tab.active').classList.remove('active');
-    document.querySelector('.order-status__tab-content.active').classList.remove('active');
-
-    this.classList.add('active');
-    orderTabContent.classList.add('active');
-  };
-});
-
 // "Mobile Menu" modal
 const mobileMenuModal = document.getElementById('mobileMenuModal');
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');

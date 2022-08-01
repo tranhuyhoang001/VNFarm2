@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- header component -->
+    <!-- Header component -->
     <header>
       <div class="header-banner">
         <div class="header-banner__container">
@@ -25,61 +25,154 @@
           <span class="header-banner__btn">XEM THÊM</span>
         </div>
       </div>
-      <div class="grid wide header-function">
-        <img src="./assets/img/logo.svg" alt="" class="header-logo" />
-        <div class="header-search">
-          <input type="text" placeholder="Tìm kiếm tại đây" class="header-search__input" />
-          <img src="./assets/icon/search.svg" class="header-search__icon" />
+      <div class="s-none">
+        <div class="grid wide header-function">
+          <img src="./assets/img/logo.svg" alt="" class="header-logo" />
+          <div class="header-search">
+            <input type="text" placeholder="Tìm kiếm tại đây" class="header-search__input" />
+            <img src="./assets/icon/search.svg" class="header-search__icon" />
+          </div>
+          <div class="header-list-btn">
+            <div class="header-btn header-heart-btn">
+              <img src="./assets/icon/heart.svg" alt="" class="" />
+              <span class="header-amount header-heart-amount">2</span>
+            </div>
+            <span class="ml-24">300.00VNĐ</span>
+            <div class="header-btn header-cart-btn ml-10">
+              <img src="./assets/icon/cart.svg" alt="" class="" />
+              <span class="header-amount header-cart-amount">2</span>
+            </div>
+            <a id="loginBtn" class="header-login-btn">Đăng nhập</a>
+            <img src="./assets/icon/user-circle.svg" alt="" class="ml-10" />
+          </div>
         </div>
-        <div class="header-list-btn">
-          <div class="header-btn header-heart-btn">
-            <img src="./assets/icon/heart.svg" alt="" class="" />
-            <span class="header-amount header-heart-amount">2</span>
+
+        <div class="header-navbar">
+          <div class="grid wide header-navbar__content">
+            <div class="header-navbar__content-left">
+              <div class="header-navbar__btn">
+                <img src="./assets/icon/bar.svg" />
+                Danh mục sản phẩm
+                <img src="./assets/icon/caret-down.svg" class="ml-12" />
+                <div class="header-navbar__dropdown">
+                  <ul>
+                    <li>Thuốc trừ bệnh sinh học</li>
+                    <li>Thuốc trừ sâu sinh học</li>
+                    <li>Dinh dưỡng cho cây</li>
+                    <li>Hỗ trợ nông nghiệp</li>
+                    <li>Phòng trừ bệnh</li>
+                  </ul>
+                </div>
+              </div>
+              <ul>
+                <li>Sản phẩm</li>
+                <li>Hỏi đáp</li>
+                <li>Về chúng tôi</li>
+                <li>Hỗ trợ</li>
+              </ul>
+            </div>
+            <div class="header-navbar__support">
+              <img src="./assets/icon/headphone.svg" />
+              <div class="ml-10">
+                <p class="header-navbar__support-phone">0363631997</p>
+                <p class="header-navbar__support-desc">Trung tâm hỗ trợ 24/7</p>
+              </div>
+            </div>
           </div>
-          <span class="ml-24">300.00VNĐ</span>
-          <div class="header-btn header-cart-btn ml-10">
-            <img src="./assets/icon/cart.svg" alt="" class="" />
-            <span class="header-amount header-cart-amount">2</span>
-          </div>
-          <a href="#" class="ml-24">Đăng nhập</a>
-          <img src="./assets/icon/user-circle.svg" alt="" class="ml-10" />
         </div>
       </div>
 
-      <div class="header-navbar">
-        <div class="grid wide header-navbar__content">
-          <div>
-            <div class="header-navbar__btn">
-              <img src="./assets/icon/bar.svg" class="mr-6" />
-              Danh mục sản phẩm
-              <img src="./assets/icon/caret-down.svg" />
-              <div class="header-navbar__dropdown">
-                <ul>
-                  <li>Thuốc trừ bệnh sinh học</li>
-                  <li>Thuốc trừ sâu sinh học</li>
-                  <li>Dinh dưỡng cho cây</li>
-                  <li>Hỗ trợ nông nghiệp</li>
-                  <li>Phòng trừ bệnh</li>
-                </ul>
+      <div class="l-none s-block">
+        <div class="header-mobile">
+          <div class="header-mobile__func">
+            <div class="header-mobile__func-left">
+              <img src="./assets/img/logo.svg" alt="Logo" class="header-mobile__logo" />
+              <div class="header-mobile__list-icon-btn">
+                <div class="header-mobile__heart-btn">
+                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.4375 0.625C11.915 0.625 10.4537 1.33375 9.5 2.45375C8.54625 1.33375 7.085 0.625 5.5625 0.625C2.8675 0.625 0.75 2.7425 0.75 5.4375C0.75 8.745 3.725 11.44 8.23125 15.535L9.5 16.6813L10.7688 15.5263C15.275 11.44 18.25 8.745 18.25 5.4375C18.25 2.7425 16.1325 0.625 13.4375 0.625ZM9.5875 14.2312L9.5 14.3188L9.4125 14.2312C5.2475 10.46 2.5 7.96625 2.5 5.4375C2.5 3.6875 3.8125 2.375 5.5625 2.375C6.91 2.375 8.2225 3.24125 8.68625 4.44H10.3225C10.7775 3.24125 12.09 2.375 13.4375 2.375C15.1875 2.375 16.5 3.6875 16.5 5.4375C16.5 7.96625 13.7525 10.46 9.5875 14.2312Z"
+                      fill="#3FA000"
+                    />
+                  </svg>
+                  <div class="header-mobile__heart-btn-number">3</div>
+                </div>
+                <div class="header-mobile__cart-btn">
+                  <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.125 3.8H11.25C11.25 1.7005 9.57187 0 7.5 0C5.42813 0 3.75 1.7005 3.75 3.8H1.875C0.84375 3.8 0 4.655 0 5.7V17.1C0 18.145 0.84375 19 1.875 19H13.125C14.1562 19 15 18.145 15 17.1V5.7C15 4.655 14.1562 3.8 13.125 3.8ZM7.5 1.9C8.53125 1.9 9.375 2.755 9.375 3.8H5.625C5.625 2.755 6.46875 1.9 7.5 1.9ZM13.125 17.1H1.875V5.7H3.75V7.6C3.75 8.1225 4.17188 8.55 4.6875 8.55C5.20312 8.55 5.625 8.1225 5.625 7.6V5.7H9.375V7.6C9.375 8.1225 9.79688 8.55 10.3125 8.55C10.8281 8.55 11.25 8.1225 11.25 7.6V5.7H13.125V17.1Z"
+                      fill="#107B8C"
+                    />
+                  </svg>
+                  <div class="header-mobile__cart-btn-number">3</div>
+                </div>
               </div>
             </div>
-            <ul>
-              <li>Sản phẩm</li>
-              <li>Hỏi đáp</li>
-              <li>Về chúng tôi</li>
-              <li>Hỗ trợ</li>
-            </ul>
-          </div>
-          <div class="header-navbar__support">
-            <img src="./assets/icon/headphone.svg" />
-            <div class="ml-10">
-              <p class="header-navbar__support-phone">0363631997</p>
-              <p class="header-navbar__support-desc">Trung tâm hỗ trợ 24/7</p>
+            <div id="mobileMenuBtn" class="header-mobile__menu-btn">
+              <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="6" width="21" height="3" rx="1.5" fill="#7FB640" />
+                <rect x="6" y="21" width="21" height="3" rx="1.5" fill="#7FB640" />
+                <rect x="6" y="13" width="21" height="3" rx="1.5" fill="#7FB640" />
+                <rect x="0.5" y="0.5" width="32" height="29" rx="3.5" stroke="#7FB640" />
+              </svg>
             </div>
+          </div>
+          <div class="header-search">
+            <input type="text" placeholder="Tìm kiếm tại đây" class="header-search__input" />
+            <img src="./assets/icon/search.svg" class="header-search__icon" />
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenuModal" class="mobile-menu__modal">
+      <div class="mobile-menu__box">
+        <span class="mobile-menu__close-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.4 15L10 11.4L13.6 15L15 13.6L11.4 10L15 6.4L13.6 5L10 8.6L6.4 5L5 6.4L8.6 10L5 13.6L6.4 15ZM10 20C8.61667 20 7.31667 19.7373 6.1 19.212C4.88333 18.6873 3.825 17.975 2.925 17.075C2.025 16.175 1.31267 15.1167 0.788 13.9C0.262667 12.6833 0 11.3833 0 10C0 8.61667 0.262667 7.31667 0.788 6.1C1.31267 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.31233 6.1 0.787C7.31667 0.262333 8.61667 0 10 0C11.3833 0 12.6833 0.262333 13.9 0.787C15.1167 1.31233 16.175 2.025 17.075 2.925C17.975 3.825 18.6873 4.88333 19.212 6.1C19.7373 7.31667 20 8.61667 20 10C20 11.3833 19.7373 12.6833 19.212 13.9C18.6873 15.1167 17.975 16.175 17.075 17.075C16.175 17.975 15.1167 18.6873 13.9 19.212C12.6833 19.7373 11.3833 20 10 20ZM10 18C12.2167 18 14.1043 17.221 15.663 15.663C17.221 14.1043 18 12.2167 18 10C18 7.78333 17.221 5.89567 15.663 4.337C14.1043 2.779 12.2167 2 10 2C7.78333 2 5.896 2.779 4.338 4.337C2.77933 5.89567 2 7.78333 2 10C2 12.2167 2.77933 14.1043 4.338 15.663C5.896 17.221 7.78333 18 10 18Z"
+              fill="#333949"
+            />
+          </svg>
+        </span>
+        <div class="mobile-menu__header">
+          <div class="header-navbar__btn">
+            <img src="./assets/icon/bar.svg" />
+            Danh mục sản phẩm
+            <img src="./assets/icon/caret-down.svg" class="ml-12" />
+            <div class="header-navbar__dropdown">
+              <ul>
+                <li>Thuốc trừ bệnh sinh học</li>
+                <li>Thuốc trừ sâu sinh học</li>
+                <li>Dinh dưỡng cho cây</li>
+                <li>Hỗ trợ nông nghiệp</li>
+                <li>Phòng trừ bệnh</li>
+              </ul>
+            </div>
+          </div>
+          <ul class="mobile-menu__list-text-btn">
+            <li id="mobile-menu__login-btn">Đăng nhập</li>
+            <li>Sản phẩm</li>
+            <li>Hỏi đáp</li>
+            <li>Về chúng tôi</li>
+            <li>Hỗ trợ</li>
+          </ul>
+        </div>
+        <div class="mobile-menu__support">
+          <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M31.5 15.636V13.5C31.5 9.9196 30.0777 6.4858 27.546 3.95406C25.0142 1.42232 21.5805 0 18 0C14.4196 0 10.9858 1.42232 8.45411 3.95406C5.92236 6.4858 4.50005 9.9196 4.50005 13.5V15.636C2.92679 16.3287 1.63925 17.5409 0.85298 19.0696C0.0667122 20.5983 -0.170561 22.3506 0.180884 24.0334C0.532329 25.7161 1.45116 27.227 2.78355 28.3132C4.11595 29.3994 5.78103 29.9949 7.50005 30H10.5V15H7.50005V13.5C7.50005 10.7152 8.60629 8.0445 10.5754 6.07538C12.5446 4.10625 15.2153 3 18 3C20.7848 3 23.4555 4.10625 25.4247 6.07538C27.3938 8.0445 28.5 10.7152 28.5 13.5V15H25.5V27H19.5V30H28.5C30.2191 29.9949 31.8841 29.3994 33.2165 28.3132C34.5489 27.227 35.4678 25.7161 35.8192 24.0334C36.1707 22.3506 35.9334 20.5983 35.1471 19.0696C34.3608 17.5409 33.0733 16.3287 31.5 15.636ZM7.50005 27C6.30657 27 5.16198 26.5259 4.31807 25.682C3.47415 24.8381 3.00005 23.6935 3.00005 22.5C3.00005 21.3065 3.47415 20.1619 4.31807 19.318C5.16198 18.4741 6.30657 18 7.50005 18V27ZM28.5 27V18C29.6935 18 30.8381 18.4741 31.682 19.318C32.5259 20.1619 33 21.3065 33 22.5C33 23.6935 32.5259 24.8381 31.682 25.682C30.8381 26.5259 29.6935 27 28.5 27Z"
+              fill="#333949"
+            />
+          </svg>
+          <div class="mobile-menu__support-content">
+            <div class="mobile-menu__support-number">0363631997</div>
+            <div class="mobile-menu__support-desc">Trung tâm hỗ trợ 24/7</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- breadcrumb component -->
     <div class="breadcrumb">
@@ -104,8 +197,8 @@
       </div>
     </div>
 
-    <div class="grid wide">
-      <div class="cart__back-to-shopping">
+    <div class="grid wide s-px-20">
+      <div class="cart__back-to-shopping s-none">
         <svg
           width="8"
           height="14"
@@ -126,11 +219,11 @@
       </div>
       <h1 class="cart__heading">Xác nhận</h1>
       <div class="row cart__body">
-        <div class="col l-8">
+        <div class="col l-8 c-12">
           <div class="cart-confirm__box">
             <h3 class="cart-confirm__title">1 .Thông tin giao hàng</h3>
             <div class="row mt-24">
-              <div class="col l-6">
+              <div class="col l-6 c-12">
                 <label for="fname" class="cart-confirm__input-label">Họ tên</label>
                 <input
                   type="text"
@@ -140,7 +233,7 @@
                   class="cart-confirm__input-text"
                 />
               </div>
-              <div class="col l-6">
+              <div class="col l-6 c-12 s-mt-20">
                 <label for="phone" class="cart-confirm__input-label">Số điện thoại</label>
                 <input type="text" id="phone" name="phone" value="+84" class="cart-confirm__input-text" />
               </div>
@@ -165,7 +258,7 @@
               </span>
             </div>
             <div class="row mt-24">
-              <div class="col l-6">
+              <div class="col l-6 c-12">
                 <label for="province" class="cart-confirm__input-label">Thành phố</label>
                 <select id="province" name="province" class="cart-confirm__select">
                   <option class="cart-confirm__select-option" value="hn">Hà Nội</option>
@@ -175,7 +268,7 @@
                   <option class="cart-confirm__select-option" value="th">Thanh Hoá</option>
                 </select>
               </div>
-              <div class="col l-6">
+              <div class="col l-6 c-12 s-mt-20">
                 <label for="district" class="cart-confirm__input-label">Quận/Huyện</label>
                 <select id="district" name="district" class="cart-confirm__select">
                   <option class="cart-confirm__select-option" value="hk">Hoàn Kiếm</option>
@@ -187,7 +280,7 @@
               </div>
             </div>
             <div class="row mt-24">
-              <div class="col l-6">
+              <div class="col l-6 c-12">
                 <label for="commune" class="cart-confirm__input-label">Phường xã</label>
                 <select id="commune" name="commune" class="cart-confirm__select">
                   <option class="cart-confirm__select-option" value="nd">Nguyễn Du</option>
@@ -197,7 +290,7 @@
                   <option class="cart-confirm__select-option" value="ntn">Ngô Thì Nhậm</option>
                 </select>
               </div>
-              <div class="col l-6">
+              <div class="col l-6 c-12 s-mt-20">
                 <label for="address" class="cart-confirm__input-label">Địa chỉ chi tiết</label>
                 <input
                   type="text"
@@ -209,7 +302,7 @@
               </div>
             </div>
             <div class="row mt-24">
-              <div class="col l-12">
+              <div class="col l-12 c-12">
                 <label for="note" class="cart-confirm__input-label">Ghi chú (Nếu có)</label>
                 <input
                   type="text"
@@ -251,9 +344,19 @@
                 </p>
               </div>
             </div>
+            <div class="cart-confirm__payment-box">
+              <input type="radio" id="vnpay" name="payment" value="vnpay" class="cart-confirm__payment-radio" />
+              <img src="./assets/img/media-logo/vnpay.png" alt="VNPAY" class="cart-confirm__payment-img" />
+              <div class="cart-confirm__payment-text">
+                <p class="cart-confirm__payment-tile">Hướng dẫn thanh toán VNPAY</p>
+                <p class="cart-confirm__payment-desc">
+                  Bạn chọn thanh toán bằng VNPAY sau đó hãy quét mã QR trên VNPAY để thanh toán nhé
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col l-4">
+        <div class="col l-4 c-12 s-mt-36">
           <div class="cart__summary-box">
             <h3 class="cart__summary-heading">Đơn hàng</h3>
             <div class="cart__summary-order">
@@ -286,24 +389,11 @@
 
     <!-- footer component -->
     <footer>
-      <div class="grid wide">
+      <div class="grid wide s-px-20">
         <div class="row footer__list-title">
-          <div class="col l-3-6">
+          <div class="col l-3-6 c-12">
             <!-- <h4 class="footer-title">abc</h4> -->
             <img src="./assets/img/logo.svg" alt="Logo" />
-          </div>
-          <div class="col l-2-4">
-            <h4 class="footer__title">Thông tin chính sách</h4>
-          </div>
-          <div class="col l-2-4">
-            <h4 class="footer__title">Khám phá VNFarm</h4>
-          </div>
-          <div class="col l-3-6">
-            <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
-          </div>
-        </div>
-        <div class="row footer__content">
-          <div class="col l-3-6">
             <ul class="footer__col-1">
               <li><img src="./assets/icon/building.svg" alt="" /> CÔNG TY CỔ PHẦN NÔNG NGHIỆP VNFARM</li>
               <li>
@@ -314,7 +404,8 @@
               <li><img src="./assets/icon/envelope.svg" alt="" />Admin@vnfarm.com.vn</li>
             </ul>
           </div>
-          <div class="col l-2-4">
+          <div class="col l-2-4 c-12 s-mt-24">
+            <h4 class="footer__title">Thông tin chính sách</h4>
             <ul class="footer__col-2">
               <li>Quy chế hoạt động</li>
               <li>Quy chế hoạt động</li>
@@ -322,7 +413,8 @@
               <li>Quy chế hoạt động</li>
             </ul>
           </div>
-          <div class="col l-2-4">
+          <div class="col l-2-4 c-12 s-mt-24">
+            <h4 class="footer__title">Khám phá VNFarm</h4>
             <ul class="footer__col-3">
               <li>Sản phẩm</li>
               <li>Hỏi đáp</li>
@@ -330,23 +422,22 @@
               <li>Hỗ trợ</li>
             </ul>
           </div>
-          <div class="col l-3-6">
-            <!-- <div class="footer__col-4"> -->
+          <div class="col l-3-6 c-12 s-mt-24">
+            <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
             <p class="footer__listen-to-you">
               Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải
               nghiệm dịch vụ và sản phẩm tốt hơn nữa.
             </p>
             <span class="btn btn-primary footer__btn">Gửi ý kiến</span>
-            <div class="footer__list-social">
+            <div class="footer__list-social s-none">
               Theo dõi chúng tôi
               <img src="./assets/icon/youtube.png" alt="Youtube" class="footer__social-logo" />
               <img src="./assets/icon/facebook.png" alt="Facebook" class="footer__social-logo" />
               <img src="./assets/icon/tiktok.png" alt="Tiktok" class="footer__social-logo" />
             </div>
-            <!-- </div> -->
           </div>
         </div>
-        <div class="footer__copyright">
+        <div class="footer__copyright s-none">
           <div class="">© 2022 VNFarm. All rights reserved.</div>
           <div class="footer__support">
             <div class="row">
@@ -373,7 +464,170 @@
           <div class=""><img src="./assets/img/bo-cong-thuong.png" alt="Đã thông báo Bộ Công Thương" /></div>
           <div class=""><img src="./assets/img/dmca.png" alt="DMCA Logo" /></div>
         </div>
+        <div class="footer-mobile l-none s-block">
+          <div class="row">
+            <div class="col c-6"><img src="./assets/img/bo-cong-thuong.png" alt="" /></div>
+            <div class="col c-6"><img src="./assets/img/dmca.png" alt="" /></div>
+          </div>
+          <div class="footer-mobile__payment">Cổng thanh toán được bảo đảm</div>
+          <img src="./assets/img/payment-logo.png" alt="" />
+          <div class="row">
+            <div class="col c-6 footer-mobile__call">
+              <object data="./assets/icon/phone-call.svg" width="28"></object>
+              <div class="footer-mobile__call-info">
+                <div class="footer-mobile__number">0342331997</div>
+                <div class="footer-mobile__working-time">Làm việc từ 8:00 - 22:00</div>
+              </div>
+            </div>
+            <div class="col c-6 footer-mobile__call">
+              <object data="./assets/icon/phone-call.svg" width="28"></object>
+              <div class="footer-mobile__call-info">
+                <div class="footer-mobile__number">0342331997</div>
+                <div class="footer-mobile__working-time">Trung tâm hỗ trợ 24/7</div>
+              </div>
+            </div>
+            <div class="footer-mobile__follow-us">
+              Theo dõi chúng tôi
+              <div class="footer-mobile__list-follow-icon">
+                <img src="./assets/icon/youtube.png" alt="" class="footer-mobile__follow-icon" />
+                <img src="./assets/icon/facebook.png" alt="" class="footer-mobile__follow-icon" />
+                <img src="./assets/icon/tiktok.png" alt="" class="footer-mobile__follow-icon" />
+              </div>
+            </div>
+            <div class="footer-mobile__copyright-text">© 2022 VNFarm. All rights reserved.</div>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <!-- Login Modal component -->
+    <div id="loginModal" class="modal">
+      <div class="login-box">
+        <span class="login-box__close-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.4 15L10 11.4L13.6 15L15 13.6L11.4 10L15 6.4L13.6 5L10 8.6L6.4 5L5 6.4L8.6 10L5 13.6L6.4 15ZM10 20C8.61667 20 7.31667 19.7373 6.1 19.212C4.88333 18.6873 3.825 17.975 2.925 17.075C2.025 16.175 1.31267 15.1167 0.788 13.9C0.262667 12.6833 0 11.3833 0 10C0 8.61667 0.262667 7.31667 0.788 6.1C1.31267 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.31233 6.1 0.787C7.31667 0.262333 8.61667 0 10 0C11.3833 0 12.6833 0.262333 13.9 0.787C15.1167 1.31233 16.175 2.025 17.075 2.925C17.975 3.825 18.6873 4.88333 19.212 6.1C19.7373 7.31667 20 8.61667 20 10C20 11.3833 19.7373 12.6833 19.212 13.9C18.6873 15.1167 17.975 16.175 17.075 17.075C16.175 17.975 15.1167 18.6873 13.9 19.212C12.6833 19.7373 11.3833 20 10 20ZM10 18C12.2167 18 14.1043 17.221 15.663 15.663C17.221 14.1043 18 12.2167 18 10C18 7.78333 17.221 5.89567 15.663 4.337C14.1043 2.779 12.2167 2 10 2C7.78333 2 5.896 2.779 4.338 4.337C2.77933 5.89567 2 7.78333 2 10C2 12.2167 2.77933 14.1043 4.338 15.663C5.896 17.221 7.78333 18 10 18Z"
+              fill="#333949"
+            />
+          </svg>
+        </span>
+        <img src="./assets/img/logo.svg" alt="Logo" class="login-box__logo" />
+        <div class="login-box__list-tab">
+          <div class="login-box__tab active">Đăng nhập</div>
+          <div class="login-box__tab">Đăng ký</div>
+        </div>
+        <div class="login-box__tab-content active">
+          <div class="login-box__input-item">
+            <label for="login__acc" class="login-box__input-label"
+              >Tài khoản hoặc email <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="login__acc"
+              name="login__acc"
+              class="login-box__input-text"
+              placeholder="Nhập tài khoàn hoặc email của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="login__password" class="login-box__input-label"
+              >Mật khẩu <span style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="login__password"
+              name="login__password"
+              class="login-box__input-password"
+              placeholder="Nhập mật khẩu của bạn tại đây"
+            />
+          </div>
+          <div class="login-box__list-action">
+            <div class="login-box__save-password">
+              <input type="checkbox" class="login-box__checkbox" />Lưu mật khẩu
+            </div>
+            <div class="login-box__forgot-password">Quên mật khẩu ?</div>
+          </div>
+          <div class="login-box__btn">Đăng nhập</div>
+        </div>
+        <div class="login-box__tab-content">
+          <div class="login-box__input-item">
+            <label for="register__fname" class="login-box__input-label"
+              >Tên của bạn <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="register__fname"
+              name="register__fname"
+              class="login-box__input-text"
+              placeholder="Nhập tên của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__acc" class="login-box__input-label"
+              >Tài khoản hoặc email <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="register__acc"
+              name="register__acc"
+              class="login-box__input-text"
+              placeholder="Nhập tài khoàn hoặc email của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__phone" class="login-box__input-label"
+              >Sô điện thoại của bạn <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="register__phone"
+              name="register__phone"
+              class="login-box__input-text"
+              placeholder="Nhập tài khoàn hoặc email của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__password" class="login-box__input-label"
+              >Mật khẩu <span style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="register__password"
+              name="register__password"
+              class="login-box__input-password"
+              placeholder="Nhập mật khẩu của bạn tại đây"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__retype-password" class="login-box__input-label"
+              >Nhập lại mật khẩu <span style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="register__retype-password"
+              name="register__retype-password"
+              class="login-box__input-password"
+              placeholder="Nhập mật khẩu của bạn tại đây"
+            />
+          </div>
+          <div class="login-box__btn">Đăng ký</div>
+        </div>
+        <div class="login-box__or">
+          <div class="login-box__or-before"></div>
+          Hoặc
+          <div class="login-box__or-after"></div>
+        </div>
+        <div class="login-box__facebook-btn">
+          <img src="./assets/icon/login-facebook-icon.png" alt="Facebook" class="login-box__icon" />
+          Đăng nhập bằng Facebook
+        </div>
+        <div class="login-box__google-btn">
+          <img src="./assets/icon/login-google-icon.png" alt="Goolge" class="login-box__icon" />
+          Đăng nhập bằng Google
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/cart.js"></script>
   </body>
 </html>

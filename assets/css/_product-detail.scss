@@ -443,41 +443,9 @@
     }
     &__cmt-time {
       margin-top: 6px;
-      font-weight: 700;
     }
-    &__cmt-img {
-      margin-top: 16px;
-    }
-    &__cmt-action {
-      margin-top: 30px;
-      font-weight: 600;
-      font-size: 14px;
-    }
-    &__like-btn,
-    &__cmt-btn {
-      display: inline-flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: 0.3s;
-      fill: #333949;
-    }
-    &__like-btn:hover,
-    &__cmt-btn:hover {
-      cursor: pointer;
-      color: #7fb640;
-      fill: #7fb640;
-    }
-    &__like-btn {
-      margin-right: 14px;
-      width: 80px;
-    }
-    &__cmt-btn {
-      width: 95px;
-    }
-    &__related-heading {
-      font-weight: 700;
-      font-size: 20px;
-      margin: 50px 0 30px 0;
-    }
+    // &__related-heading {
+    //   margin: 50px 0 30px 0;
+    // }
   }
 }
