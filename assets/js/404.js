@@ -49,38 +49,6 @@ listLoginTab.forEach((loginTab, index) => {
   };
 });
 
-// Change tab "Tài khoản của tôi"
-const listProfileTab = document.querySelectorAll('.profile__tab');
-const listProfileTabContent = document.querySelectorAll('.profile__tab-content');
-
-listProfileTab.forEach((profileTab, index) => {
-  const profileTabContent = listProfileTabContent[index];
-
-  profileTab.onclick = function () {
-    document.querySelector('.profile__tab.active').classList.remove('active');
-    document.querySelector('.profile__tab-content.active').classList.remove('active');
-
-    this.classList.add('active');
-    profileTabContent.classList.add('active');
-  };
-});
-
-// Change tab "Tình trạng đơn hàng"
-const listOrderTab = document.querySelectorAll('.order-status__tab');
-const listOrderTabContent = document.querySelectorAll('.order-status__tab-content');
-
-listOrderTab.forEach((orderTab, index) => {
-  const orderTabContent = listOrderTabContent[index];
-
-  orderTab.onclick = function () {
-    document.querySelector('.order-status__tab.active').classList.remove('active');
-    document.querySelector('.order-status__tab-content.active').classList.remove('active');
-
-    this.classList.add('active');
-    orderTabContent.classList.add('active');
-  };
-});
-
 // "Mobile Menu" modal
 const mobileMenuModal = document.getElementById('mobileMenuModal');
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -99,23 +67,4 @@ closeMobileMenuModalBtn.onclick = function () {
   setTimeout(() => {
     mobileMenuModal.style.display = 'none';
   }, 300);
-};
-
-// Change tab by Select "Tình trạng đơn hàng"
-const tabSelectOrderStatus = document.getElementsByClassName('mobile-profile__tab-select')[0];
-
-tabSelectOrderStatus.onchange = function (event) {
-  document.querySelector('.order-status__tab-content.active').classList.remove('active');
-  const orderTabContent = listOrderTabContent[event.target.value - 1];
-  orderTabContent.classList.add('active');
-};
-
-// Change tab by Select "Lịch sử mua hàng"
-const tabSelectPurchaseHistory = document.getElementsByClassName('mobile-profile__tab-select')[1];
-const listPurchaseHistoryTabContent = document.querySelectorAll('.purchase-history__tab-content');
-
-tabSelectPurchaseHistory.onchange = function (event) {
-  document.querySelector('.purchase-history__tab-content.active').classList.remove('active');
-  const purchaseHistoryTabContent = listPurchaseHistoryTabContent[event.target.value - 1];
-  purchaseHistoryTabContent.classList.add('active');
 };

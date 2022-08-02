@@ -199,7 +199,7 @@
     <div class="grid wide mb-62 s-px-20">
       <div class="profile__overview-box">
         <div class="profile__overview-info">
-          <img src="./assets/img/avatar.jpg" alt="avatar" class="profile__overview-img" />
+          <img src="./assets/img/profile-avatar.jpg" alt="Avatar" class="profile__overview-img" />
           <div class="profile__overview-text">
             <h2 class="profile__overview-name">Vũ Minh Đức</h2>
             <p class="profile__overview-email">Vuminhduc@gmail.com</p>
@@ -216,16 +216,24 @@
             <div class="profile__overview-count">10</div>
           </div>
         </div>
+        <span class="mobile-profile__log-out-btn l-none">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.875 6.125L13.6413 7.35875L15.8988 9.625H7V11.375H15.8988L13.6413 13.6325L14.875 14.875L19.25 10.5L14.875 6.125ZM3.5 4.375H10.5V2.625H3.5C2.5375 2.625 1.75 3.4125 1.75 4.375V16.625C1.75 17.5875 2.5375 18.375 3.5 18.375H10.5V16.625H3.5V4.375Z"
+              fill="white"
+            />
+          </svg>
+        </span>
       </div>
 
-      <div class="row mt-20">
-        <div class="col l-3">
+      <div class="row mt-20 s-mt-44">
+        <div class="col l-3 c-12">
           <div class="profile__list-tab">
             <div class="profile__tab active">Hồ sơ</div>
             <div class="profile__tab">Tình trạng đơn hàng</div>
             <div class="profile__tab">Lịch sử mua hàng</div>
             <div class="profile__tab">Mật khẩu</div>
-            <div class="profile__log-out">
+            <div class="profile__log-out s-none">
               <span class="profile__log-out-btn">
                 <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -238,7 +246,7 @@
             </div>
           </div>
         </div>
-        <div class="col l-9">
+        <div class="col l-9 c-12 s-mt-44">
           <div class="profile__tab-content active">
             <div class="profile__inner">
               <h3 class="profile__heading">Hồ sơ cá nhân</h3>
@@ -327,17 +335,24 @@
                   <input type="radio" id="no" name="sign_in" value="no" class="ml-24" /><label for="no">Không</label>
                 </div>
               </div>
+              <div class="btn btn-primary profile__update-btn">Cập nhập tài khoản</div>
             </div>
           </div>
           <div class="profile__tab-content">
             <div class="order-status__inner">
               <h3 class="order-status__heading">Tình trạng đơn hàng</h3>
-              <div class="order-status__list-tab">
+              <div class="order-status__list-tab s-none">
                 <div class="order-status__tab active">Tất cả</div>
                 <div class="order-status__tab">Đơn hàng chờ thanh toán</div>
                 <div class="order-status__tab">Đơn hàng đang vận chuyển</div>
                 <div class="order-status__tab">Đơn hàng chờ đánh giá</div>
               </div>
+              <select class="mobile-profile__tab-select l-none s-block">
+                <option class="profile__select-option" value="1">Tất cả</option>
+                <option class="profile__select-option" value="2">Đơn hàng chờ thanh toán</option>
+                <option class="profile__select-option" value="3">Đơn hàng đang vận chuyển</option>
+                <option class="profile__select-option" value="4">Đơn hàng chờ đánh giá</option>
+              </select>
               <div class="order-status__tab-content active">
                 <div class="order-status__item">
                   <div class="order-status__left">
@@ -375,11 +390,12 @@
                           fill="#F9B402"
                         />
                       </svg>
+                      <span class="order-status__current-price l-none s-block">300.000 VNĐ</span>
                     </div>
                   </div>
                   <div class="order-status__right">
-                    <span class="order-status__current-price">300.000 VNĐ</span>
-                    <span class="order-status__original-price">400.000 VNĐ</span>
+                    <span class="order-status__current-price s-none">300.000 VNĐ</span>
+                    <span class="order-status__original-price s-none">400.000 VNĐ</span>
                     <span class="order-status__btn">Chờ đánh giá</span>
                   </div>
                   <div class="order-status__list-text-action">
@@ -423,11 +439,12 @@
                           fill="#F9B402"
                         />
                       </svg>
+                      <span class="order-status__current-price l-none s-block">300.000 VNĐ</span>
                     </div>
                   </div>
                   <div class="order-status__right">
-                    <span class="order-status__current-price">300.000 VNĐ</span>
-                    <span class="order-status__original-price">400.000 VNĐ</span>
+                    <span class="order-status__current-price s-none">300.000 VNĐ</span>
+                    <span class="order-status__original-price s-none">400.000 VNĐ</span>
                     <span class="order-status__btn">Chờ đánh giá</span>
                   </div>
                   <div class="order-status__list-text-action">
@@ -471,11 +488,12 @@
                           fill="#F9B402"
                         />
                       </svg>
+                      <span class="order-status__current-price l-none s-block">300.000 VNĐ</span>
                     </div>
                   </div>
                   <div class="order-status__right">
-                    <span class="order-status__current-price">300.000 VNĐ</span>
-                    <span class="order-status__original-price">400.000 VNĐ</span>
+                    <span class="order-status__current-price s-none">300.000 VNĐ</span>
+                    <span class="order-status__original-price s-none">400.000 VNĐ</span>
                     <span class="order-status__btn">Chờ thanh toán</span>
                   </div>
                   <div class="order-status__list-text-action">
@@ -519,11 +537,12 @@
                           fill="#F9B402"
                         />
                       </svg>
+                      <span class="order-status__current-price l-none s-block">300.000 VNĐ</span>
                     </div>
                   </div>
                   <div class="order-status__right">
-                    <span class="order-status__current-price">300.000 VNĐ</span>
-                    <span class="order-status__original-price">400.000 VNĐ</span>
+                    <span class="order-status__current-price s-none">300.000 VNĐ</span>
+                    <span class="order-status__original-price s-none">400.000 VNĐ</span>
                     <span class="order-status__btn">Chờ đánh giá</span>
                   </div>
                   <div class="order-status__list-text-action">
@@ -567,11 +586,12 @@
                           fill="#F9B402"
                         />
                       </svg>
+                      <span class="order-status__current-price l-none s-block">300.000 VNĐ</span>
                     </div>
                   </div>
                   <div class="order-status__right">
-                    <span class="order-status__current-price">300.000 VNĐ</span>
-                    <span class="order-status__original-price">400.000 VNĐ</span>
+                    <span class="order-status__current-price s-none">300.000 VNĐ</span>
+                    <span class="order-status__original-price s-none">400.000 VNĐ</span>
                     <span class="order-status__btn">Chờ vận chuyển</span>
                   </div>
                   <div class="order-status__list-text-action">
@@ -583,252 +603,266 @@
               <div class="order-status__tab-content">Đơn hàng chờ thanh toán</div>
               <div class="order-status__tab-content">Đơn hàng đang vận chuyển</div>
               <div class="order-status__tab-content">Đơn hàng chờ đánh giá</div>
-
-              <div class="product-pagination profile__pagination">
-                <div class="product-pagination__arrow">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="product-pagination__arrow-icon"
-                  >
-                    <path
-                      d="M8.5,12.8l5.7,5.6c0.4,0.4,1,0.4,1.4,0c0,0,0,0,0,0c0.4-0.4,0.4-1,0-1.4l-4.9-5l4.9-5c0.4-0.4,0.4-1,0-1.4c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3,0-0.5,0.1-0.7,0.3l-5.7,5.6C8.1,11.7,8.1,12.3,8.5,12.8C8.5,12.7,8.5,12.7,8.5,12.8z"
-                    />
-                  </svg>
-                </div>
-                <span class="product-pagination__page-number product-pagination__current-page">1</span>
-                <span class="product-pagination__page-number">2</span>
-                <span class="product-pagination__page-number">3</span>
-                <span class="product-pagination__page-number">...</span>
-                <span class="product-pagination__page-number">10</span>
-                <div class="product-pagination__arrow">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="product-pagination__arrow-icon"
-                  >
-                    <path
-                      d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
-                    />
-                  </svg>
-                </div>
+            </div>
+            <!-- pagination component -->
+            <div class="product-pagination profile__pagination">
+              <div class="product-pagination__arrow">
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="product-pagination__arrow-icon"
+                >
+                  <path
+                    d="M8.5,12.8l5.7,5.6c0.4,0.4,1,0.4,1.4,0c0,0,0,0,0,0c0.4-0.4,0.4-1,0-1.4l-4.9-5l4.9-5c0.4-0.4,0.4-1,0-1.4c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3,0-0.5,0.1-0.7,0.3l-5.7,5.6C8.1,11.7,8.1,12.3,8.5,12.8C8.5,12.7,8.5,12.7,8.5,12.8z"
+                  />
+                </svg>
+              </div>
+              <span class="product-pagination__page-number product-pagination__current-page">1</span>
+              <span class="product-pagination__page-number">2</span>
+              <span class="product-pagination__page-number">3</span>
+              <span class="product-pagination__page-number">...</span>
+              <span class="product-pagination__page-number">10</span>
+              <div class="product-pagination__arrow">
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="product-pagination__arrow-icon"
+                >
+                  <path
+                    d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+                  />
+                </svg>
               </div>
             </div>
           </div>
           <div class="profile__tab-content">
             <div class="purchase-history__inner">
-              <h3 class="purchase-history__heading">Lịch sửa mua hàng</h3>
-              <h4 class="purchase-history__month">Tháng 10</h4>
-              <div class="purchase-history__item">
-                <div class="purchase-history__left">
-                  <img src="./assets/img/0001575_physa_500.png" alt="" class="purchase-history__img" />
-                  <div class="purchase-history__info">
-                    <div class="purchase-history__category">Thuốc trừ sâu sinh học</div>
-                    <div class="purchase-history__name">BS04 - TRIZON</div>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="purchase-history__right">
-                  <span class="purchase-history__current-price">300.000 VNĐ</span>
-                  <span class="purchase-history__original-price">400.000 VNĐ</span>
+              <div class="purchase-history__header">
+                <h3 class="purchase-history__heading">Lịch sửa mua hàng</h3>
+                <div class="purchase-history__select">
+                  <select class="mobile-profile__tab-select">
+                    <option class="profile__select-option" value="1">Tháng 1</option>
+                    <option class="profile__select-option" value="2">Tháng 2</option>
+                    <option class="profile__select-option" value="3">Tháng 3</option>
+                    <option class="profile__select-option" value="4">Tháng 4</option>
+                  </select>
                 </div>
               </div>
-              <div class="purchase-history__item">
-                <div class="purchase-history__left">
-                  <img src="./assets/img/0001575_physa_500.png" alt="" class="purchase-history__img" />
-                  <div class="purchase-history__info">
-                    <div class="purchase-history__category">Thuốc trừ sâu sinh học</div>
-                    <div class="purchase-history__name">BS04 - TRIZON</div>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
+              <div class="purchase-history__tab-content active">
+                <h4 class="purchase-history__month">Tháng 1</h4>
+                <div class="purchase-history__item">
+                  <div class="purchase-history__left">
+                    <img src="./assets/img/0001575_physa_500.png" alt="" class="purchase-history__img" />
+                    <div class="purchase-history__info">
+                      <div class="purchase-history__category">Thuốc trừ sâu sinh học</div>
+                      <div class="purchase-history__name">BS04 - TRIZON</div>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="purchase-history__right">
+                    <span class="purchase-history__current-price">300.000 VNĐ</span>
+                    <span class="purchase-history__original-price">400.000 VNĐ</span>
                   </div>
                 </div>
-                <div class="purchase-history__right">
-                  <span class="purchase-history__current-price">300.000 VNĐ</span>
-                  <span class="purchase-history__original-price">400.000 VNĐ</span>
-                </div>
-              </div>
-              <div class="purchase-history__item">
-                <div class="purchase-history__left">
-                  <img src="./assets/img/0001575_physa_500.png" alt="" class="purchase-history__img" />
-                  <div class="purchase-history__info">
-                    <div class="purchase-history__category">Thuốc trừ sâu sinh học</div>
-                    <div class="purchase-history__name">BS04 - TRIZON</div>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
+                <div class="purchase-history__item">
+                  <div class="purchase-history__left">
+                    <img src="./assets/img/0001575_physa_500.png" alt="" class="purchase-history__img" />
+                    <div class="purchase-history__info">
+                      <div class="purchase-history__category">Thuốc trừ sâu sinh học</div>
+                      <div class="purchase-history__name">BS04 - TRIZON</div>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="purchase-history__right">
+                    <span class="purchase-history__current-price">300.000 VNĐ</span>
+                    <span class="purchase-history__original-price">400.000 VNĐ</span>
                   </div>
                 </div>
-                <div class="purchase-history__right">
-                  <span class="purchase-history__current-price">300.000 VNĐ</span>
-                  <span class="purchase-history__original-price">400.000 VNĐ</span>
-                </div>
-              </div>
-              <div class="purchase-history__item">
-                <div class="purchase-history__left">
-                  <img src="./assets/img/0001575_physa_500.png" alt="" class="purchase-history__img" />
-                  <div class="purchase-history__info">
-                    <div class="purchase-history__category">Thuốc trừ sâu sinh học</div>
-                    <div class="purchase-history__name">BS04 - TRIZON</div>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
-                        fill="#F9B402"
-                      />
-                    </svg>
+                <div class="purchase-history__item">
+                  <div class="purchase-history__left">
+                    <img src="./assets/img/0001575_physa_500.png" alt="" class="purchase-history__img" />
+                    <div class="purchase-history__info">
+                      <div class="purchase-history__category">Thuốc trừ sâu sinh học</div>
+                      <div class="purchase-history__name">BS04 - TRIZON</div>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="purchase-history__right">
+                    <span class="purchase-history__current-price">300.000 VNĐ</span>
+                    <span class="purchase-history__original-price">400.000 VNĐ</span>
                   </div>
                 </div>
-                <div class="purchase-history__right">
-                  <span class="purchase-history__current-price">300.000 VNĐ</span>
-                  <span class="purchase-history__original-price">400.000 VNĐ</span>
+                <div class="purchase-history__item">
+                  <div class="purchase-history__left">
+                    <img src="./assets/img/0001575_physa_500.png" alt="" class="purchase-history__img" />
+                    <div class="purchase-history__info">
+                      <div class="purchase-history__category">Thuốc trừ sâu sinh học</div>
+                      <div class="purchase-history__name">BS04 - TRIZON</div>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                          fill="#F9B402"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="purchase-history__right">
+                    <span class="purchase-history__current-price">300.000 VNĐ</span>
+                    <span class="purchase-history__original-price">400.000 VNĐ</span>
+                  </div>
                 </div>
               </div>
-
-              <!-- pagination component -->
-              <div class="product-pagination profile__pagination">
-                <div class="product-pagination__arrow">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="product-pagination__arrow-icon"
-                  >
-                    <path
-                      d="M8.5,12.8l5.7,5.6c0.4,0.4,1,0.4,1.4,0c0,0,0,0,0,0c0.4-0.4,0.4-1,0-1.4l-4.9-5l4.9-5c0.4-0.4,0.4-1,0-1.4c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3,0-0.5,0.1-0.7,0.3l-5.7,5.6C8.1,11.7,8.1,12.3,8.5,12.8C8.5,12.7,8.5,12.7,8.5,12.8z"
-                    />
-                  </svg>
-                </div>
-                <span class="product-pagination__page-number product-pagination__current-page">1</span>
-                <span class="product-pagination__page-number">2</span>
-                <span class="product-pagination__page-number">3</span>
-                <span class="product-pagination__page-number">...</span>
-                <span class="product-pagination__page-number">10</span>
-                <div class="product-pagination__arrow">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="product-pagination__arrow-icon"
-                  >
-                    <path
-                      d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
-                    />
-                  </svg>
-                </div>
+              <div class="purchase-history__tab-content">Tháng 2</div>
+              <div class="purchase-history__tab-content">Tháng 3</div>
+              <div class="purchase-history__tab-content">Tháng 4</div>
+            </div>
+            <!-- pagination component -->
+            <div class="product-pagination profile__pagination">
+              <div class="product-pagination__arrow">
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="product-pagination__arrow-icon"
+                >
+                  <path
+                    d="M8.5,12.8l5.7,5.6c0.4,0.4,1,0.4,1.4,0c0,0,0,0,0,0c0.4-0.4,0.4-1,0-1.4l-4.9-5l4.9-5c0.4-0.4,0.4-1,0-1.4c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3,0-0.5,0.1-0.7,0.3l-5.7,5.6C8.1,11.7,8.1,12.3,8.5,12.8C8.5,12.7,8.5,12.7,8.5,12.8z"
+                  />
+                </svg>
+              </div>
+              <span class="product-pagination__page-number product-pagination__current-page">1</span>
+              <span class="product-pagination__page-number">2</span>
+              <span class="product-pagination__page-number">3</span>
+              <span class="product-pagination__page-number">...</span>
+              <span class="product-pagination__page-number">10</span>
+              <div class="product-pagination__arrow">
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="product-pagination__arrow-icon"
+                >
+                  <path
+                    d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+                  />
+                </svg>
               </div>
             </div>
           </div>
@@ -856,7 +890,7 @@
                 />
               </div>
               <div class="update-password__input-item">
-                <label for="retype_password" class="update-password__input-label">Nhập lại mật khẩu</label>
+                <label for="retype_password" class="update-password__input-label">Nhập lại MK</label>
                 <input
                   type="password"
                   id="retype_password"
@@ -865,7 +899,7 @@
                   placeholder="Nhập thông tin tại đây"
                 />
               </div>
-              <span class="update-password__btn">Cập nhập mật khẩu</span>
+              <div class="btn btn-primary update-password__btn">Cập nhập mật khẩu</div>
             </div>
           </div>
         </div>

@@ -246,6 +246,9 @@ input[type='range']::-moz-range-thumb {
   .s-block {
     display: block !important;
   }
+  .s-flex {
+    display: flex !important;
+  }
   .s-p-0 {
     padding: 0 !important;
   }
@@ -287,8 +290,8 @@ input[type='range']::-moz-range-thumb {
   .btn {
     padding: 8px 16px;
     border-radius: 32px;
-    // text-transform: none;
+    text-transform: none;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 12px;
   }
 }

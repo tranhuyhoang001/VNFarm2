@@ -159,16 +159,11 @@
     }
   }
   &__current-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 36px;
-    height: 36px;
-    color: #ffffff;
+    color: #fff;
     background-color: #7fb640;
     border-radius: 100%;
     &:hover {
-      color: #ffffff;
+      color: #fff;
     }
   }
 }
@@ -181,6 +176,34 @@
     align-items: flex-start;
     &__sort {
       width: 100%;
+    }
+  }
+  .product-pagination {
+    margin: 20px 0 40px 0;
+    &__arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 28px;
+      height: 28px;
+      border: 1px solid #b5b5b5;
+      border-radius: 100px;
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+      &-icon {
+        transition: 0.3s;
+        &:hover {
+          fill: #7fb640;
+          cursor: pointer;
+        }
+      }
+    }
+    &__page-number {
+      width: 28px;
+      height: 28px;
+      margin-left: 14px;
+      font-size: 16px;
     }
   }
 }
