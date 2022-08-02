@@ -1,18 +1,18 @@
 .product-portfolio {
   margin: 50px 0 80px 0;
-
   &__list-box {
-    margin-top: 110px;
+    margin-top: 22px;
   }
-
+  &__wrapper {
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+  }
   &__box {
-    width: 200px;
+    width: 100%;
     height: 160px;
-    // background: #8c2285;
     border-radius: 8px;
     color: #fff;
-    font-size: 14px;
-    // padding: 0 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -22,15 +22,17 @@
   }
   &__title {
     // padding-top: 85px;
+    font-size: 14px;
     font-weight: 700;
     padding-bottom: 6px;
   }
   &__amount {
     padding-bottom: 12px;
+    font-size: 14px;
   }
   &__img {
     position: absolute;
-    top: -92px;
+    top: -90px;
   }
 }
 

@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -264,10 +265,81 @@
         <div class="homepage-heading">
           <h2 class="homepage-heading__text">Danh mục sản phẩm <span class="homepage-heading__decorate"></span></h2>
         </div>
-        <div class="row product-portfolio__list-box">
+        <div class="swiper mySwiper row product-portfolio__list-box s-none">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide col l-2-4 c-6">
+              <div class="product-portfolio__wrapper">
+                <div class="product-portfolio__box box-jade-green">
+                  <h3 class="product-portfolio__title">Trừ bệnh sinh học</h3>
+                  <p class="product-portfolio__amount">20 sản phẩm</p>
+                  <img
+                    src="./assets/img/thuoc-tru-benh-sinh-học.svg"
+                    alt="Thuốc trừ bệnh sinh học"
+                    class="product-portfolio__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide col l-2-4 c-6">
+              <div class="product-portfolio__wrapper">
+                <div class="product-portfolio__box box-purple">
+                  <h3 class="product-portfolio__title">Trừ sâu sinh học</h3>
+                  <p class="product-portfolio__amount">20 sản phẩm</p>
+                  <img
+                    src="./assets/img/tru-sau-sinh-hoc.svg"
+                    alt="Thuốc trừ sâu sinh học"
+                    class="product-portfolio__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide col l-2-4 c-6 s-mt-111">
+              <div class="product-portfolio__wrapper">
+                <div class="product-portfolio__box box-green">
+                  <h3 class="product-portfolio__title">Dinh dưỡng cho cây</h3>
+                  <p class="product-portfolio__amount">20 sản phẩm</p>
+                  <img
+                    src="./assets/img/dinh-duong-cho-cay.svg"
+                    alt="Dinh dưỡng cho cây"
+                    class="product-portfolio__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide col l-2-4 c-6 s-mt-111">
+              <div class="product-portfolio__wrapper">
+                <div class="product-portfolio__box box-gold">
+                  <h3 class="product-portfolio__title">Hỗ trợ nông nghiệp</h3>
+                  <p class="product-portfolio__amount">20 sản phẩm</p>
+                  <img
+                    src="./assets/img/ho-tro-nong-nghiep.svg"
+                    alt="Hỗ trợ nông nghiệp"
+                    class="product-portfolio__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide col l-2-4 c-12 s-mt-111">
+              <div class="product-portfolio__wrapper">
+                <div class="product-portfolio__box box-blue">
+                  <h3 class="product-portfolio__title">Phòng trừ tuyến trùng</h3>
+                  <p class="product-portfolio__amount">20 sản phẩm</p>
+                  <img
+                    src="./assets/img/phong-tru-tuyen-trung.svg"
+                    alt="Phòng trừ tuyến trùng"
+                    class="product-portfolio__img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next product-portfolio__swiper-button-next"></div>
+          <div class="swiper-button-prev product-portfolio__swiper-button-prev"></div>
+        </div>
+        <div class="row product-portfolio__list-box l-none s-flex">
           <div class="col l-2-4 c-6">
             <div class="product-portfolio__box box-jade-green">
-              <h3 class="product-portfolio__title">Thuốc trừ bệnh<br />sinh học</h3>
+              <h3 class="product-portfolio__title">Trừ bệnh sinh học</h3>
               <p class="product-portfolio__amount">20 sản phẩm</p>
               <img
                 src="./assets/img/thuoc-tru-benh-sinh-học.svg"
@@ -278,7 +350,7 @@
           </div>
           <div class="col l-2-4 c-6">
             <div class="product-portfolio__box box-purple">
-              <h3 class="product-portfolio__title">Thuốc trừ sâu<br />sinh học</h3>
+              <h3 class="product-portfolio__title">Trừ sâu sinh học</h3>
               <p class="product-portfolio__amount">20 sản phẩm</p>
               <img
                 src="./assets/img/tru-sau-sinh-hoc.svg"
@@ -289,7 +361,7 @@
           </div>
           <div class="col l-2-4 c-6 s-mt-111">
             <div class="product-portfolio__box box-green">
-              <h3 class="product-portfolio__title">Dinh dưỡng<br />cho cây</h3>
+              <h3 class="product-portfolio__title">Dinh dưỡng cho cây</h3>
               <p class="product-portfolio__amount">20 sản phẩm</p>
               <img src="./assets/img/dinh-duong-cho-cay.svg" alt="Dinh dưỡng cho cây" class="product-portfolio__img" />
             </div>
@@ -1065,5 +1137,21 @@
     </div>
 
     <script src="./assets/js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>

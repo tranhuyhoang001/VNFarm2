@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -211,19 +212,29 @@
       <div class="row">
         <div class="col l-6 c-12">
           <img src="./assets/img/BS04 - TRIZON.png" alt="BS04 - TRIZON" class="product-image" />
-          <div class="row mt-16">
-            <div class="col l-3 c-4">
-              <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small selected" />
+          <div class="swiper mySwiper row mt-16">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide col l-3 c-3">
+                <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small selected" />
+              </div>
+              <div class="swiper-slide col l-3 c-3">
+                <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
+              </div>
+              <div class="swiper-slide col l-3 c-3">
+                <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
+              </div>
+              <div class="swiper-slide col l-3 c-3">
+                <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
+              </div>
+              <div class="swiper-slide col l-3 c-3">
+                <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
+              </div>
+              <div class="swiper-slide col l-3 c-3">
+                <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
+              </div>
             </div>
-            <div class="col l-3 c-4">
-              <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
-            </div>
-            <div class="col l-3 c-4">
-              <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
-            </div>
-            <div class="col l-3 s-none">
-              <img src="./assets/img/product-detail-img-small.png" alt="" class="product-image__small" />
-            </div>
+            <div class="swiper-button-next product-image__swiper-button-next"></div>
+            <div class="swiper-button-prev product-image__swiper-button-prev"></div>
           </div>
         </div>
         <div class="col l-6 c-12">
@@ -1394,5 +1405,21 @@
       </svg>
     </div>
     <script src="./assets/js/product-detail.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        // loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>
