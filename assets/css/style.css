@@ -3870,4 +3870,27 @@ input[type=range]::-moz-range-thumb {
   width: 100%;
 }
 
+.forgot-password__heading {
+  font-weight: 700;
+  font-size: 20px;
+}
+.forgot-password__input {
+  margin-top: 38px;
+  width: 547px;
+}
+.forgot-password__btn {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+@media (max-width: 740px) {
+  .forgot-password__input {
+    width: 100%;
+  }
+  .forgot-password__btn {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
