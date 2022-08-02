@@ -375,6 +375,21 @@ input[type=range]::-moz-range-thumb {
     font-weight: 700;
     font-size: 12px;
   }
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 4px;
+  }
+  input[type=range]::-moz-range-track {
+    height: 4px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    margin-top: -4px;
+    width: 12px;
+    height: 12px;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+  }
 }
 .header-banner {
   background: #289b15;
@@ -1579,6 +1594,7 @@ input[type=range]::-moz-range-thumb {
   border: 1px solid #d8d8d8;
   border-radius: 4px;
   margin-left: 6px;
+  cursor: pointer;
 }
 .product-detail__capacity-selected {
   border: 1px solid #7fb640;
@@ -2604,7 +2620,7 @@ input[type=range]::-moz-range-thumb {
   font-size: 32px;
 }
 .article-detail__func {
-  margin-top: 8px;
+  margin-top: 16px;
   height: 46px;
   border-top: 2px solid #e6e6e6;
   border-bottom: 2px solid #e6e6e6;
@@ -2628,7 +2644,7 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 .article-detail__text-to-speech {
-  margin-top: 18px;
+  margin-top: 16px;
   height: 67px;
   background: rgba(176, 220, 147, 0.35);
   border-radius: 32px;
@@ -2638,12 +2654,18 @@ input[type=range]::-moz-range-thumb {
   padding-left: 8px;
   padding-right: 28px;
 }
+.article-detail__play-btn {
+  cursor: pointer;
+}
 .article-detail__seek-time {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-left: 43px;
+}
+.article-detail__time-number {
+  font-weight: 700;
 }
 .article-detail__input-range {
   width: 80%;
@@ -2672,6 +2694,7 @@ input[type=range]::-moz-range-thumb {
   font-weight: 700;
 }
 .article-detail__ads-discount {
+  margin-left: 16px;
   padding: 2px 16px;
   background: #9eb23b;
   border-radius: 23px;
@@ -2680,7 +2703,6 @@ input[type=range]::-moz-range-thumb {
 }
 .article-detail__ads-uses {
   font-weight: 700;
-  font-size: 9px;
   color: #9b9999;
   margin-top: 8px;
 }
@@ -2689,11 +2711,11 @@ input[type=range]::-moz-range-thumb {
 }
 .article-detail__ads-current-price {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   color: #289b15;
 }
 .article-detail__ads-original-price {
-  font-size: 10px;
+  font-size: 12px;
   text-decoration-line: line-through;
   color: #a8a8a8;
 }
@@ -2727,7 +2749,7 @@ input[type=range]::-moz-range-thumb {
   flex-direction: row-reverse;
 }
 .article-detail__share-btn {
-  width: 261px;
+  width: 100%;
   height: 44px;
   border-radius: 32px;
   display: flex;
@@ -2742,11 +2764,14 @@ input[type=range]::-moz-range-thumb {
   opacity: 0.9;
 }
 .article-detail__zalo-share-btn {
-  margin-right: 46px;
+  margin-right: 32px;
   background: #1b95e0;
 }
 .article-detail__facebook-share-btn {
   background: #1257be;
+}
+.article-detail__share-icon {
+  margin-right: 6px;
 }
 .article-detail__related-heading {
   margin-top: 68px;
@@ -2783,6 +2808,115 @@ input[type=range]::-moz-range-thumb {
   color: #7fb640;
 }
 
+.mobile-article-detail__quick-view {
+  padding: 14px 18px 22px 18px;
+  background: #f9fdcb;
+  border-radius: 8px;
+}
+.mobile-article-detail__quick-view li {
+  margin-top: 16px;
+}
+.mobile-article-detail__quick-view-heading {
+  font-weight: 700;
+}
+.mobile-article-detail__quick-view-active {
+  font-weight: 700;
+  color: #7fb640;
+}
+.mobile-article-detail__quick-view-children {
+  margin-left: 16px;
+}
+
+@media (max-width: 740px) {
+  .article-detail__container {
+    margin-bottom: 48px;
+  }
+  .article-detail__heading {
+    font-size: 20px;
+  }
+  .article-detail__func {
+    font-size: 14px;
+  }
+  .article-detail__text-to-speech {
+    height: 50px;
+    padding-left: 8px;
+    padding-right: 18px;
+  }
+  .article-detail__play-btn {
+    width: 42px;
+    height: 42px;
+  }
+  .article-detail__seek-time {
+    margin-left: 8px;
+  }
+  .article-detail__time-number {
+    font-size: 12px;
+  }
+  .article-detail__input-range {
+    width: 68%;
+    margin-left: 8px;
+  }
+  .article-detail__ads-box {
+    width: 100%;
+    padding: 24px 16px 48px 16px;
+  }
+  .article-detail__ads-price {
+    margin-top: 4px;
+  }
+  .article-detail__ads-cart-btn {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+  }
+  .article-detail__ads-heart-btn {
+    right: 16px;
+    top: 16px;
+  }
+  .article-detail__share-btn {
+    height: 32px;
+    font-size: 12px;
+  }
+  .article-detail__zalo-share-btn {
+    margin-right: 12px;
+  }
+  .article-detail__share-icon {
+    width: 22px;
+  }
+  .article-detail__related-heading {
+    margin-top: 68px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .article-detail__related-post-heading {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+  .article-detail__related-post-img {
+    width: 100%;
+  }
+  .article-detail__quick-view {
+    padding: 10px 0 10px 24px;
+    border-left: 2px solid #eeeeee;
+  }
+  .article-detail__quick-view ul {
+    margin-top: 12px;
+  }
+  .article-detail__quick-view li {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  .article-detail__quick-view-heading {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .article-detail__quick-view-active {
+    font-weight: 700;
+    color: #7fb640;
+  }
+}
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
