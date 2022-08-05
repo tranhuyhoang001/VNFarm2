@@ -209,7 +209,24 @@
     </div>
 
     <div class="grid wide s-px-20">
-      <div class="row">
+      <div class="row relative">
+        <div class="product-detail__list-social-btn s-none">
+          <svg
+            width="22"
+            height="20"
+            viewBox="0 0 22 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="product-detail__heart-btn"
+          >
+            <path
+              d="M15.95 0.100098C14.036 0.100098 12.199 0.94607 11 2.28291C9.801 0.94607 7.964 0.100098 6.05 0.100098C2.662 0.100098 0 2.62757 0 5.84435C0 9.79222 3.74 13.009 9.405 17.8968L11 19.265L12.595 17.8864C18.26 13.009 22 9.79222 22 5.84435C22 2.62757 19.338 0.100098 15.95 0.100098ZM11.11 16.3407L11 16.4451L10.89 16.3407C5.654 11.8393 2.2 8.8627 2.2 5.84435C2.2 3.75553 3.85 2.18892 6.05 2.18892C7.744 2.18892 9.394 3.22288 9.977 4.65373H12.034C12.606 3.22288 14.256 2.18892 15.95 2.18892C18.15 2.18892 19.8 3.75553 19.8 5.84435C19.8 8.8627 16.346 11.8393 11.11 16.3407Z"
+              fill="#3FA000"
+            />
+          </svg>
+          <img src="./assets/icon/product-detail-zalo-icon.png" alt="Zalo" class="product-detail__social-btn" />
+          <img src="./assets/icon/product-detail-facebook-icon.png" alt="Facebook" class="product-detail__social-btn" />
+        </div>
         <div class="col l-6 c-12">
           <img src="./assets/img/BS04 - TRIZON.png" alt="BS04 - TRIZON" class="product-image" />
           <div class="swiper mySwiper row mt-16">
@@ -240,20 +257,21 @@
         <div class="col l-6 c-12">
           <div class="product-detail">
             <h1 class="product-detail__heading">BS04 - TRIZON</h1>
-            <p class="product-detail__rating">
+            <div class="product-detail__uses">Trị xoắn ngọn, xoắn lá</div>
+            <div class="product-detail__rating">
               <object data="./assets/icon/star.svg" width="16" height="16"></object>
               <object data="./assets/icon/star.svg" width="16" height="16"></object>
               <object data="./assets/icon/star.svg" width="16" height="16"></object>
               <object data="./assets/icon/star.svg" width="16" height="16"></object>
               <object data="./assets/icon/star.svg" width="16" height="16"></object>
-              ( 1 người review )
-            </p>
-            <p class="product-detail__price">
+              <span class="ml-6">(1 đánh giá)</span>
+            </div>
+            <div class="product-detail__price">
               <span class="product-detail__current-price">300.000 VNĐ</span>
               <span class="product-detail__original-price">400.000 VNĐ</span>
               <span class="product-detail__discount">-15%</span>
-            </p>
-            <p class="product-detail__text-bold">Công dụng:</p>
+            </div>
+            <div class="product-detail__text-bold">Công dụng:</div>
             <ul>
               <li>Chuyên xử lý xoăn ngọn, xoăn lá, khảm, ngoảnh đầu lân, sượng trái do virus gây nên.</li>
               <li>
@@ -265,19 +283,21 @@
                 canh tác hữu cơ sinh học, mang lại nguồn nông sản an toàn đạt tiêu chuẩn xuất khẩu.
               </li>
             </ul>
-            <p class="product-detail__text-bold">
+            <fieldset class="product-detail__promotion">
+              <legend class="product-detail__promotion-title">Đặc điểm nổi bật</legend>
+              <div class="product-detail__promotion-text">> Miễn phí giao hàng cho đơn hàng từ 300k</div>
+              <div class="product-detail__promotion-text">
+                > Giao nhanh trong 2 giờ đối với Hà Nội và TP. Hồ Chí Minh
+              </div>
+              <div class="product-detail__promotion-text">
+                > Cam kết chính hãng, nói không với hàng giả, hàng nhái, hàng kém chất lượng
+              </div>
+            </fieldset>
+            <div class="product-detail__text-bold">
               Dung tích:
               <span class="product-detail__capacity product-detail__capacity-selected">200ml</span>
               <span class="product-detail__capacity">500ml</span>
-            </p>
-            <fieldset class="product-detail__promotion">
-              <legend class="product-detail__promotion-title">Đặc điểm nổi bật</legend>
-              <p class="product-detail__promotion-text">> Miễn phí giao hàng cho đơn hàng từ 300k</p>
-              <p class="product-detail__promotion-text">> Giao nhanh trong 2 giờ đối với Hà Nội và TP. Hồ Chí Minh</p>
-              <p class="product-detail__promotion-text">
-                > Cam kết chính hãng, nói không với hàng giả, hàng nhái, hàng kém chất lượng
-              </p>
-            </fieldset>
+            </div>
             <div class="product-detail__amount">
               <span class="product-detail__amount-title">Số lượng:</span>
               <span class="product-detail__amount-btn-minus">-</span>
@@ -309,22 +329,22 @@
         <div class="product-detail__why-us-box">
           <object data="./assets/icon/free-delivery.svg" width="70" height="70"></object>
           <div class="product-detail__why-us-content">
-            <p class="product-detail__why-us-title">Giao hàng miễn phí</p>
-            <p class="product-detail__why-us-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="product-detail__why-us-title">Giao hàng miễn phí</div>
+            <div class="product-detail__why-us-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
           </div>
         </div>
         <div class="product-detail__why-us-box s-mt-24">
           <object data="./assets/icon/easy-returns.svg" width="70" height="70"></object>
           <div class="product-detail__why-us-content">
-            <p class="product-detail__why-us-title">Đổi trả dễ dàng</p>
-            <p class="product-detail__why-us-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="product-detail__why-us-title">Đổi trả dễ dàng</div>
+            <div class="product-detail__why-us-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
           </div>
         </div>
         <div class="product-detail__why-us-box s-mt-24">
           <object data="./assets/icon/24hours_7days.svg" width="70" height="70"></object>
           <div class="product-detail__why-us-content">
-            <p class="product-detail__why-us-title">Hỗ trợ từ vấn 24/7</p>
-            <p class="product-detail__why-us-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="product-detail__why-us-title">Hỗ trợ từ vấn 24/7</div>
+            <div class="product-detail__why-us-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
           </div>
         </div>
       </div>

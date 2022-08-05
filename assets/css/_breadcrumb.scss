@@ -1,6 +1,5 @@
 .breadcrumb-background {
   overflow: hidden;
-  position: relative;
   height: 171px;
   background: #f9fdcb;
   display: flex;
@@ -32,8 +31,8 @@
   }
   &__img {
     position: absolute;
-    top: -60px;
-    right: 60px;
+    top: -80px;
+    right: -100px;
   }
 }
 
@@ -44,7 +43,7 @@
       font-size: 28px;
     }
     &__img {
-      top: -8px;
+      top: -55px;
       right: -86px;
     }
   }
