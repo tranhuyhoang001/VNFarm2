@@ -31,6 +31,14 @@ window.onclick = function (event) {
       mobileMenuModal.style.display = 'none';
     }, 300);
   }
+
+  if (
+    event.target !== discountDropdown &&
+    event.target !== discountDropdownInner &&
+    event.target !== discountDownIcon
+  ) {
+    discountDropdown.style.display = 'none';
+  }
 };
 
 // Change tab "Đăng nhập/Đăng ký"
@@ -68,3 +76,26 @@ closeMobileMenuModalBtn.onclick = function () {
     mobileMenuModal.style.display = 'none';
   }, 300);
 };
+
+// "Mã giảm giá" dropdown
+const discountDownIcon = document.getElementsByClassName('cart__discount-down-icon')[0];
+const discountDropdown = document.getElementsByClassName('cart__discount-dropdown')[0];
+const discountDropdownInner = document.getElementsByClassName('cart__discount-dropdown-inner')[0];
+
+discountDownIcon.onclick = function () {
+  discountDropdown.style.display == 'block'
+    ? (discountDropdown.style.display = 'none')
+    : (discountDropdown.style.display = 'block');
+};
+
+// Ẩn/Hiện password
+const listShowHidePasswordBtn = document.querySelectorAll('.show-hide-password-btn');
+const listInputPassword = document.querySelectorAll('.login-box__input-password');
+
+listShowHidePasswordBtn.forEach((showHidePasswordBtn, index) => {
+  showHidePasswordBtn.onclick = function () {
+    listInputPassword[index].type == 'password'
+      ? (listInputPassword[index].type = 'text')
+      : (listInputPassword[index].type = 'password');
+  };
+});

@@ -47,8 +47,11 @@
       border-bottom: 4px solid #7fb640;
     }
   }
-  &__input-item:not(:first-child) {
-    margin-top: 16px;
+  &__input-item {
+    position: relative;
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
   }
   &__input-label {
     display: block;

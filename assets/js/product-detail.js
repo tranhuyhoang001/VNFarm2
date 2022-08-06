@@ -85,3 +85,15 @@ writeReviewBtn.onclick = function () {
 closeWriteReviewModalBtn.onclick = function () {
   writeReviewModal.style.display = 'none';
 };
+
+// Ẩn/Hiện password
+const listShowHidePasswordBtn = document.querySelectorAll('.show-hide-password-btn');
+const listInputPassword = document.querySelectorAll('.login-box__input-password');
+
+listShowHidePasswordBtn.forEach((showHidePasswordBtn, index) => {
+  showHidePasswordBtn.onclick = function () {
+    listInputPassword[index].type == 'password'
+      ? (listInputPassword[index].type = 'text')
+      : (listInputPassword[index].type = 'password');
+  };
+});

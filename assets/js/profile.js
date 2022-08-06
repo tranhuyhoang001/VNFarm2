@@ -119,3 +119,15 @@ tabSelectPurchaseHistory.onchange = function (event) {
   const purchaseHistoryTabContent = listPurchaseHistoryTabContent[event.target.value - 1];
   purchaseHistoryTabContent.classList.add('active');
 };
+
+// Ẩn/Hiện password
+const listShowHidePasswordBtn = document.querySelectorAll('.show-hide-password-btn');
+const listInputPassword = document.querySelectorAll('.login-box__input-password');
+
+listShowHidePasswordBtn.forEach((showHidePasswordBtn, index) => {
+  showHidePasswordBtn.onclick = function () {
+    listInputPassword[index].type == 'password'
+      ? (listInputPassword[index].type = 'text')
+      : (listInputPassword[index].type = 'password');
+  };
+});
