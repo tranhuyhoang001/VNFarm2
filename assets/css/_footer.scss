@@ -32,9 +32,12 @@
       margin-right: 10px;
     }
   }
-  &__col-2 li:not(:first-child),
-  &__col-3 li:not(:first-child) {
-    margin-top: 16px;
+  &__col-2,
+  &__col-3 {
+    position: relative;
+    & li {
+      margin-top: 16px;
+    }
   }
   &__listen-to-you {
     font-weight: 600;
@@ -74,6 +77,15 @@
       font-size: 12px;
       color: #b5b5b5;
     }
+  }
+}
+
+.collapsible__btn {
+  position: absolute;
+  right: 30px;
+  top: 6px;
+  &.rotate {
+    transform: rotateX(180deg);
   }
 }
 

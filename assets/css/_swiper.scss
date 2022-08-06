@@ -40,3 +40,10 @@
     display: none;
   }
 }
+
+.small-banner-mobile {
+  & .swiper-pagination {
+    position: static;
+    margin-top: 12px;
+  }
+}

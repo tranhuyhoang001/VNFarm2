@@ -1,8 +1,8 @@
 .successful-message {
   width: 690px;
+  margin: auto;
   border-radius: 8px;
-  border: 1px solid #eeeeee;
-  display: inline-block;
+  background: #fff;
   padding: 88px 110px 62px 110px;
   text-align: center;
   position: relative;
@@ -24,5 +24,22 @@
   }
   &__desc {
     margin-top: 18px;
+  }
+}
+
+@media (max-width: 740px) {
+  .successful-message {
+    width: 100%;
+    padding: 24px 44px;
+    &__close-icon {
+      width: 20px;
+      height: 20px;
+      top: 14px;
+      right: 12px;
+    }
+    &__heading {
+      font-size: 20px;
+      margin-top: 16px;
+    }
   }
 }

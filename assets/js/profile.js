@@ -131,3 +131,14 @@ listShowHidePasswordBtn.forEach((showHidePasswordBtn, index) => {
       : (listInputPassword[index].type = 'password');
   };
 });
+
+// Footer collapsible
+const coll = document.getElementsByClassName('collapsible__btn');
+
+for (let i = 0; i < coll.length; i++) {
+  coll[i].onclick = function () {
+    this.classList.toggle('rotate');
+    const content = this.nextElementSibling;
+    content.style.display === 'block' ? (content.style.display = 'none') : (content.style.display = 'block');
+  };
+}

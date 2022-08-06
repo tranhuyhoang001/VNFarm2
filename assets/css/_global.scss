@@ -9,6 +9,7 @@
   --gold-color: #c09515;
   --blue-color: #0e78a5;
   --black-color: #000000;
+  --swiper-theme-color: #7fb640;
 }
 
 .flex-center {
@@ -244,6 +245,7 @@ input[type='range']::-moz-range-thumb {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+  z-index: 10;
   background: #7fb640;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -280,6 +282,7 @@ input[type='range']::-moz-range-thumb {
   position: fixed;
   bottom: 100px;
   right: 46px;
+  z-index: 10;
   cursor: pointer;
   &__inner {
     position: relative;
@@ -305,6 +308,7 @@ input[type='range']::-moz-range-thumb {
   position: fixed;
   bottom: 40px;
   right: 46px;
+  z-index: 10;
   cursor: pointer;
   background: #99c83e;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -357,6 +361,9 @@ input[type='range']::-moz-range-thumb {
   }
   .s-mt-44 {
     margin-top: 44px !important;
+  }
+  .s-mt-62 {
+    margin-top: 62px !important;
   }
   .s-mt-111 {
     margin-top: 111px !important;
