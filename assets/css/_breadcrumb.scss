@@ -36,7 +36,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
   .breadcrumb-background {
     margin-top: 9px;
     &__title {
@@ -45,6 +45,15 @@
     &__img {
       top: -55px;
       right: -86px;
+    }
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .breadcrumb-background {
+    &__img {
+      top: -80px;
+      right: -40px;
     }
   }
 }

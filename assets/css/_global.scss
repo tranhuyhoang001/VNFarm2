@@ -327,7 +327,7 @@ input[type='range']::-moz-range-thumb {
   cursor: pointer;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
   .s-none {
     display: none !important;
   }
@@ -410,5 +410,11 @@ input[type='range']::-moz-range-thumb {
   }
   .go-to-top {
     right: 22px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .m-mt-0 {
+    margin-top: 0 !important;
   }
 }

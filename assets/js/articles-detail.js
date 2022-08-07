@@ -81,18 +81,6 @@ listShowHidePasswordBtn.forEach((showHidePasswordBtn, index) => {
   };
 });
 
-// Category collapsible
-const listCategoryToggleBtn = document.getElementsByClassName('category__toggle');
-const listCategoryContent = document.getElementsByClassName('category__content');
-
-for (let i = 0; i < listCategoryToggleBtn.length; i++) {
-  listCategoryToggleBtn[i].onclick = function () {
-    this.classList.toggle('rotate');
-    const content = listCategoryContent[i];
-    content.style.display === 'block' ? (content.style.display = 'none') : (content.style.display = 'block');
-  };
-}
-
 // Footer collapsible
 const coll = document.getElementsByClassName('collapsible__btn');
 

@@ -220,7 +220,7 @@
     font-size: 14px;
     color: #a5a5a5;
   }
-  &__btn {
+  &__btn-submit {
     text-align: center;
     margin-top: 40px;
   }
@@ -315,7 +315,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
   .login-box {
     width: 353px;
     &__or {
@@ -330,9 +330,7 @@
       padding: 24px 16px 30px 16px;
       width: 353px;
     }
-    &__btn {
-      text-align: center;
-      margin-top: 40px;
+    &__btn-submit {
       font-size: 14px !important;
     }
   }
@@ -348,6 +346,37 @@
     }
     &__rating {
       margin: 18px 10px 22px 10px;
+    }
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .login-box {
+    width: 580px;
+    &__or {
+      &-before,
+      &-after {
+        width: 230px;
+      }
+    }
+  }
+  .register-agent {
+    &__box {
+      width: 580px;
+    }
+  }
+  .login-box__close-btn,
+  .register-agent__close-btn,
+  .write-review__close-btn {
+    top: 20px;
+    right: 18px;
+  }
+  .write-review {
+    &__box {
+      width: 450px;
+    }
+    &__rating {
+      margin: 18px 30px 22px 30px;
     }
   }
 }

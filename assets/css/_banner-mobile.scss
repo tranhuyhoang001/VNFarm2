@@ -1,5 +1,18 @@
-.banner-mobile {
-  &__img {
-    width: 100%;
+@media (max-width: 1023px) {
+  .banner-mobile {
+    margin: 0 auto;
+    max-width: 644px;
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .banner-mobile {
+    padding: 0 20px;
+    &__img {
+      border-radius: 8px;
+    }
   }
 }

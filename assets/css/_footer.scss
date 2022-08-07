@@ -89,7 +89,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
   .footer-mobile {
     &__payment {
       margin: 21px 0;
@@ -97,6 +97,7 @@
     &__call {
       margin-top: 68px;
       display: flex;
+      justify-content: center;
       align-items: center;
     }
     &__call-info {
@@ -122,11 +123,14 @@
       margin-top: 22px;
       padding: 0 85px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
     }
     &__follow-icon {
       width: 52px;
+      &:not(:first-child) {
+        margin-left: 12px;
+      }
     }
     &__copyright-text {
       width: 100%;

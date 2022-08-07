@@ -228,7 +228,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
   .article-detail {
     &__container {
       margin-bottom: 48px;
@@ -317,6 +317,14 @@
     &__quick-view-active {
       font-weight: 700;
       color: #7fb640;
+    }
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .article-detail {
+    &__input-range {
+      width: 80%;
     }
   }
 }

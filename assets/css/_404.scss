@@ -12,8 +12,9 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
   .page-404 {
+    max-width: 644px;
     margin: 50px auto;
     &__img {
       width: 100%;
