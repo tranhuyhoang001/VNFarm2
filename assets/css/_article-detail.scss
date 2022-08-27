@@ -68,7 +68,7 @@
   }
   &__ads-box {
     width: 546px;
-    padding: 23px 192px 28px 28px;
+    padding: 23px 28px 28px 28px;
     border: 1px solid #e4e4e4;
     border-radius: 8px;
     display: flex;
@@ -83,14 +83,11 @@
     margin-left: 15px;
   }
   &__ads-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-weight: 700;
   }
   &__ads-discount {
-    margin-left: 16px;
-    padding: 2px 16px;
+    margin-left: 30px;
+    padding: 1px 16px;
     background: #9eb23b;
     border-radius: 23px;
     color: #fff;
@@ -107,7 +104,7 @@
   &__ads-current-price {
     font-weight: 700;
     font-size: 14px;
-    color: #289b15;
+    color: #f40000;
   }
   &__ads-original-price {
     font-size: 12px;
@@ -260,7 +257,7 @@
     }
     &__ads-box {
       width: 100%;
-      padding: 24px 16px 48px 16px;
+      padding: 38px 16px 48px 16px;
     }
     &__ads-price {
       margin-top: 4px;
@@ -270,9 +267,13 @@
       right: 16px;
       bottom: 16px;
     }
+    &__ads-discount {
+      position: absolute;
+      top: 13px;
+      right: 11px;
+    }
     &__ads-heart-btn {
-      right: 16px;
-      top: 16px;
+      display: none;
     }
     &__share-btn {
       height: 32px;

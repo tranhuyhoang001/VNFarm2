@@ -4,7 +4,7 @@
 .about-us__banner-4 {
   position: relative;
   color: #000000;
-  width: 261px;
+  max-width: 261px;
   height: 325px;
   border-radius: 16px;
 }
@@ -12,15 +12,19 @@
 .about-us {
   &__banner-1 {
     background-image: url(../img/about-us-1.svg);
+    background-repeat: no-repeat;
   }
   &__banner-2 {
     background-image: url(../img/about-us-2.svg);
+    background-repeat: no-repeat;
   }
   &__banner-3 {
     background-image: url(../img/about-us-3.svg);
+    background-repeat: no-repeat;
   }
   &__banner-4 {
     background-image: url(../img/about-us-4.svg);
+    background-repeat: no-repeat;
   }
   &__content-on-bottom {
     position: absolute;

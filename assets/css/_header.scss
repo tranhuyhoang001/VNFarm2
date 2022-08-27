@@ -1,6 +1,7 @@
 .header-banner {
   background: #289b15;
   height: 44px;
+  overflow-x: auto;
   &__container {
     position: relative;
     max-width: 1116px;

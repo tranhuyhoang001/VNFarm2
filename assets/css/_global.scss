@@ -418,3 +418,9 @@ input[type='range']::-moz-range-thumb {
     margin-top: 0 !important;
   }
 }
+
+@media (max-width: 376px) {
+  .btn {
+    padding: 8px 14px;
+  }
+}

@@ -93,9 +93,14 @@
 .featured-img-2 {
   height: 480px;
   background-image: url(../img/featured-img-2.jpg);
+  background-repeat: no-repeat;
   border-radius: 8px;
   padding: 70px 78px 22px 78px;
   text-align: center;
+  &__img {
+    width: 100%;
+    margin: 0 auto;
+  }
   &__heading {
     font-weight: 700;
     font-size: 24px;
@@ -110,7 +115,7 @@
 }
 
 .featured-img-34 {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -123,8 +128,13 @@
   overflow: hidden;
   &__img {
     position: absolute;
+    z-index: 10;
     top: 30px;
     right: -10px;
+  }
+  &__text {
+    position: absolute;
+    z-index: 11;
   }
   &__time {
     margin-top: 69px;
@@ -140,8 +150,10 @@
   &__btn {
     display: inline-block;
     padding: 7px 20px;
-    margin-top: 63px;
-    margin-left: 13px;
+    position: absolute;
+    z-index: 11;
+    bottom: 22px;
+    left: 13px;
   }
 }
 
@@ -156,6 +168,10 @@
     position: absolute;
     top: 50px;
     right: -10px;
+  }
+  &__text {
+    position: absolute;
+    z-index: 11;
   }
   &__name {
     font-weight: 700;
@@ -172,7 +188,10 @@
   &__btn {
     display: inline-block;
     padding: 7px 20px;
-    margin-top: 85px;
+    position: absolute;
+    z-index: 11;
+    bottom: 22px;
+    left: 13px;
   }
 }
 

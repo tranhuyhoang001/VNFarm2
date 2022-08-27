@@ -204,6 +204,9 @@
       background: rgba(108, 171, 67, 0.08);
       border: 1px solid #7fb640;
       border-radius: 8px;
+      &:not(:first-child) {
+        margin-left: 24px;
+      }
     }
     &-content {
       margin-left: 38px;
@@ -423,6 +426,11 @@
     &__why-us {
       margin-top: 42px;
       display: block;
+      &-box {
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+      }
     }
     &__content-box {
       margin-top: 25px;
