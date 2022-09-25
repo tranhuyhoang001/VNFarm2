@@ -35,6 +35,10 @@ window.onclick = function (event) {
   if (event.target == writeReviewModal) {
     writeReviewModal.style.display = 'none';
   }
+
+  if (event.target == replyCommentModal) {
+    replyCommentModal.style.display = 'none';
+  }
 };
 
 // Change tab "Đăng nhập/Đăng ký"
@@ -84,6 +88,21 @@ writeReviewBtn.onclick = function () {
 
 closeWriteReviewModalBtn.onclick = function () {
   writeReviewModal.style.display = 'none';
+};
+
+// "Trả lời bình luận" modal (Mobile)
+const replyCommentModal = document.getElementById('replyCommentModal');
+const listReplyCommentBtn = document.querySelectorAll('.product-detail__cmt-btn');
+const closeReplyCommentModalBtn = document.getElementsByClassName('reply-cmt__close-btn')[0];
+
+listReplyCommentBtn.forEach((replyCommentBtn) => {
+  replyCommentBtn.onclick = function () {
+    if (window.screen.width < 1024) replyCommentModal.style.display = 'block';
+  };
+});
+
+closeReplyCommentModalBtn.onclick = function () {
+  replyCommentModal.style.display = 'none';
 };
 
 // Ẩn/Hiện password
