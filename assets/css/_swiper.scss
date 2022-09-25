@@ -1,4 +1,5 @@
-.product-portfolio {
+.product-portfolio,
+.search {
   &__swiper-button-next {
     background-image: url('../icon/swiper-button-next.svg');
     right: 0px !important;
@@ -45,5 +46,11 @@
   & .swiper-pagination {
     position: static;
     margin-top: 12px;
+  }
+}
+
+.search__background {
+  & .swiper-slide {
+    height: auto;
   }
 }

@@ -7,10 +7,16 @@
   overflow: hidden;
   position: relative;
   // height: 344px;
+  background-color: #fff;
   border: 1px solid #eeeeee;
-  border-radius: 8px;
+  border-radius: 16px;
   text-align: center;
   padding: 15px 30px;
+  &:hover {
+    transition: 0.3s;
+    border: 1px solid #7fb640;
+    box-shadow: 0px 4px 4px rgba(88, 88, 88, 0.16);
+  }
   &__img-box {
     width: 115px;
     height: 160px;
@@ -54,8 +60,8 @@
     position: absolute;
     width: 60px;
     height: 25px;
-    left: -6px;
-    top: -1px;
+    left: -4px;
+    top: 0px;
     background: #7fb640;
     border-radius: 0px 0px 8px 0px;
     font-weight: 600;

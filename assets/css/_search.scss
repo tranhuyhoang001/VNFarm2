@@ -1,0 +1,29 @@
+.search {
+  &__number-found {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #7fb640;
+  }
+  &__background {
+    padding: 28px 0 42px 0;
+    background: rgba(249, 253, 203, 0.16);
+  }
+  &__number-product,
+  &__number-post {
+    margin-top: 28px;
+    margin-bottom: 36px;
+  }
+  &__read-more-btn {
+    text-align: center;
+    margin: 36px 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .search {
+    &__background {
+      padding: 28px 0 6px 0;
+    }
+  }
+}
