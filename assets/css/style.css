@@ -987,9 +987,12 @@ input[type=range]::-moz-range-thumb {
 }
 .featured__container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   padding: 0 6px;
+}
+.featured__icon-wrapper {
+  min-width: 60px;
+  text-align: center;
 }
 .featured__content {
   margin-left: 12px;
@@ -1010,7 +1013,6 @@ input[type=range]::-moz-range-thumb {
   }
   .featured__container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     padding: 0 6px;
   }

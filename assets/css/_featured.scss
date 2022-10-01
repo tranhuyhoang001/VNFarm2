@@ -200,9 +200,12 @@
   border-bottom: 1px solid #ebebeb;
   &__container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     padding: 0 6px;
+  }
+  &__icon-wrapper {
+    min-width: 60px;
+    text-align: center;
   }
   &__content {
     margin-left: 12px;
@@ -223,7 +226,6 @@
     border-bottom: none;
     &__container {
       display: flex;
-      justify-content: space-around;
       align-items: center;
       padding: 0 6px;
     }
