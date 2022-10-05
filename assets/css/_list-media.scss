@@ -16,6 +16,19 @@
     margin-bottom: 40px;
   }
   .list-media::-webkit-scrollbar {
-    display: none;
+    width: 20px;
   }
+  .list-media::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 9999px;
+  }
+  .list-media::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: #f1f1f1;
+  }
+  // .list-media::-webkit-scrollbar {
+  //   display: none;
+  // }
 }
