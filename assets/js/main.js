@@ -146,3 +146,31 @@ for (let i = 0; i < coll.length; i++) {
     content.style.display === 'block' ? (content.style.display = 'none') : (content.style.display = 'block');
   };
 }
+
+// Scroll ngang "Danh sách báo chí"
+const mediaSlider = document.querySelector('.list-media');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+mediaSlider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  mediaSlider.classList.add('active');
+  startX = e.pageX - mediaSlider.offsetLeft;
+  scrollLeft = mediaSlider.scrollLeft;
+});
+mediaSlider.addEventListener('mouseleave', () => {
+  isDown = false;
+  mediaSlider.classList.remove('active');
+});
+mediaSlider.addEventListener('mouseup', () => {
+  isDown = false;
+  mediaSlider.classList.remove('active');
+});
+mediaSlider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - mediaSlider.offsetLeft;
+  const walk = (x - startX) * 1; //scroll-fast
+  mediaSlider.scrollLeft = scrollLeft - walk;
+});
