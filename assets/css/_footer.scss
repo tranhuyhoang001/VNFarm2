@@ -28,7 +28,8 @@
     & li:not(:first-child) {
       margin-top: 20px;
     }
-    & img {
+    &-img-wrapper {
+      min-width: 20px;
       margin-right: 10px;
     }
   }

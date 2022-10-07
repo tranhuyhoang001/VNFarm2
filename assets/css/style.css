@@ -1522,7 +1522,8 @@ input[type=range]::-moz-range-thumb {
 .footer__col-1 li:not(:first-child) {
   margin-top: 20px;
 }
-.footer__col-1 img {
+.footer__col-1-img-wrapper {
+  min-width: 20px;
   margin-right: 10px;
 }
 .footer__col-2, .footer__col-3 {
